@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import { darkGray, butter, layout } from "../../theme";
 import lululab from "../../assets/images/lululab2.png";
 
@@ -6,7 +8,9 @@ const Swiper = () => {
   return (
     <Section>
       <div className="swiper_container">
-        <div className="prev">이전</div>
+        <div className="back_box">
+          <IoIosArrowBack className="back" />
+        </div>
         <div className="introduction">
           <h3 className="title">Lululab</h3>
           <h3 className="title_detail">병원예약 서비스</h3>
@@ -15,7 +19,9 @@ const Swiper = () => {
         <div className="image_box">
           <img src={lululab} alt="프로젝트 대표 이미지"></img>
         </div>
-        <div className="prev">다음</div>
+        <div className="next_box">
+          <IoIosArrowForward className="next" />
+        </div>
       </div>
     </Section>
   );
@@ -24,18 +30,44 @@ const Swiper = () => {
 const Section = styled.section`
   width: 100%;
   padding: 100px 0px 150px 0px;
-  background-color: ${darkGray};
+  /* background-color: ${darkGray}; */
   color: ${butter};
+  position: absolute;
+  top: 15%;
   div.swiper_container {
     display: flex;
+    align-items: center;
     width: fit-content;
     margin: auto;
-    div.prev {
+    .back_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5rem;
       width: 80px;
       height: 80px;
       border: 1px solid ${butter};
       border-radius: 50%;
       color: ${butter};
+      .back {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+    .next_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5rem;
+      width: 80px;
+      height: 80px;
+      border: 1px solid ${butter};
+      border-radius: 50%;
+      color: ${butter};
+      .next {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
 
     div.introduction {
