@@ -1,0 +1,2 @@
+background.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/background.mp4 filter=lfs diff=lfs merge=lfs -text
