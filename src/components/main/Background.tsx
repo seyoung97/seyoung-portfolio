@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darkGray, butter, layout } from "../../theme";
+import { darkGray } from "../../theme";
 import background from "../../assets/videos/background.mp4";
 
 const Background = () => {
@@ -18,10 +18,13 @@ const Background = () => {
 const Section = styled.section`
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+
   position: relative;
   .video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left bottom;
   }
 `;
 
@@ -33,4 +36,5 @@ const Filter = styled.div`
   background-color: ${darkGray};
   opacity: 0.6;
 `;
+
 export default Background;

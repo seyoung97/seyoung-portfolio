@@ -1,14 +1,14 @@
 import Intro from "../components/intro/Intro";
 import Background from "../components/main/Background";
 import Header from "../components/header/Header";
-import Swiper from "../components/main/Swiper";
+import Carousel from "../components/main/Carousel";
 
 const Main = () => {
   return (
     <>
       <Background />
       <Header />
-      <Swiper />
+      <Carousel />
     </>
   );
 };

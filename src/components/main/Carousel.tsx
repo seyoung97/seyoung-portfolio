@@ -1,37 +1,33 @@
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "./Carousel.scss";
+
+import { Navigation } from "swiper";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { darkGray, butter, layout } from "../../theme";
-import lululab from "../../assets/images/lululab2.png";
+import lululab from "../../assets/images/lululab5.png";
 
-const Swiper = () => {
+const Carousel = () => {
   return (
-    <Section>
-      <div className="swiper_container">
-        <div className="back_box">
-          <IoIosArrowBack className="back" />
-        </div>
-        <div className="introduction">
-          <h3 className="title">Lululab</h3>
-          <h3 className="title_detail">병원예약 서비스</h3>
-          <p>기업 룰루랩에서 제공한 기획안을 참고하여 병원예약 시스템을 구축</p>
-        </div>
-        <div className="image_box">
-          <img src={lululab} alt="프로젝트 대표 이미지"></img>
-        </div>
-        <div className="next_box">
-          <IoIosArrowForward className="next" />
-        </div>
-      </div>
-    </Section>
+    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <SwiperSlide>
+        <img src={lululab}></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={lululab}></img>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
-const Section = styled.section`
+/*const Section = styled.section`
   width: 100%;
   padding: 100px 0px 150px 0px;
-  /* background-color: ${darkGray}; */
-  color: ${butter};
+  color: #fffef2;
   position: absolute;
   top: 15%;
   div.swiper_container {
@@ -87,7 +83,7 @@ const Section = styled.section`
       }
     }
     div.image_box {
-      /* border: ${layout}; */
+      
       width: 900px;
       height: 600px;
       border-radius: 10px;
@@ -99,6 +95,6 @@ const Section = styled.section`
       }
     }
   }
-`;
+`;*/
 
-export default Swiper;
+export default Carousel;
