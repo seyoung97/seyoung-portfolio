@@ -1,9 +1,6 @@
-.mySwiper {
-}
-
 .swiper {
   position: relative;
-  top: -30rem;
+  top: -38rem;
   width: 100%;
   height: 100%;
 }
@@ -11,7 +8,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  // background: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -33,4 +29,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-button-prev {
+  padding-left: 2rem;
+  color: #fffef2;
+}
+.swiper-button-next {
+  padding-right: 2rem;
+  color: #fffef2;
 }
