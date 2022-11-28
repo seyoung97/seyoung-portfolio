@@ -16,8 +16,8 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  position: absolute;
-  top: 0%;
+  position: fixed;
+  top: 0;
   background-image: linear-gradient(
     to bottom,
     rgba(33, 32, 33, 1),
