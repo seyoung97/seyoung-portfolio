@@ -15,26 +15,23 @@ import justmeat from "../../assets/images/justmeat.png";
 
 const Carousel = () => {
   return (
-    <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>
-          <img src={lululab}></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={haii}></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bitbyte}></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={modu}></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={justmeat}></img>
-        </SwiperSlide>
-      </Swiper>
-      <div>dkdkdkdkdk</div>
-    </>
+    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <SwiperSlide>
+        <img src={lululab}></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={haii}></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={bitbyte}></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={modu}></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={justmeat}></img>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

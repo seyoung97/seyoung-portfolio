@@ -13,14 +13,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Noto Sans KR', sans-serif;
-    position: relative;
+    background-color: rgb(33, 32, 33);
+    /* position: relative;  */
   }
   html {
     font-size: 20px;
   }
-  #root{
-    height: 100%;
-  }
+  
 `;
 
 export default GlobalStyle;

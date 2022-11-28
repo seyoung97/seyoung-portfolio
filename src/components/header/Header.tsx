@@ -17,7 +17,8 @@ const Section = styled.section`
   align-items: center;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 0%;
+  z-index: 1;
   background-image: linear-gradient(
     to bottom,
     rgba(33, 32, 33, 1),
