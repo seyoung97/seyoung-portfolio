@@ -3,32 +3,64 @@
     {
       "id": 0,
       "skillName": "HTML5",
-      "imgUrl": "../images/skills/html-5.png"
+      "imgUrl": "/public/images/skills/html-5.png"
     },
     {
       "id": 1,
       "skillName": "CSS",
-      "imgUrl": "../images/skills/css-3.png"
+      "imgUrl": "/public/images/skills/css-3.png"
     },
     {
       "id": 2,
       "skillName": "Sass",
-      "imgUrl": "../images/skills/sass.png"
+      "imgUrl": "/public/images/skills/sass.png"
     },
     {
       "id": 3,
       "skillName": "styled-component",
-      "imgUrl": "../images/skills/img.png"
+      "imgUrl": "/public/images/skills/img.png"
     },
     {
       "id": 4,
       "skillName": "JavaScript",
-      "imgUrl": "../images/skills/javsscript.png"
+      "imgUrl": "/public/images/skills/javsscript.png"
     },
     {
-      "id": 4,
-      "skillName": "JavaScript",
-      "imgUrl": "../images/skills/javsscript.png"
+      "id": 5,
+      "skillName": "TypeScript",
+      "imgUrl": "/public/images/skills/typescript.png"
+    },
+    {
+      "id": 6,
+      "skillName": "React",
+      "imgUrl": "/public/images/skills/physics.png"
+    }
+  ],
+  "communication": [
+    {
+      "id": 7,
+      "skillName": "git",
+      "imgUrl": "/public/images/skills/git.png"
+    },
+    {
+      "id": 8,
+      "skillName": "Slack",
+      "imgUrl": "/public/images/skills/slack.png"
+    },
+    {
+      "id": 9,
+      "skillName": "Zep",
+      "imgUrl": "/public/images/skills/zep.png"
+    },
+    {
+      "id": 10,
+      "skillName": "Notion",
+      "imgUrl": "/public/images/skills/letter-n.png"
+    },
+    {
+      "id": 11,
+      "skillName": "Trello",
+      "imgUrl": "/public/images/skills/trello.png"
     }
   ]
 }

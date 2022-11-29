@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
 import html from "../../assets/images/skills/html-5.png";
+import { SkillsInfo } from "../../interface";
 
-const Skills = () => {
+interface SkillsProps {
+  content: SkillsInfo;
+}
+
+const Skills = ({ content }: SkillsProps) => {
   return (
     <Container>
       <div>
-        <img src={html}></img>
+        <img src={content.imgUrl}></img>
       </div>
-      <span>HTML5</span>
+      <span>{content.skillName}</span>
     </Container>
   );
 };
@@ -20,8 +25,8 @@ const Container = styled.div`
   width: 230px;
   padding: 10px 0px 8px 0px;
   margin: 10px;
-  border-radius: 5%;
-  background-color: rgb(255, 254, 242, 0.6);
+  border-radius: 5px;
+  background-color: rgb(255, 254, 242);
   box-shadow: 0px -1px 4px 0px rgb(0 0 0 / 8%);
   div {
     width: 45px;
@@ -35,7 +40,7 @@ const Container = styled.div`
   }
   span {
     color: ${darkGray};
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 `;

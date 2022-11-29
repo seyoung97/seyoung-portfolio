@@ -1,12 +1,16 @@
+import { useMemo } from "react";
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
 import profileimg from "../../assets/images/profile.png";
 import Title from "../title/Title";
 import { TitleData } from "../../assets/data/Data";
 import Skills from "./Skills";
+import SkillsList from "../../assets/data/skillsList.json";
 
 const AboutMe = () => {
   const skillsTitle = TitleData[0];
+  const frontList = useMemo(() => SkillsList["Front-end"], []);
+  const communicationList = useMemo(() => SkillsList.communication, []);
 
   return (
     <>
@@ -36,7 +40,27 @@ const AboutMe = () => {
       </Section>
       <Title content={skillsTitle} />
       <SkillsSection>
-        <Skills />
+        <article>
+          <h2>Front-end</h2>
+          <div>
+            {frontList.map((frontSkills) => {
+              return <Skills key={frontSkills.id} content={frontSkills} />;
+            })}
+          </div>
+        </article>
+        <article>
+          <h2>Communication</h2>
+          <div>
+            {communicationList.map((communicationSkills) => {
+              return (
+                <Skills
+                  key={communicationSkills.id}
+                  content={communicationSkills}
+                />
+              );
+            })}
+          </div>
+        </article>
       </SkillsSection>
     </>
   );
@@ -90,11 +114,30 @@ const Section = styled.section`
 `;
 
 const SkillsSection = styled.section`
-  border: ${layout};
   border-radius: 2%;
-  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  width: 1700px;
   margin: auto;
   margin-top: 70px;
+  article {
+    width: 800px;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211, 0.3);
+    h2 {
+      text-align: center;
+      color: ${darkGray};
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 20px 0px 10px 0px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
 `;
 
 export default AboutMe;
