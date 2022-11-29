@@ -1,0 +1,34 @@
+{
+  "Front-end": [
+    {
+      "id": 0,
+      "skillName": "HTML5",
+      "imgUrl": "../images/skills/html-5.png"
+    },
+    {
+      "id": 1,
+      "skillName": "CSS",
+      "imgUrl": "../images/skills/css-3.png"
+    },
+    {
+      "id": 2,
+      "skillName": "Sass",
+      "imgUrl": "../images/skills/sass.png"
+    },
+    {
+      "id": 3,
+      "skillName": "styled-component",
+      "imgUrl": "../images/skills/img.png"
+    },
+    {
+      "id": 4,
+      "skillName": "JavaScript",
+      "imgUrl": "../images/skills/javsscript.png"
+    },
+    {
+      "id": 4,
+      "skillName": "JavaScript",
+      "imgUrl": "../images/skills/javsscript.png"
+    }
+  ]
+}

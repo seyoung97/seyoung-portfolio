@@ -3,9 +3,10 @@ import { darkGray, butter, layout } from "../../theme";
 import profileimg from "../../assets/images/profile.png";
 import Title from "../title/Title";
 import { TitleData } from "../../assets/data/Data";
+import Skills from "./Skills";
 
 const AboutMe = () => {
-  const Skills = TitleData[0];
+  const skillsTitle = TitleData[0];
 
   return (
     <>
@@ -33,7 +34,10 @@ const AboutMe = () => {
           </div>
         </div>
       </Section>
-      <Title content={Skills} />
+      <Title content={skillsTitle} />
+      <SkillsSection>
+        <Skills />
+      </SkillsSection>
     </>
   );
 };
@@ -83,6 +87,14 @@ const Section = styled.section`
       }
     }
   }
+`;
+
+const SkillsSection = styled.section`
+  border: ${layout};
+  border-radius: 2%;
+  width: 1000px;
+  margin: auto;
+  margin-top: 70px;
 `;
 
 export default AboutMe;
