@@ -1,0 +1,66 @@
+{
+  "projects_list": [
+    {
+      "id": 0,
+      "img_url": "/public/images/projects/portfoliomain.png",
+      "project_name": "포트폴리오 사이트",
+      "activity_type": "개인 프로젝트",
+      "project_introduction": "React와 TypeScript를 기반으로 제작한 포트폴리오 사이트",
+      "github_url": "https://github.com/seyoung97/seyoung-portfolio",
+      "distribute_url": 0,
+      "blog_url": 0
+    },
+    {
+      "id": 1,
+      "img_url": "/public/images/projects/modumain.png",
+      "project_name": "사조의 공방 프로젝트",
+      "activity_type": "JUST CODE 6기",
+      "project_introduction": "맞춤제작 전문 플랫폼 모두의 공방을 참고해 디자인 및 기능을 직접 구현",
+      "github_url": "https://github.com/seyoung97/justcode-6-2nd-team4-front",
+      "distribute_url": 0,
+      "blog_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+    },
+    {
+      "id": 2,
+      "img_url": "/public/images/projects/justmeatmain.png",
+      "project_name": "JUSTMEAT 프로젝트",
+      "activity_type": "JUST CODE 6기",
+      "project_introduction": "육류 판매 전문 플랫폼 정육각을 참고해 모든 기능을 직접 구현",
+      "github_url": "https://github.com/seyoung97/justcode-6-1st-justmeat-front",
+      "distribute_url": 0,
+      "blog_url": "https://velog.io/@seeyong_0/JUST-MEAT-1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+    }
+  ],
+  "internship_list": [
+    {
+      "id": 3,
+      "img_url": "/public/images/projects/lululab.png",
+      "project_name": "lululab 병원 예약 서비스",
+      "activity_type": "wanted pre-onboarding",
+      "project_introduction": "기업 룰루랩에서 제공한 기획안을 토대로 UI/UX 디자인 및 병원 예약, 예약 조회 기능을 구현",
+      "github_url": "https://github.com/seyoung97/preonboarding-lululab",
+      "distribute_url": "https://extraordinary-elf-828716.netlify.app",
+      "blog_url": 0
+    },
+    {
+      "id": 4,
+      "img_url": "/public/images/projects/haiimain.png",
+      "project_name": "HAII 음성 녹음 애플리케이션",
+      "activity_type": "wanted pre-onboarding",
+      "project_introduction": "기업 하이에서 제공한 기획안을 토대로 UI/UX 디자인 및 음성 녹음, 녹음 파일 재생, 파형 출력 기능을 구현",
+      "github_url": "https://github.com/seyoung97/pre-onboarding-4team-haii",
+      "distribute_url": "https://jocular-empanada-50806c.netlify.app/",
+      "blog_url": 0
+    },
+    {
+      "id": 5,
+      "img_url": "/public/images/projects/playmain.png",
+      "project_name": "BITBYTE 플레이키보드 웹스토어",
+      "activity_type": "wanted pre-onboarding",
+      "project_introduction": "기업 비트바이트에서 제공한 기획안 및 figma를 토대로 상품 리스트 페이지 및 상품 상세 페이지를 구현",
+      "github_url": "https://github.com/seyoung97/playkeyboard",
+      "distribute_url": "https://elaborate-hotteok-6003a1.netlify.app",
+      "blog_url": 0
+    }
+  ]
+}

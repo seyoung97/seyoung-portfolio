@@ -70,7 +70,7 @@ const Article = styled.article`
     margin-left: 15px;
     img {
       width: 30px;
-      margin: 10px 15px 10px 0px;
+      margin: 10px 15px 15px 0px;
     }
   }
 `;
