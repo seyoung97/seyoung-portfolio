@@ -71,7 +71,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   .img_box {
     width: 500px;
@@ -117,11 +117,12 @@ const SkillsSection = styled.section`
   border-radius: 2%;
   display: flex;
   justify-content: space-between;
-  width: 1700px;
+  width: 80%;
   margin: auto;
   margin-top: 70px;
   article {
-    width: 800px;
+    width: 48.5%;
+    padding-bottom: 20px;
     border-radius: 5px;
     background-color: rgb(211, 211, 211, 0.3);
     h2 {
