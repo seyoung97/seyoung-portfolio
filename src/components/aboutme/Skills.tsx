@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
-import html from "../../assets/images/skills/html-5.png";
 import { SkillsInfo } from "../../interface";
 
 interface SkillsProps {

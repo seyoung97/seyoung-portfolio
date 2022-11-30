@@ -4,26 +4,29 @@ import portfoliomain from "../../assets/images/portfoliomain.png";
 import github from "../../assets/images/links/github_butter.png";
 import network from "../../assets/images/links/network.png";
 import blog from "../../assets/images/links/blog_butter.png";
+import { ProjectCardType } from "../../interface";
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+  content: ProjectCardType;
+}
+
+const ProjectCard = ({ content }: ProjectCardProps) => {
   return (
     <Article>
       <div className="img_box">
-        <img src={portfoliomain}></img>
+        <img src={content.img_url}></img>
       </div>
-      <div className="title">포트폴리오 사이트</div>
-      <div className="activity">관련활동: 개인 프로젝트</div>
-      <p className="explain">
-        React와 TypeScript 기반으로 제작한 포트폴리오 사이트입니다.
-      </p>
+      <div className="title">{content.project_name}</div>
+      <div className="activity">관련활동: {content.activity_type}</div>
+      <p className="explain">{content.project_introduction}</p>
       <div className="links_container">
-        <a href="https://github.com/seyoung97/seyoung-portfolio">
+        <a href={content.github_url}>
           <img src={github}></img>
         </a>
-        <a>
+        <a href={content.distribute_url}>
           <img src={network} />
         </a>
-        <a>
+        <a href={content.blog_url}>
           <img src={blog}></img>
         </a>
       </div>
@@ -49,7 +52,7 @@ const Article = styled.article`
     }
   }
   .title {
-    margin: 15px 15px 10px 10px;
+    margin: 20px 15px 10px 10px;
     padding-bottom: 8px;
     border-bottom: 1px solid rgb(223, 222, 222, 0.3);
     color: ${butter};
@@ -61,7 +64,7 @@ const Article = styled.article`
     font-size: 0.9rem;
   }
   .explain {
-    width: 90%;
+    width: 85%;
     margin: 10px 0px 10px 15px;
     color: ${butter};
     font-size: 0.9rem;
