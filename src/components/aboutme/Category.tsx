@@ -55,6 +55,7 @@ const Ul = styled.ul`
     text-align: center;
     border: 1px solid ${butter};
     font-size: 1.4rem;
+    font-weight: bold;
     color: ${darkGray};
     background-color: ${butter};
     cursor: pointer;
