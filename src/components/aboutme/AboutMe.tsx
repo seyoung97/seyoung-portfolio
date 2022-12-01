@@ -130,6 +130,7 @@ const SkillsArticle = styled.section`
   border-radius: 2%;
   display: flex;
   justify-content: space-between;
+
   width: 80%;
   margin: auto;
   margin-top: 70px;

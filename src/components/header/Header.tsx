@@ -60,8 +60,8 @@ const Section = styled.section`
   .links_container {
     margin-right: 5rem;
     img {
-      width: 2rem;
-      margin: 0px 40px 0px 0px;
+      width: 1.6rem;
+      margin: 0px 35px 0px 0px;
     }
   }
 `;
