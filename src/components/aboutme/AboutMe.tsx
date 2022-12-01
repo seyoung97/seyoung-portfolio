@@ -6,6 +6,7 @@ import Title from "../title/Title";
 import { TitleData } from "../../assets/data/Data";
 import Skills from "./Skills";
 import SkillsList from "../../assets/data/skillsList.json";
+import Category from "./Category";
 
 const AboutMe = () => {
   const skillsTitle = TitleData[0];
@@ -13,8 +14,9 @@ const AboutMe = () => {
   const communicationList = useMemo(() => SkillsList.communication, []);
 
   return (
-    <>
-      <Section>
+    <AboutSection>
+      <Category />
+      <IntroductionArticle>
         <div className="img_box">
           <img src={profileimg}></img>
         </div>
@@ -37,9 +39,9 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-      </Section>
+      </IntroductionArticle>
       <Title content={skillsTitle} />
-      <SkillsSection>
+      <SkillsArticle>
         <article>
           <h2>Front-end</h2>
           <div>
@@ -61,22 +63,26 @@ const AboutMe = () => {
             })}
           </div>
         </article>
-      </SkillsSection>
-    </>
+      </SkillsArticle>
+    </AboutSection>
   );
 };
 
-const Section = styled.section`
+const AboutSection = styled.section`
+  width: 100%;
+  height: 100vh;
+`;
+
+const IntroductionArticle = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
 
   .img_box {
     width: 500px;
     height: 500px;
-    margin: 200px 0px 200px 0px;
+    margin: 100px 0px 200px 0px;
     img {
       width: 100%;
       height: 100%;
@@ -113,7 +119,7 @@ const Section = styled.section`
   }
 `;
 
-const SkillsSection = styled.section`
+const SkillsArticle = styled.section`
   border-radius: 2%;
   display: flex;
   justify-content: space-between;
