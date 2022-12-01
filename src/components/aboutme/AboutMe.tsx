@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
 import profileimg from "../../assets/images/profile.png";
@@ -12,58 +12,65 @@ const AboutMe = () => {
   const skillsTitle = TitleData[0];
   const frontList = useMemo(() => SkillsList["Front-end"], []);
   const communicationList = useMemo(() => SkillsList.communication, []);
+  const [category, setCategory] = useState("selfIntroduction");
 
   return (
     <AboutSection>
-      <Category />
-      <IntroductionArticle>
-        <div className="img_box">
-          <img src={profileimg}></img>
-        </div>
-        <div className="introduction_container">
-          <p className="intro">안녕하세요, 남다른 성장곡선을 그리는 개발자</p>
-          <div className="name_box">
-            <span className="name">정세영</span>
-            <span className="end">입니다.</span>
+      <Category category={category} setCategory={setCategory} />
+      {category === "selfIntroduction" ? (
+        <IntroductionArticle>
+          <div className="img_box">
+            <img src={profileimg}></img>
           </div>
-          <div className="content_box">
-            <p>개발자가 되기 전부터 제작하는 것에 큰 기쁨을 느끼며 살다가, </p>
-            <p>이제는 웹개발에 푹 빠져있습니다.</p>
-            <p>
-              부트캠프를 통해 백엔드와 협업하여 프로젝트를 진행한 경험이 있고,
-            </p>
-            <p>인턴십을 통해 디자이너와 figma로 협업한 경험이있습니다. </p>
-            <p>
-              개발자의 생명은 꾸준함이라고 믿고 1일 1커밋과 기술 블로그를
-              운영하고 있습니다.
-            </p>
+          <div className="introduction_container">
+            <p className="intro">안녕하세요, 남다른 성장곡선을 그리는 개발자</p>
+            <div className="name_box">
+              <span className="name">정세영</span>
+              <span className="end">입니다.</span>
+            </div>
+            <div className="content_box">
+              <p>
+                개발자가 되기 전부터 제작하는 것에 큰 기쁨을 느끼며 살다가,{" "}
+              </p>
+              <p>이제는 웹개발에 푹 빠져있습니다.</p>
+              <p>
+                부트캠프를 통해 백엔드와 협업하여 프로젝트를 진행한 경험이 있고,
+              </p>
+              <p>인턴십을 통해 디자이너와 figma로 협업한 경험이있습니다. </p>
+              <p>
+                개발자의 생명은 꾸준함이라고 믿고 1일 1커밋과 기술 블로그를
+                운영하고 있습니다.
+              </p>
+            </div>
           </div>
-        </div>
-      </IntroductionArticle>
-      <Title content={skillsTitle} />
-      <SkillsArticle>
-        <article>
-          <h2>Front-end</h2>
-          <div>
-            {frontList.map((frontSkills) => {
-              return <Skills key={frontSkills.id} content={frontSkills} />;
-            })}
-          </div>
-        </article>
-        <article>
-          <h2>Communication</h2>
-          <div>
-            {communicationList.map((communicationSkills) => {
-              return (
-                <Skills
-                  key={communicationSkills.id}
-                  content={communicationSkills}
-                />
-              );
-            })}
-          </div>
-        </article>
-      </SkillsArticle>
+        </IntroductionArticle>
+      ) : null}
+
+      {category === "techStack" ? (
+        <SkillsArticle>
+          <article>
+            <h2>Front-end</h2>
+            <div>
+              {frontList.map((frontSkills) => {
+                return <Skills key={frontSkills.id} content={frontSkills} />;
+              })}
+            </div>
+          </article>
+          <article>
+            <h2>Communication</h2>
+            <div>
+              {communicationList.map((communicationSkills) => {
+                return (
+                  <Skills
+                    key={communicationSkills.id}
+                    content={communicationSkills}
+                  />
+                );
+              })}
+            </div>
+          </article>
+        </SkillsArticle>
+      ) : null}
     </AboutSection>
   );
 };

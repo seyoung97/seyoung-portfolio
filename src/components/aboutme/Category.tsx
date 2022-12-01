@@ -1,13 +1,38 @@
 import styled from "styled-components";
 import { darkGray, butter } from "../../theme";
 
-const Category = () => {
+interface CategoryProps {
+  category: string;
+  setCategory: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Category = ({ setCategory, category }: CategoryProps) => {
   return (
     <Ul>
-      <li>Self Introduction</li>
-      <li>Tech Stack</li>
-      <li>Education</li>
-      <li>Work Experience</li>
+      <li
+        className={category === "selfIntroduction" ? "after" : "before"}
+        onClick={() => setCategory("selfIntroduction")}
+      >
+        Self Introduction
+      </li>
+      <li
+        className={category === "techStack" ? "after" : "before"}
+        onClick={() => setCategory("techStack")}
+      >
+        Tech Stack
+      </li>
+      <li
+        className={category === "education" ? "after" : "before"}
+        onClick={() => setCategory("education")}
+      >
+        Education
+      </li>
+      <li
+        className={category === "workExperience" ? "after" : "before"}
+        onClick={() => setCategory("workExperience")}
+      >
+        Work Experience
+      </li>
     </Ul>
   );
 };
@@ -15,13 +40,24 @@ const Category = () => {
 const Ul = styled.ul`
   display: flex;
   width: 100%;
-  li {
+  .before {
     width: 25%;
     padding: 20px 0px;
     text-align: center;
     border: 1px solid ${butter};
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: ${butter};
+    cursor: pointer;
+  }
+  .after {
+    width: 25%;
+    padding: 20px 0px;
+    text-align: center;
+    border: 1px solid ${butter};
+    font-size: 1.4rem;
+    color: ${darkGray};
+    background-color: ${butter};
+    cursor: pointer;
   }
 `;
 
