@@ -7,6 +7,7 @@ import { TitleData } from "../../assets/data/Data";
 import Skills from "./Skills";
 import SkillsList from "../../assets/data/skillsList.json";
 import Category from "./Category";
+import Experience from "./Experience";
 
 const AboutMe = () => {
   const skillsTitle = TitleData[0];
@@ -47,7 +48,7 @@ const AboutMe = () => {
       ) : null}
 
       {category === "techStack" ? (
-        <SkillsArticle>
+        <SkillsSection>
           <article>
             <h2>Front-end</h2>
             <div>
@@ -69,7 +70,12 @@ const AboutMe = () => {
               })}
             </div>
           </article>
-        </SkillsArticle>
+        </SkillsSection>
+      ) : null}
+      {category === "education" ? (
+        <EducationSection>
+          <Experience />
+        </EducationSection>
       ) : null}
     </AboutSection>
   );
@@ -126,7 +132,7 @@ const IntroductionArticle = styled.article`
   }
 `;
 
-const SkillsArticle = styled.section`
+const SkillsSection = styled.section`
   border-radius: 2%;
   display: flex;
   justify-content: space-between;
@@ -153,6 +159,11 @@ const SkillsArticle = styled.section`
       flex-wrap: wrap;
     }
   }
+`;
+
+const EducationSection = styled.section`
+  width: 70%;
+  margin: auto;
 `;
 
 export default AboutMe;
