@@ -8,11 +8,13 @@ import Skills from "./Skills";
 import SkillsList from "../../assets/data/skillsList.json";
 import Category from "./Category";
 import Experience from "./Experience";
+import ExperienceData from "../../assets/data/education.json";
 
 const AboutMe = () => {
   const skillsTitle = TitleData[0];
   const frontList = useMemo(() => SkillsList["Front-end"], []);
   const communicationList = useMemo(() => SkillsList.communication, []);
+  const ExperienceList = useMemo(() => ExperienceData, []);
   const [category, setCategory] = useState("selfIntroduction");
 
   return (
@@ -74,8 +76,17 @@ const AboutMe = () => {
       ) : null}
       {category === "education" ? (
         <EducationSection>
-          <Experience />
+          {ExperienceList.education.map((education) => {
+            return <Experience key={education.id} content={education} />;
+          })}
         </EducationSection>
+      ) : null}
+      {category === "workExperience" ? (
+        <WorkExperienceSection>
+          {ExperienceList.work_experience.map((work) => {
+            return <Experience key={work.id} content={work} />;
+          })}
+        </WorkExperienceSection>
       ) : null}
     </AboutSection>
   );
@@ -136,7 +147,6 @@ const SkillsSection = styled.section`
   border-radius: 2%;
   display: flex;
   justify-content: space-between;
-
   width: 80%;
   margin: auto;
   margin-top: 70px;
@@ -162,8 +172,13 @@ const SkillsSection = styled.section`
 `;
 
 const EducationSection = styled.section`
-  width: 70%;
-  margin: auto;
+  width: 60%;
+  margin: 70px auto 0px auto;
+`;
+
+const WorkExperienceSection = styled.section`
+  width: 60%;
+  margin: 70px auto 0px auto;
 `;
 
 export default AboutMe;
