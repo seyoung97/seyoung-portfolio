@@ -32,4 +32,5 @@ export interface EducationType {
 
 export interface EducationListType {
   education: EducationType[];
+  work_experience: EducationType[];
 }

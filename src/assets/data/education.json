@@ -29,5 +29,35 @@
         "기획과 자료 조사 및 발표 자료 제작을 담당했고 발표 자료에 발표 내용이 잘 드러나도록 시각화가 잘 되었다는 평가를 받았습니다."
       ]
     }
+  ],
+  "work_experience": [
+    {
+      "id": 2,
+      "img_url": "/public/images/education/preonboarding.png",
+      "course_name": "Wanted Pre-onboarding",
+      "major": "프론트엔드",
+      "double_major": "Internship",
+      "period": "2022-10 ~ 2022-11",
+      "explain": [
+        "프리온 보딩은 원티드에서 주최하는 기업 인턴십 프로그램입니다.",
+        "기업이 제공하는 기획안에 따라 서비스를 제작하는 방식으로 진행됐으며,",
+        "4개의 팀프로젝트와 한 개의 개인프로젝트를 진행했다.",
+        "프로젝트 : Lululab 병원예약서비스, 주식회사 하이 오디오 재생 프로그램, 플레이키보드 웹스토어"
+      ]
+    },
+    {
+      "id": 3,
+      "img_url": "/public/images/education/toonsquare.png",
+      "course_name": "TOONSQUARE",
+      "major": "콘텐츠팀",
+      "double_major": "Internship",
+      "period": "2021-01 ~ 2021-02",
+      "explain": [
+        "툰스퀘어는 AI 기술을 적용한 웹툰 제작 플랫폼을 운영하는 스타트업입니다.",
+        "콘텐츠 기획팀에서 홍보문구와 콘텐츠를 제작해 새로운 유저의 유입률을 10% 상승시켰습니다.",
+        "초등 교육 콘텣르를 기획 및 제작했으며 초등교과 활동에 사용되어 학생들의 참여도가 높아졌습니다.",
+        "IT기술과 산업에 관한 콘텐츠들을 주로 제작했기 때문에 IT산업에 관심을 갖고 진로를 정하는 발판이 되었습니다."
+      ]
+    }
   ]
 }
