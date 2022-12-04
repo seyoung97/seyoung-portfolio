@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 import { darkGray, butter, layout } from "../../theme";
 import { TitleData } from "../../assets/data/Data";
 import Title from "../title/Title";
@@ -14,18 +15,22 @@ const Projects = () => {
 
   return (
     <Section id="projects">
-      <Title content={projectsTitle} />
-      <div className="projects_container">
-        {ProjectsData.projects_list.map((projects) => {
-          return <ProjectCard content={projects} />;
-        })}
-      </div>
-      <Title content={internshipTitle} />
-      <div id="internship" className="projects_container">
-        {ProjectsData.internship_list.map((projects) => {
-          return <ProjectCard content={projects} />;
-        })}
-      </div>
+      <Fade bottom>
+        <Title content={projectsTitle} />
+        <div className="projects_container">
+          {ProjectsData.projects_list.map((projects) => {
+            return <ProjectCard content={projects} />;
+          })}
+        </div>
+      </Fade>
+      <Fade bottom>
+        <Title content={internshipTitle} />
+        <div id="internship" className="projects_container">
+          {ProjectsData.internship_list.map((projects) => {
+            return <ProjectCard content={projects} />;
+          })}
+        </div>
+      </Fade>
     </Section>
   );
 };

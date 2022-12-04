@@ -12,12 +12,12 @@ const Header = () => {
     if (window.scrollY > 100) {
       headerEl?.setAttribute(
         "style",
-        "background:rgb(33, 32, 33); transition:0.3s"
+        "background:rgb(33, 32, 33); transition:0.2s"
       );
     } else {
       headerEl?.setAttribute(
         "style",
-        "background:transparent; transition:0.3s"
+        "background:transparent; transition:0.2s"
       );
     }
   };
