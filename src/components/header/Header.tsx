@@ -75,7 +75,7 @@ const Section = styled.section`
   width: 100%;
   position: fixed;
   top: 0%;
-  z-index: 2;
+  /* z-index: 2; */
   background-image: linear-gradient(
     to bottom,
     rgba(33, 32, 33, 1),
