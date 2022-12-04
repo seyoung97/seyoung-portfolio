@@ -13,7 +13,7 @@ const Projects = () => {
   const ProjectsData: ProjectsListData = useMemo(() => ProjectsList, []);
 
   return (
-    <Section>
+    <Section id="projects">
       <Title content={projectsTitle} />
       <div className="projects_container">
         {ProjectsData.projects_list.map((projects) => {
@@ -21,7 +21,7 @@ const Projects = () => {
         })}
       </div>
       <Title content={internshipTitle} />
-      <div className="projects_container">
+      <div id="internship" className="projects_container">
         {ProjectsData.internship_list.map((projects) => {
           return <ProjectCard content={projects} />;
         })}

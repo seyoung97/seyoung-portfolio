@@ -5,7 +5,7 @@ import background from "../../assets/videos/background.mp4";
 const Background = () => {
   return (
     <>
-      <Section>
+      <Section id="preview">
         <video muted={true} autoPlay={true} loop={true} className="video">
           <source src={background} type="video/mp4"></source>
         </video>

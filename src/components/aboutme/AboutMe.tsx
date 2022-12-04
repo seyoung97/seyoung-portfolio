@@ -18,7 +18,7 @@ const AboutMe = () => {
   const [category, setCategory] = useState("selfIntroduction");
 
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <Category category={category} setCategory={setCategory} />
       {category === "selfIntroduction" ? (
         <IntroductionArticle>
