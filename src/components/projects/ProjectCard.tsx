@@ -40,6 +40,11 @@ const Article = styled.article`
   border: 1px solid rgb(223, 222, 222, 0.3);
   border-radius: 5px;
   background-color: rgb(223, 222, 222, 0.1);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
   .img_box {
     width: 449px;
     height: 250px;
@@ -68,6 +73,7 @@ const Article = styled.article`
     margin: 10px 0px 10px 15px;
     color: ${butter};
     font-size: 0.9rem;
+    line-height: 120%;
   }
   .links_container {
     margin-left: 15px;

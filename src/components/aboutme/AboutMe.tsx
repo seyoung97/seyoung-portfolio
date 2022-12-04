@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
+
 import { darkGray, butter, layout } from "../../theme";
 import profileimg from "../../assets/images/profile.png";
 import Title from "../title/Title";
@@ -22,37 +22,32 @@ const AboutMe = () => {
     <AboutSection id="about">
       <Category category={category} setCategory={setCategory} />
       {category === "selfIntroduction" ? (
-        <Fade bottom>
-          <IntroductionArticle>
-            <div className="img_box">
-              <img src={profileimg}></img>
+        <IntroductionArticle>
+          <div className="img_box">
+            <img src={profileimg}></img>
+          </div>
+          <div className="introduction_container">
+            <p className="intro">안녕하세요, 남다른 성장곡선을 그리는 개발자</p>
+            <div className="name_box">
+              <span className="name">정세영</span>
+              <span className="end">입니다.</span>
             </div>
-            <div className="introduction_container">
-              <p className="intro">
-                안녕하세요, 남다른 성장곡선을 그리는 개발자
+            <div className="content_box">
+              <p>
+                개발자가 되기 전부터 제작하는 것에 큰 기쁨을 느끼며 살다가,{" "}
               </p>
-              <div className="name_box">
-                <span className="name">정세영</span>
-                <span className="end">입니다.</span>
-              </div>
-              <div className="content_box">
-                <p>
-                  개발자가 되기 전부터 제작하는 것에 큰 기쁨을 느끼며 살다가,{" "}
-                </p>
-                <p>이제는 웹개발에 푹 빠져있습니다.</p>
-                <p>
-                  부트캠프를 통해 백엔드와 협업하여 프로젝트를 진행한 경험이
-                  있고,
-                </p>
-                <p>인턴십을 통해 디자이너와 figma로 협업한 경험이있습니다. </p>
-                <p>
-                  개발자의 생명은 꾸준함이라고 믿고 1일 1커밋과 기술 블로그를
-                  운영하고 있습니다.
-                </p>
-              </div>
+              <p>이제는 웹개발에 푹 빠져있습니다.</p>
+              <p>
+                부트캠프를 통해 백엔드와 협업하여 프로젝트를 진행한 경험이 있고,
+              </p>
+              <p>인턴십을 통해 디자이너와 figma로 협업한 경험이있습니다. </p>
+              <p>
+                개발자의 생명은 꾸준함이라고 믿고 1일 1커밋과 기술 블로그를
+                운영하고 있습니다.
+              </p>
             </div>
-          </IntroductionArticle>
-        </Fade>
+          </div>
+        </IntroductionArticle>
       ) : null}
 
       {category === "techStack" ? (
@@ -81,22 +76,18 @@ const AboutMe = () => {
         </SkillsSection>
       ) : null}
       {category === "education" ? (
-        <Fade bottom>
-          <EducationSection>
-            {ExperienceList.education.map((education) => {
-              return <Experience key={education.id} content={education} />;
-            })}
-          </EducationSection>
-        </Fade>
+        <EducationSection>
+          {ExperienceList.education.map((education) => {
+            return <Experience key={education.id} content={education} />;
+          })}
+        </EducationSection>
       ) : null}
       {category === "workExperience" ? (
-        <Fade bottom>
-          <WorkExperienceSection>
-            {ExperienceList.work_experience.map((work) => {
-              return <Experience key={work.id} content={work} />;
-            })}
-          </WorkExperienceSection>
-        </Fade>
+        <WorkExperienceSection>
+          {ExperienceList.work_experience.map((work) => {
+            return <Experience key={work.id} content={work} />;
+          })}
+        </WorkExperienceSection>
       ) : null}
     </AboutSection>
   );
