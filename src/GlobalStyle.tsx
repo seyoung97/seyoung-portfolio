@@ -19,6 +19,11 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 20px;
   }
+  ul{
+    li{
+      line-height: 120%;
+    }
+  }
   
 `;
 

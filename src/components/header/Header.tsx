@@ -9,7 +9,7 @@ import { useEffect } from "react";
 const Header = () => {
   const colorChange = () => {
     const headerEl = document.querySelector(".header");
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
       headerEl?.setAttribute(
         "style",
         "background:rgb(33, 32, 33); transition:0.2s"
@@ -75,7 +75,7 @@ const Section = styled.section`
   width: 100%;
   position: fixed;
   top: 0%;
-  /* z-index: 2; */
+  z-index: 2;
   background-image: linear-gradient(
     to bottom,
     rgba(33, 32, 33, 1),

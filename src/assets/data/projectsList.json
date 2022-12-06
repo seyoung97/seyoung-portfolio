@@ -18,7 +18,112 @@
       "project_introduction": "맞춤제작 전문 플랫폼 모두의 공방을 참고해 디자인 및 기능을 직접 구현",
       "github_url": "https://github.com/seyoung97/justcode-6-2nd-team4-front",
       "distribute_url": "0",
-      "blog_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+      "blog_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
+      "details": {
+        "breif_info": {
+          "introduction": "2주일 동안 모두의공방 페이지의 모든 기능을 직접 구현해보는 클론 프로젝트입니다.",
+          "period": "2022/09/19 ~ 2022/09/30",
+          "team": "Backend 2명, Frontend 3명"
+        },
+        "project_introduction": [
+          "모두의 공방은 원하는 공방을 쉽고 빠르게 찾을 수 있는 맞춤 제작 전문 플랫폼입니다.",
+          "모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤 제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는 디자인마켓으로 이루어져있습니다.",
+          "저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고 싶어서 모두의 공방을 선택했습니다."
+        ],
+        "links": [
+          {
+            "link_name": "프론트엔드 레포",
+            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front"
+          },
+          {
+            "link_name": "백엔드 레포",
+            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-back"
+          },
+          {
+            "link_name": "팀 노션",
+            "link_url": "https://www.notion.so/wecode/4-7769dc42856248299aa5d32009b313e9"
+          },
+          {
+            "link_name": "회고록",
+            "link_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+          }
+        ],
+        "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
+        "tech_stack": {
+          "front": [
+            "HTML",
+            "Sass",
+            "Javascript",
+            "React",
+            "CRA",
+            "React-router",
+            "axios",
+            "Font Awesome"
+          ],
+          "back": ["Node.js", "Express.js", "MYSQL"],
+          "communication": ["Slack", "Notion", "Zep"]
+        },
+        "structure": {
+          "img_url": [
+            "/public/images/projects/structure/cart_structure.png",
+            "/public/images/projects/structure/itemcard_structure.png",
+            "/public/images/projects/structure/navigationbar_structure.png",
+            "/public/images/projects/structure/modu_pages.png"
+          ],
+          "explain": [
+            "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
+            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다.",
+            "빨강색 글자로 적혀진 폴더는 본인이 담당했던 페이지들 입니다."
+          ]
+        },
+        "cooperation": [
+          {
+            "title": "Planning Meeting 1: 주제선정,범위설정",
+            "content": [
+              "각자 2개 이상의 웹페이지를 찾아와서 소개하는 시간을 가졌습니다.",
+              "투표를 통해 모두의 공방을 클론 페이지로 선정했습니다. 일반적인 이커머스가 아닌 맞춤 제작이라는 점에서 다양한 옵션 선택 기능이나 필터링 기능을 구현해볼 수 있는 기회라고 생각해서 선택했습니다.",
+              "함께 웹사이트를 둘러보면서 주요 기능과 사이트의 흐름을 파악했습니다.",
+              "시간 제약이 있는 만큼 구현할 기능과 제외할 기능들을 명확하게 나눴습니다. 저희는 우선 디자인 마켓의 주요 기능들을 구현한 후 시간이 있다면 맞춤제작소의 채팅 기능까지 구현하는 것을 목표로 설정했습니다."
+            ]
+          },
+          {
+            "title": "Planning Meeting 2: 역할 분담, 컨벤션",
+            "content": [
+              "각자 원하는 기능을 소개하고 겹치는 부분이 있으면 조율하면서 역할을 분담했습니다.",
+              "코드 컨벤션과 Git 컨벤션을 정리했습니다. ",
+              "Git 컨벤션의 경우 Header, body, Footer 구조로 작성했습니다."
+            ]
+          },
+          {
+            "title": "Planning Meeting 3: 새로운 기획 회의",
+            "content": [
+              "클론 페이지인 모두의 공방이 리뉴얼에 들어가서 UI가 제대로 보이지 않는 문제가 발생되어 이를 해결하기 위해 3번 째 플래닝 미팅을 갖게 되었습니다.",
+              "모두의 공방 측에 문의해본 결과 리뉴얼 기간이 2~3개월 정도 될것이라는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다. 이미 어느정도 프로젝트가 진행된 상황이었기 때문에 다른 사이트를 찾는 것 보다 저희가 직접 기획 및 디자인을하여 우리들만의 사이트를 만들기로 했습니다.",
+              "비슷한 형태의 웹사이트인 오늘의 집, 무신사 등 웹사이트들의 UI를 같이 분석하고 차용하면 괜찮을 부분들을 참고해 제작했습니다. 핀터레스트에서 웹페이지 디자인을 검색해 참고하는 것도 많은 도움이 되었습니다.",
+              "리뉴얼 이슈가 발생하여 시간이 부족할 것 같다는 판단을 내렸고 맞춤 제작소 부분은 과감히 제외시켰습니다. 대신에 제작자 페이지를 만들어서 팀원들의 프로필을 넣어 우리만의 공방 페이지를 만들었습니다.",
+              "팀원들에게 UI 피드백을 수시로 받으며 직관적인 UI를 구현하기 위해 노력했습니다."
+            ]
+          },
+          {
+            "title": "Daily Stand-Up meeting",
+            "content": [
+              "프로젝트 진행 기간동안 매일 오후 2시에 30분 내외로 스탠드업미팅을 진행했습니다.",
+              "진행상황을 공유하고 공유해야할 이슈를 공유했습니다."
+            ]
+          },
+          {
+            "title": "GIT Flow 방식",
+            "content": [
+              "개발 사항을 main 브랜치에 병합하지 않고 develop 브랜치에 병합하고 마지막에 main branch에 병합했습니다.",
+              "새로운 UI 또는 기능을 구현할 때 또는 발견된 버그를 처리할 때 마다 Issue를 등록해 팀원들의 진행상황을 tracking 할 수 있도록했습니다.",
+              "Issue를 등록할 때 태그를 적극적으로 활용했고 작업 내용을 구체적으로 작성했습니다.",
+              "commit을 남길 때 헤더-바디-푸터 구조로 작성하여 작업 내용을 세세하게 기록할 수 있도록 했습니다. 푸터에 Issue 번호를 적어서 어떤 Issue에 속한 작업인지 기록했습니다.",
+              "PR은 하나의 Issue가 완료 될 때 마다 올렸습니다. PR이 Issue와 연동되도록했습니다."
+            ]
+          }
+        ],
+        "Feature": []
+      }
     },
     {
       "id": 2,
