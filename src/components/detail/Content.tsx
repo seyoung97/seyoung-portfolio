@@ -75,6 +75,7 @@ const Content = () => {
         <h3>Git Flow 방식</h3>
         <h2>담당 기능</h2>
         <h3>메인 페이지</h3>
+
         <h4>Drop down menu</h4>
         <h4>Carousel 베너 광고</h4>
         <h4>신상품 및 인기상품 리스트</h4>

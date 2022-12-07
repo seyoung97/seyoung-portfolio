@@ -65,10 +65,10 @@
         },
         "structure": {
           "img_url": [
-            "/public/images/projects/structure/cart_structure.png",
-            "/public/images/projects/structure/itemcard_structure.png",
-            "/public/images/projects/structure/navigationbar_structure.png",
-            "/public/images/projects/structure/modu_pages.png"
+            "/public/images/projects/structure/modu/cart_structure.png",
+            "/public/images/projects/structure/modu/itemcard_structure.png",
+            "/public/images/projects/structure/modu/navigationbar_structure.png",
+            "/public/images/projects/structure/modu/modu_pages.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -122,7 +122,71 @@
             ]
           }
         ],
-        "Feature": []
+        "Feature": [
+          {
+            "page_name": "메인 페이지",
+            "page_gif": "/public/images/projects/features/modu/modu-mainpage.gif",
+            "features": [
+              {
+                "feature_name": "Drop down menu",
+                "explain": [
+                  "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
+                ]
+              },
+              {
+                "feature_name": "Carousel 베너 광고",
+                "explain": [
+                  "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
+                  "참고 사이트가 리뉴얼에 들어가서 참고할 이미지가 없었습니다. 핀터레스트에 베너 광고 이미지들을 검색해서 디    자인을 참고하여 직접 제작했습니다."
+                ]
+              },
+              {
+                "feature_name": "신상품 및 인기상품 리스트 ",
+                "explain": [
+                  "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
+                  "아이템카드 컴포넌트를 재사용하여 리스트를 구현했습니다.",
+                  "표현식과 useParams를 활용해 상품을 클릭했을 때 해당 상품의 상세페이지로 넘어갈 수 있도록 동적라우팅을 구현했습니다."
+                ]
+              }
+            ]
+          },
+          {
+            "page_name": "상품 리스트 페이지",
+            "page_gif": "/public/images/projects/features/modu/modu-category.gif",
+            "features": [
+              {
+                "feature_name": "정렬 기능",
+                "explain": [
+                  "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
+                  "정렬조건이 바뀔 때 마다 state값이 변경 되도록 하고 이 state 값을 통신 요청 URI에 표현식으로 넣어서",
+                  "state 값이 변경 되면 요청 URI가 변경되어 조건에 맞는 정렬 순서대로 데이터를 받아와 출력하도록 구현했습니다."
+                ]
+              },
+              {
+                "feature_name": "무한스크롤 기능",
+                "explain": [
+                  "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
+                  "스크롤이 끝에 닿을 때 마다 offset이라는 state를 1씩 증가되게 하고 이 offset을 요청 URI에 표현식으로 넣어서 계속해서 추가로 데이터를 요청하도록 구현했습니다.",
+                  "하지만 데이터의 양이 한정적이어서 실제로는 한번 밖에 상품 리스트가 추가되지 않아 이 부분이 아쉬웠습니다.",
+                  "useEffect의 의존성 배열과 표현식, return함수를 활용해 정렬기능이 적용된 상태에서 무한스크롤이 작동할 수 있도록 구현했습니다."
+                ]
+              }
+            ]
+          },
+          {
+            "page_name": "장바구니 페이지",
+            "page_gif": "/public/images/projects/features/modu/modu-cart.gif",
+            "features": [
+              {
+                "feature_name": "장바구니 수량변경, 삭제 기능 구현",
+                "explain": [
+                  "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
+                  "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
+                ]
+              }
+            ]
+          }
+        ]
       }
     },
     {
