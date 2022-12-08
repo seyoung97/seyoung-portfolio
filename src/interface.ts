@@ -4,7 +4,34 @@ export interface SkillsInfo {
   imgUrl: string;
 }
 
-export interface ProjectCardType {
+export interface ProjectDetailType {
+  breif_info: { introduction: string; period: string; team: string };
+  project_introduction: string[];
+  links: { link_name: string; link_url: string }[];
+  video_url: string;
+  tech_stack: { front: string[]; back: string[]; communication: string[] };
+  structure: { img_url: string[]; explain: string[] };
+  cooperation: { title: string; content: string[] }[];
+  Feature: {
+    page_name: string;
+    page_gif: string;
+    features: { feature_name: string; code_img: string[]; explain: string[] }[];
+  }[];
+  Trouble_Shooting: {
+    title: string;
+    explain: string[];
+    subtitle: string;
+    figure_out: string[];
+    subtitle_2: string;
+    problem_solving: string[];
+    subtitle_3: string;
+    lesson: string[];
+  }[];
+  Level_up: string[];
+  review: { sub_titile: string; explain: string[] }[];
+}
+
+export interface ProjectDataType {
   id: number;
   img_url: string;
   project_name: string;
@@ -13,11 +40,12 @@ export interface ProjectCardType {
   github_url: string;
   distribute_url: string;
   blog_url: string;
+  details: ProjectDetailType;
 }
 
 export interface ProjectsListData {
-  projects_list: ProjectCardType[];
-  internship_list: ProjectCardType[];
+  projects_list: ProjectDataType[];
+  internship_list: ProjectDataType[];
 }
 
 export interface EducationType {

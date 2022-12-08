@@ -4,10 +4,10 @@ import portfoliomain from "../../assets/images/portfoliomain.png";
 import github from "../../assets/images/links/github_butter.png";
 import network from "../../assets/images/links/network.png";
 import blog from "../../assets/images/links/blog_butter.png";
-import { ProjectCardType } from "../../interface";
+import { ProjectDataType } from "../../interface";
 
 interface ProjectCardProps {
-  content: ProjectCardType;
+  content: ProjectDataType;
 }
 
 const ProjectCard = ({ content }: ProjectCardProps) => {
