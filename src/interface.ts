@@ -62,3 +62,7 @@ export interface EducationListType {
   education: EducationType[];
   work_experience: EducationType[];
 }
+
+export interface ContentPropsType {
+  Data: ProjectDetailType;
+}

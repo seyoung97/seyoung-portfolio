@@ -1,8 +1,11 @@
 import ReactPlayer from "react-player/youtube";
 import styled from "styled-components";
-import { darkGray, butter, layout } from "../../theme";
+import { darkGray, butter, layout, paragraphFontSize } from "../../theme";
 import { ProjectDataType } from "../../interface";
-import Skills from "../aboutme/Skills";
+import Feature from "./Feature";
+import TroubleShooting from "./TroubleShooting";
+import LevelUp from "./LevelUp";
+import Review from "./Review";
 
 interface ContentProps {
   projectData: ProjectDataType;
@@ -90,29 +93,32 @@ const Content = ({ projectData }: ContentProps) => {
           </ul>
         </div>
         <h2>협업방식</h2>
-        <h3>Planning Meeting 1: 주제선정, 범위설정</h3>
-        <h3>Planning Meeting 2: 역할 분담, 컨벤션</h3>
-        <h3>Planning Meeting 3: 새로운 기획 회의</h3>
-        <h4>Daily Stnad-up meeting</h4>
-        <h4>Emergency Meeting</h4>
-        <h3>Git Flow 방식</h3>
-        <h2>담당 기능</h2>
-        <h3>메인 페이지</h3>
+        {projectData.details.cooperation.map((content) => {
+          return (
+            <>
+              <h3 key={content.title}>{content.title}</h3>
+              <ul className="cooperation_explain">
+                {content.content.map((paragraph, i) => {
+                  return <li key={i}>{paragraph}</li>;
+                })}
+              </ul>
+            </>
+          );
+        })}
+        <Feature featureData={projectData.details} />
+        <TroubleShooting troubleShootingData={projectData.details} />
+        <LevelUp Data={projectData.details} />
 
-        <h4>Drop down menu</h4>
-        <h4>Carousel 베너 광고</h4>
-        <h4>신상품 및 인기상품 리스트</h4>
-        <h3>상품 리스트 페이지</h3>
-        <h4>정렬기능</h4>
-        <h4>무한스크롤 기능</h4>
-        <h3>장바구니 페이지</h3>
-        <h2>Trouble Shooting</h2>
-        <h2>성장 Point</h2>
-        <h2>느낀점</h2>
+        <Review Data={projectData.details} />
       </section>
     </Article>
   );
 };
+
+const MainImage = styled.img`
+  display: block;
+  width: 100%;
+`;
 
 const Article = styled.article`
   width: 55%;
@@ -145,12 +151,12 @@ const Article = styled.article`
       font-weight: bold;
     }
     h3 {
-      padding: 60px 0px 10px 15px;
+      margin: 40px 0px 10px 15px;
       font-size: 1.7rem;
       font-weight: bold;
     }
     h4 {
-      padding: 20px 0px 10px 20px;
+      margin: 20px 0px 10px 20px;
       font-size: 1.4rem;
       font-weight: bold;
     }
@@ -159,12 +165,12 @@ const Article = styled.article`
       background-color: #eeee;
       padding: 30px 30px;
       li {
-        font-size: 1.1rem;
+        font-size: ${paragraphFontSize};
       }
     }
     .period_personnel_box {
       margin-left: 25px;
-      font-size: 1.1rem;
+      font-size: ${paragraphFontSize};
       li {
         span {
           font-weight: bold;
@@ -175,7 +181,7 @@ const Article = styled.article`
       margin: 30px 0px 0px 25px;
       li {
         margin-bottom: 20px;
-        font-size: 1.1rem;
+        font-size: ${paragraphFontSize};
         span {
           font-weight: bold;
         }
@@ -197,7 +203,7 @@ const Article = styled.article`
         margin: 10px 10px 30px 5px;
         padding: 5px 10px;
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: ${paragraphFontSize};
         font-weight: bold;
         color: #a02525ec;
         background-color: #eeee;
@@ -222,7 +228,16 @@ const Article = styled.article`
         padding: 100px 50px;
         li {
           margin-bottom: 20px;
+          font-size: ${paragraphFontSize};
         }
+      }
+    }
+    .cooperation_explain {
+      width: 85%;
+      margin: 10px 0px 0px 25px;
+      li {
+        margin-bottom: 20px;
+        font-size: ${paragraphFontSize};
       }
     }
   }
