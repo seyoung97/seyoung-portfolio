@@ -1,71 +1,94 @@
 import ReactPlayer from "react-player/youtube";
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
+import { ProjectDataType } from "../../interface";
+import Skills from "../aboutme/Skills";
 
-const Content = () => {
+interface ContentProps {
+  projectData: ProjectDataType;
+}
+
+const Content = ({ projectData }: ContentProps) => {
   return (
     <Article>
-      <h1 className="project_name">사조의 공방 프로젝트</h1>
+      <h1 className="project_name">{projectData.project_name}</h1>
       <ul className="info_container">
         <li>
           <span>한 줄 소개</span>
-          2주일 동안 모두의공방 페이지의 모든 기능을 직접 구현한 클론
-          프로젝트입니다.
+          {projectData.details.breif_info.introduction}
         </li>
         <li>
           <span>진행 기간</span>
+          {projectData.details.breif_info.period}
         </li>
         <li>
           <span>팀 구성</span>
+          {projectData.details.breif_info.team}
         </li>
         <li>
           <span>관련 활동</span>
+          {projectData.activity_type}
         </li>
       </ul>
       <section className="content_section">
         <h2>프로젝트 소개</h2>
-        <h3>사조의 공방 프로젝트</h3>
+        <h3>{projectData.project_name}</h3>
         <ul className="introduction_box">
-          <li>
-            모두의 공방은 원하는 공방을 쉽고 빠르게 찾을 수 있는 맞춤 제작 전문
-            플랫폼입니다.
-          </li>
-          <li>
-            모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤
-            제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는
-            디자인마켓으로 이루어져있습니다.
-          </li>
-          <li>
-            저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고
-            싶어서 모두의 공방을 선택했습니다.
-          </li>
+          {projectData.details.project_introduction.map((paragrahp, i) => {
+            return <li key={i}>{paragrahp}</li>;
+          })}
         </ul>
         <h2>Links</h2>
         <ul className="links_box">
-          <li>
-            <span>프론트 엔드 레포:</span>
-            <a href="https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front">
-              🔎자세히 보러가기
-            </a>
-          </li>
+          {projectData.details.links.map((content) => {
+            return (
+              <li key={content.link_name}>
+                <span>{content.link_name}:</span>
+                <a href={content.link_url}>🔎자세히 보러가기</a>
+              </li>
+            );
+          })}
         </ul>
         <h2>시연영상</h2>
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=0NputbNx3_s&t=3s"
-          width={"1000px"}
-          height={"630px"}
-        ></ReactPlayer>
+        <div className="video_box">
+          <ReactPlayer
+            url={projectData.details.video_url}
+            width={"1000px"}
+            height={"630px"}
+          ></ReactPlayer>
+        </div>
         <h2>사용 기술 및 라이브러리</h2>
         <ul className="tech_stack">
-          <li>Front End</li>
-          <div>
-            <span>HTML</span>
-          </div>
-          <li>Back End</li>
-          <li>Communication</li>
+          {projectData.details.tech_stack.map((positions) => {
+            return (
+              <>
+                <li key={positions.position} className="position">
+                  {positions.position}
+                </li>
+                {positions.skills.map((el) => {
+                  return (
+                    <li key={el} className="skills">
+                      {el}
+                    </li>
+                  );
+                })}
+              </>
+            );
+          })}
         </ul>
         <h2>프로젝트 구조</h2>
-        <img src="/public/images/projects/structure/cart_structure.png"></img>
+        <div className="structure_container">
+          <div className="structure_imgbox">
+            {projectData.details.structure.img_url.map((image, i) => {
+              return <img key={i} src={image}></img>;
+            })}
+          </div>
+          <ul className="structure_explain">
+            {projectData.details.structure.explain.map((content, i) => {
+              return <li key={i}>{content}</li>;
+            })}
+          </ul>
+        </div>
         <h2>협업방식</h2>
         <h3>Planning Meeting 1: 주제선정, 범위설정</h3>
         <h3>Planning Meeting 2: 역할 분담, 컨벤션</h3>
@@ -105,9 +128,9 @@ const Article = styled.article`
       display: flex;
       margin-bottom: 10px;
       font-size: 1.2rem;
-      border: ${layout};
+      /* border: ${layout}; */
       span {
-        border: ${layout};
+        /* border: ${layout}; */
         width: 250px;
         font-weight: bold;
       }
@@ -149,34 +172,56 @@ const Article = styled.article`
       }
     }
     .links_box {
-      margin: 20px 0px 0px 25px;
+      margin: 30px 0px 0px 25px;
       li {
+        margin-bottom: 20px;
         font-size: 1.1rem;
         span {
           font-weight: bold;
         }
       }
     }
-    .video_player {
-      margin: 40px auto;
-      width: 800px;
+    .video_box {
+      width: fit-content;
+      margin: 50px auto;
     }
     .tech_stack {
       margin: 40px 0px 0px 20px;
-      li {
+      .position {
         margin: 20px 0px 10px 0px;
         font-size: 1.3rem;
         font-weight: bold;
       }
-      div {
-        span {
-          margin: 10px 10px 30px 5px;
-          padding: 5px 10px;
-          border-radius: 5px;
-          font-size: 1rem;
-          font-weight: bold;
-          color: #a02525ec;
-          background-color: #eeee;
+      .skills {
+        display: inline;
+        margin: 10px 10px 30px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #a02525ec;
+        background-color: #eeee;
+      }
+    }
+    .structure_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      margin: 30px auto;
+      .structure_imgbox {
+        width: fit-content;
+        img {
+          display: block;
+          width: 500px;
+        }
+      }
+      .structure_explain {
+        border: 1px solid lightgray;
+        width: 500px;
+        padding: 100px 50px;
+        li {
+          margin-bottom: 20px;
         }
       }
     }

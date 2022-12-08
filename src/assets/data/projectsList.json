@@ -39,20 +39,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",
@@ -298,20 +307,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",
@@ -557,20 +575,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",
@@ -818,20 +845,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",
@@ -1077,20 +1113,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",
@@ -1336,20 +1381,29 @@
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
-        "tech_stack": {
-          "front": [
-            "HTML",
-            "Sass",
-            "Javascript",
-            "React",
-            "CRA",
-            "React-router",
-            "axios",
-            "Font Awesome"
-          ],
-          "back": ["Node.js", "Express.js", "MYSQL"],
-          "communication": ["Slack", "Notion", "Zep"]
-        },
+        "tech_stack": [
+          {
+            "position": "Front End",
+            "skills": [
+              "HTML",
+              "Sass",
+              "Javascript",
+              "React",
+              "CRA",
+              "React-router",
+              "axios",
+              "Font Awesome"
+            ]
+          },
+          {
+            "position": "Back End",
+            "skills": ["Node.js", "Express.js", "MYSQL"]
+          },
+          {
+            "position": "Communication",
+            "skills": ["Slack", "Notion", "Zep"]
+          }
+        ],
         "structure": {
           "img_url": [
             "/public/images/projects/structure/modu/cart_structure.png",

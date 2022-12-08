@@ -1,30 +1,32 @@
 import { useMemo } from "react";
 import styled from "styled-components";
 
-import { darkGray, butter, layout } from "../../theme";
 import { TitleData } from "../../assets/data/Data";
 import Title from "../title/Title";
 import ProjectCard from "./ProjectCard";
-import ProjectsList from "../../assets/data/projectsList.json";
+
 import { ProjectsListData } from "../../interface";
 
-const Projects = () => {
+interface ProjectsProps {
+  projectsData: ProjectsListData;
+}
+
+const Projects = ({ projectsData }: ProjectsProps) => {
   const projectsTitle = TitleData[1];
   const internshipTitle = TitleData[2];
-  const ProjectsData: ProjectsListData = useMemo(() => ProjectsList, []);
 
   return (
     <Section id="projects">
       <Title content={projectsTitle} />
       <div className="projects_container">
-        {ProjectsData.projects_list.map((projects) => {
+        {projectsData.projects_list.map((projects) => {
           return <ProjectCard content={projects} />;
         })}
       </div>
 
       <Title content={internshipTitle} />
       <div id="internship" className="projects_container">
-        {ProjectsData.internship_list.map((projects) => {
+        {projectsData.internship_list.map((projects) => {
           return <ProjectCard content={projects} />;
         })}
       </div>

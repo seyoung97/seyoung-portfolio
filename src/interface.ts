@@ -9,7 +9,7 @@ export interface ProjectDetailType {
   project_introduction: string[];
   links: { link_name: string; link_url: string }[];
   video_url: string;
-  tech_stack: { front: string[]; back: string[]; communication: string[] };
+  tech_stack: { position: string; skills: string[] }[];
   structure: { img_url: string[]; explain: string[] };
   cooperation: { title: string; content: string[] }[];
   Feature: {
