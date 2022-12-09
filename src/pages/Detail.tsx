@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../theme";
 import Content from "../components/detail/Content";
@@ -9,9 +11,21 @@ interface DetailProps {
 }
 
 const Detail = ({ projectsData }: DetailProps) => {
+  const params = useParams();
+  const type = params.id.slice(0, 1);
+  const detailId = parseInt(params.id.slice(1));
+
+  let projectData = projectsData["projects_list"][detailId];
+
+  if (type === "P") {
+    projectData = projectsData["projects_list"][detailId];
+  } else if (type === "I") {
+    projectData = projectsData["internship_list"][detailId];
+  }
+
   return (
     <Section>
-      <Content projectData={projectsData.projects_list[1]} />
+      <Content projectData={projectData} />
       <Index />
     </Section>
   );

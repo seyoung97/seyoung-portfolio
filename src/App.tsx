@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main projectsData={projectsData} />} />
         <Route
-          path="/detail"
+          path="/detail/:id"
           element={<Detail projectsData={projectsData} />}
         />
       </Routes>

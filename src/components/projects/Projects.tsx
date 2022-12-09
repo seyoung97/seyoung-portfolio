@@ -19,15 +19,14 @@ const Projects = ({ projectsData }: ProjectsProps) => {
     <Section id="projects">
       <Title content={projectsTitle} />
       <div className="projects_container">
-        {projectsData.projects_list.map((projects) => {
-          return <ProjectCard content={projects} />;
+        {projectsData.projects_list.map((projects, i) => {
+          return <ProjectCard content={projects} type={"P"} index={i} />;
         })}
       </div>
-
       <Title content={internshipTitle} />
       <div id="internship" className="projects_container">
-        {projectsData.internship_list.map((projects) => {
-          return <ProjectCard content={projects} />;
+        {projectsData.internship_list.map((projects, i) => {
+          return <ProjectCard content={projects} type={"I"} index={i} />;
         })}
       </div>
     </Section>

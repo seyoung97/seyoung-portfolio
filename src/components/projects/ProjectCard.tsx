@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import styled from "styled-components";
 import { darkGray, butter, layout } from "../../theme";
 import portfoliomain from "../../assets/images/portfoliomain.png";
@@ -8,11 +9,18 @@ import { ProjectDataType } from "../../interface";
 
 interface ProjectCardProps {
   content: ProjectDataType;
+  type: string;
+  index: number;
 }
 
-const ProjectCard = ({ content }: ProjectCardProps) => {
+const ProjectCard = ({ content, type, index }: ProjectCardProps) => {
+  const navigate = useNavigate();
+  const goToDetail = () => {
+    navigate(`/detail/${type}${index}`);
+  };
+
   return (
-    <Article>
+    <Article onClick={goToDetail}>
       <div className="img_box">
         <img src={content.img_url}></img>
       </div>
