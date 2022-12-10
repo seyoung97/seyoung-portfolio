@@ -56,6 +56,7 @@ const FeatureSection = styled.section`
     margin: 20px 0px 50px 25px;
   }
   .code_img {
+    width: 800px;
     margin: 20px 0px 30px 25px;
   }
   ul {

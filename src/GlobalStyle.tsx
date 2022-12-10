@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
   ul{
     li{
-      line-height: 120%;
+      line-height: 128%;
     }
   }
   
