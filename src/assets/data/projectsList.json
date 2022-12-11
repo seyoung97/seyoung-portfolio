@@ -786,7 +786,7 @@
             "explain": [
               "첫 프로젝트인 만큼 시작할 때 막막한 마음이 컸습니다.",
               "예상했던 대로 레이아웃 짜는 방법부터 통신까지 모르는 것 투성이었지만 정답을 바로 알려줄 선생님은 없었습니다. 부트캠프는 절대 누군가 떠먹여주지 않기 때문에 스스로 부딪히고 해결해야한다는 것을 강렬하게 깨달았습니다.",
-              "하루 종일 문제를 해결하기 위해 구글링만 한 날도 있고 구글링을 아무리 해도 해결이 되지 않을 때는 동료들에게 질문하기도하면서 치열하게 부딪혔던것 같습니다.",
+              "하루 종일 문제를 해결하기 위해 구글링만 한 날도 있고 구글링을 아무리 해도 해결이 되지 않을 때는 동료들에게 질문하기도하면서 치열하게 고민했습니다.",
               "포기하지만 않으면 결국 문제들이 해결되고 원하던 기능이 구현되는 것을 보면서 스스로가 조금은 대견했던것 같습니다.",
               "다음 프로젝트 때는 더 다양한 기능을 구현하면서 개발자로 성장하고싶습니다."
             ]
@@ -807,31 +807,23 @@
       "blog_url": "0",
       "details": {
         "breif_info": {
-          "introduction": "2주일 동안 모두의공방 페이지의 모든 기능을 직접 구현해보는 클론 프로젝트입니다.",
-          "period": "2022/09/19 ~ 2022/09/30",
-          "team": "Backend 2명, Frontend 3명"
+          "introduction": "기업 룰루랩에서 제공한 기획안을 토대로 UI/UX 디자인 및 병원 예약, 예약 조회 기능을 구현했습니다.",
+          "period": "2022/10/17 ~ 2022/10/20",
+          "team": "개인 프로젝트"
         },
         "project_introduction": [
-          "모두의 공방은 원하는 공방을 쉽고 빠르게 찾을 수 있는 맞춤 제작 전문 플랫폼입니다.",
-          "모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤 제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는 디자인마켓으로 이루어져있습니다.",
-          "저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고 싶어서 모두의 공방을 선택했습니다."
+          "룰루랩은 피부 분석 인공지능 기술을 중심으로 피부 관리 서비스를 제공하는 회사입니다.",
+          "예약이 가능한 시간을 보여주고 선택할 수 있는 예약가능 시간 리스트 페이지, 예약자 정보를 입력하고 저장할 수 있는 예약자 정보 입력 페이지 그리고 전화번호로 예약 여부를 확인할 수 있는 예약 조회 페이지로 구성되어있습니다.",
+          "가산점이 부여되는 추가 구현 사항이었던 no-show 방지 기능도 구현했습니다. no-show한 적이 있는 고객인 경우 온라인 예약을 못하도록 제한했습니다."
         ],
         "links": [
           {
             "link_name": "프론트엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front"
+            "link_url": "https://github.com/seyoung97/preonboarding-lululab"
           },
           {
-            "link_name": "백엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-back"
-          },
-          {
-            "link_name": "팀 노션",
-            "link_url": "https://www.notion.so/wecode/4-7769dc42856248299aa5d32009b313e9"
-          },
-          {
-            "link_name": "회고록",
-            "link_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+            "link_name": "배포 링크",
+            "link_url": "https://extraordinary-elf-828716.netlify.app"
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
@@ -840,35 +832,26 @@
             "position": "Front End",
             "skills": [
               "HTML",
-              "Sass",
+              "styled-component",
               "Javascript",
               "React",
-              "CRA",
+              "Vite",
               "React-router",
               "axios",
               "Font Awesome"
             ]
-          },
-          {
-            "position": "Back End",
-            "skills": ["Node.js", "Express.js", "MYSQL"]
-          },
-          {
-            "position": "Communication",
-            "skills": ["Slack", "Notion", "Zep"]
           }
         ],
         "structure": {
           "img_url": [
-            "/public/images/projects/structure/modu/cart_structure.png",
-            "/public/images/projects/structure/modu/itemcard_structure.png",
-            "/public/images/projects/structure/modu/navigationbar_structure.png",
-            "/public/images/projects/structure/modu/modu_pages.png"
+            "/public/images/projects/structure/lululab/lululab_public.png",
+            "/public/images/projects/structure/lululab/lululab_reservationlist.png",
+            "/public/images/projects/structure/lululab/lululab_pages.png"
           ],
           "explain": [
+            "요일별 예약가능 시간을 정리한 데이터와 예약고객 데이터는 통신으로 받아왔기 때문에 public에 저장했습니다.",
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
-            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다.",
-            "빨강색 글자로 적혀진 폴더는 본인이 담당했던 페이지들 입니다."
+            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다."
           ]
         },
         "cooperation": [
@@ -919,8 +902,8 @@
         ],
         "Feature": [
           {
-            "page_name": "메인 페이지",
-            "page_gif": "/public/images/projects/features/modu/modu-mainpage.gif",
+            "page_name": "예약 시간 선택 페이지",
+            "page_gif": "/public/images/projects/features/lululab/reservation_list.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
@@ -955,8 +938,8 @@
             ]
           },
           {
-            "page_name": "상품 리스트 페이지",
-            "page_gif": "/public/images/projects/features/modu/modu-category.gif",
+            "page_name": "예약자 정보 입력 페이지",
+            "page_gif": "/public/images/projects/features/lululab/reservation_form.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
@@ -984,8 +967,8 @@
             ]
           },
           {
-            "page_name": "장바구니 페이지",
-            "page_gif": "/public/images/projects/features/modu/modu-cart.gif",
+            "page_name": "예약 조회 페이지",
+            "page_gif": "/public/images/projects/features/lululab/reservation_inquiry.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
@@ -1000,8 +983,8 @@
             ]
           },
           {
-            "page_name": "제작자 페이지",
-            "page_gif": "/public/images/projects/features/modu/modu-developer.gif",
+            "page_name": "no-show 방지",
+            "page_gif": "/public/images/projects/features/lululab/noshow.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",

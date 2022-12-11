@@ -202,6 +202,7 @@ const Article = styled.article`
         display: inline;
         margin: 10px 10px 30px 5px;
         padding: 5px 10px;
+        line-height: 230%;
         border-radius: 5px;
         font-size: ${paragraphFontSize};
         font-weight: bold;
