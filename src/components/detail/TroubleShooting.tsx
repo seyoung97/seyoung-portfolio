@@ -9,11 +9,11 @@ interface TroubleShootingProps {
 const TroubleShooting = ({ troubleShootingData }: TroubleShootingProps) => {
   return (
     <TroubleShootingSection>
-      <h2>Trouble Shooting</h2>
+      <h2 id="trouble_shooting">Trouble Shooting</h2>
       {troubleShootingData.Trouble_Shooting.map((troubleShooting) => {
         return (
           <>
-            <h3>{troubleShooting.title}</h3>
+            <h3 id={troubleShooting.title}>{troubleShooting.title}</h3>
             <ul>
               {troubleShooting.explain.map((paragraph) => {
                 return <li>{paragraph}</li>;

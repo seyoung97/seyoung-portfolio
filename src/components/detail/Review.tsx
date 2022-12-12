@@ -5,11 +5,11 @@ import { ContentPropsType } from "../../interface";
 const Review = ({ Data }: ContentPropsType) => {
   return (
     <ReviewSection>
-      <h2>느낀점</h2>
+      <h2 id="project_review">느낀점</h2>
       {Data.review.map((review) => {
         return (
           <>
-            <h3>{review.sub_titile}</h3>
+            <h3 id={review.sub_titile}>{review.sub_titile}</h3>
             <ul>
               {review.explain.map((paragraph, i) => {
                 return <li key={i}>{paragraph}</li>;

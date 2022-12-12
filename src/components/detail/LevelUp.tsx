@@ -5,7 +5,7 @@ import { ContentPropsType } from "../../interface";
 const LevelUp = ({ Data }: ContentPropsType) => {
   return (
     <LevelUpSection>
-      <h2>성장 Point</h2>
+      <h2 id="project_growth">성장 Point</h2>
       <ul>
         {Data.Level_up.map((paragraph, i) => {
           return <li key={i}>{paragraph}</li>;

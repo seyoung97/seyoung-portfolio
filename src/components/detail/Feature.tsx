@@ -9,11 +9,13 @@ interface FeatureProps {
 const Feature = ({ featureData }: FeatureProps) => {
   return (
     <FeatureSection>
-      <h2>담당 기능</h2>
+      <h2 id="project_feature">담당 기능</h2>
       {featureData.Feature.map((page) => {
         return (
           <>
-            <h3 className="page_name">{page.page_name}</h3>
+            <h3 className="page_name" id={page.page_name}>
+              {page.page_name}
+            </h3>
             <img
               src={page.page_gif}
               alt={page.page_name}

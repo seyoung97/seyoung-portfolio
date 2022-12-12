@@ -14,7 +14,9 @@ interface ContentProps {
 const Content = ({ projectData }: ContentProps) => {
   return (
     <Article>
-      <h1 className="project_name">{projectData.project_name}</h1>
+      <h1 id="project_name" className="project_name">
+        {projectData.project_name}
+      </h1>
       <ul className="info_container">
         <li>
           <span>한 줄 소개</span>
@@ -34,14 +36,14 @@ const Content = ({ projectData }: ContentProps) => {
         </li>
       </ul>
       <section className="content_section">
-        <h2>프로젝트 소개</h2>
+        <h2 id="project_introduction">프로젝트 소개</h2>
         <h3>{projectData.project_name}</h3>
         <ul className="introduction_box">
           {projectData.details.project_introduction.map((paragrahp, i) => {
             return <li key={i}>{paragrahp}</li>;
           })}
         </ul>
-        <h2>Links</h2>
+        <h2 id="project_links">Links</h2>
         <ul className="links_box">
           {projectData.details.links.map((content) => {
             return (
@@ -52,7 +54,7 @@ const Content = ({ projectData }: ContentProps) => {
             );
           })}
         </ul>
-        <h2>시연영상</h2>
+        <h2 id="project_video">시연영상</h2>
         <div className="video_box">
           <ReactPlayer
             url={projectData.details.video_url}
@@ -60,7 +62,7 @@ const Content = ({ projectData }: ContentProps) => {
             height={"630px"}
           ></ReactPlayer>
         </div>
-        <h2>사용 기술 및 라이브러리</h2>
+        <h2 id="project_skills">사용 기술 및 라이브러리</h2>
         <ul className="tech_stack">
           {projectData.details.tech_stack.map((positions) => {
             return (
@@ -79,7 +81,7 @@ const Content = ({ projectData }: ContentProps) => {
             );
           })}
         </ul>
-        <h2>프로젝트 구조</h2>
+        <h2 id="project_structure">프로젝트 구조</h2>
         <div className="structure_container">
           <div className="structure_imgbox">
             {projectData.details.structure.img_url.map((image, i) => {
@@ -92,11 +94,13 @@ const Content = ({ projectData }: ContentProps) => {
             })}
           </ul>
         </div>
-        <h2>협업방식</h2>
+        <h2 id="project_cooperation">협업방식</h2>
         {projectData.details.cooperation.map((content) => {
           return (
             <>
-              <h3 key={content.title}>{content.title}</h3>
+              <h3 key={content.title} id={content.title}>
+                {content.title}
+              </h3>
               <ul className="cooperation_explain">
                 {content.content.map((paragraph, i) => {
                   return <li key={i}>{paragraph}</li>;
@@ -108,7 +112,6 @@ const Content = ({ projectData }: ContentProps) => {
         <Feature featureData={projectData.details} />
         <TroubleShooting troubleShootingData={projectData.details} />
         <LevelUp Data={projectData.details} />
-
         <Review Data={projectData.details} />
       </section>
     </Article>

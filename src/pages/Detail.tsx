@@ -26,7 +26,7 @@ const Detail = ({ projectsData }: DetailProps) => {
   return (
     <Section>
       <Content projectData={projectData} />
-      <Index />
+      <Index indexData={projectData} />
     </Section>
   );
 };
