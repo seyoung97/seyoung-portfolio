@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <Section className="header">
       <ul>
-        <Link to="preview" smooth={true} spy={true}>
+        <Link to="preview" smooth={true}>
           <li className="title" onClick={goMain}>
             SeYoung
           </li>
