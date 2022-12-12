@@ -5,8 +5,13 @@ import github from "../../assets/images/links/github_butter.png";
 import blog from "../../assets/images/links/blog_butter.png";
 import resume from "../../assets/images/links/resume_butter.png";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const goMain = () => {
+    navigate("/");
+  };
   const colorChange = () => {
     const headerEl = document.querySelector(".header");
     if (window.scrollY > 50) {
@@ -32,26 +37,26 @@ const Header = () => {
   return (
     <Section className="header">
       <ul>
-        <li className="title">
-          <Link to="preview" smooth={true}>
+        <Link to="preview" smooth={true} spy={true}>
+          <li className="title" onClick={goMain}>
             SeYoung
-          </Link>
-        </li>
-        <li className="navigation">
-          <Link to="about" smooth={true}>
+          </li>
+        </Link>
+        <Link to="about" smooth={true} offset={-162}>
+          <li className="navigation" onClick={goMain}>
             About me
-          </Link>
-        </li>
-        <li className="navigation">
-          <Link to="projects" smooth={true}>
+          </li>
+        </Link>
+        <Link to="projects" smooth={true} offset={-170}>
+          <li className="navigation" onClick={goMain}>
             Projects
-          </Link>
-        </li>
-        <li className="navigation">
-          <Link to="internship" smooth={true}>
+          </li>
+        </Link>
+        <Link to="internship" smooth={true} offset={-170}>
+          <li className="navigation" onClick={goMain}>
             Internship
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
       <div className="links_container">
         <a href="https://github.com/seyoung97">
