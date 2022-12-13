@@ -20,13 +20,27 @@ const Projects = ({ projectsData }: ProjectsProps) => {
       <Title content={projectsTitle} />
       <div className="projects_container">
         {projectsData.projects_list.map((projects, i) => {
-          return <ProjectCard content={projects} type={"P"} index={i} />;
+          return (
+            <ProjectCard
+              key={projects.id}
+              content={projects}
+              type={"P"}
+              index={i}
+            />
+          );
         })}
       </div>
       <Title content={internshipTitle} />
       <div id="internship" className="projects_container">
         {projectsData.internship_list.map((projects, i) => {
-          return <ProjectCard content={projects} type={"I"} index={i} />;
+          return (
+            <ProjectCard
+              key={projects.id}
+              content={projects}
+              type={"I"}
+              index={i}
+            />
+          );
         })}
       </div>
     </Section>

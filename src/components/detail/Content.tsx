@@ -95,9 +95,9 @@ const Content = ({ projectData }: ContentProps) => {
           </ul>
         </div>
         <h2 id="project_cooperation">협업방식</h2>
-        {projectData.details.cooperation.map((content) => {
+        {projectData.details.cooperation.map((content, i) => {
           return (
-            <>
+            <div key={i}>
               <h3 key={content.title} id={content.title}>
                 {content.title}
               </h3>
@@ -106,7 +106,7 @@ const Content = ({ projectData }: ContentProps) => {
                   return <li key={i}>{paragraph}</li>;
                 })}
               </ul>
-            </>
+            </div>
           );
         })}
         <Feature featureData={projectData.details} />

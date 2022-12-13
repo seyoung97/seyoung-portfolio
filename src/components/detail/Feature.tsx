@@ -13,10 +13,11 @@ const Feature = ({ featureData }: FeatureProps) => {
       {featureData.Feature.map((page) => {
         return (
           <>
-            <h3 className="page_name" id={page.page_name}>
+            <h3 key={page.page_name} className="page_name" id={page.page_name}>
               {page.page_name}
             </h3>
             <img
+              key={page.page_gif}
               src={page.page_gif}
               alt={page.page_name}
               className="page_gif"
@@ -24,10 +25,11 @@ const Feature = ({ featureData }: FeatureProps) => {
             {page.features.map((feature) => {
               return (
                 <>
-                  <h4>{feature.feature_name}</h4>
+                  <h4 key={feature.feature_name}>{feature.feature_name}</h4>
                   {feature.code_img.map((image) => {
                     return (
                       <img
+                        key={image}
                         src={image}
                         alt="코드 이미지"
                         className="code_img"
@@ -36,7 +38,7 @@ const Feature = ({ featureData }: FeatureProps) => {
                   })}
                   <ul>
                     {feature.explain.map((content) => {
-                      return <li>{content}</li>;
+                      return <li key={content}>{content}</li>;
                     })}
                   </ul>
                 </>
