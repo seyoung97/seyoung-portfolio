@@ -2,7 +2,7 @@
   "education": [
     {
       "id": 0,
-      "img_url": "/public/images/education/justcode.png",
+      "img_url": "../images/education/justcode.png",
       "course_name": "JUST CODE",
       "major": "프론트엔드 6기",
       "double_major": "none",
@@ -16,7 +16,7 @@
     },
     {
       "id": 1,
-      "img_url": "/public/images/education/ewha.png",
+      "img_url": "../images/education/ewha.png",
       "course_name": "이화여자대학교",
       "major": "(주) 중어중문학과",
       "double_major": "(복) 소비자학과",
@@ -33,7 +33,7 @@
   "work_experience": [
     {
       "id": 2,
-      "img_url": "/public/images/education/preonboarding.png",
+      "img_url": "../images/education/preonboarding.png",
       "course_name": "Wanted Pre-onboarding",
       "major": "프론트엔드",
       "double_major": "Internship",
@@ -47,7 +47,7 @@
     },
     {
       "id": 3,
-      "img_url": "/public/images/education/toonsquare.png",
+      "img_url": "../images/education/toonsquare.png",
       "course_name": "TOONSQUARE",
       "major": "콘텐츠팀",
       "double_major": "Internship",
