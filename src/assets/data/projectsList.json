@@ -64,10 +64,10 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/modu/cart_structure.png",
-            "../../../dist/images/projects/structure/modu/itemcard_structure.png",
-            "../../../dist/images/projects/structure/modu/navigationbar_structure.png",
-            "../../../dist/images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/modu/cart_structure.png",
+            "../images/projects/structure/modu/itemcard_structure.png",
+            "../images/projects/structure/modu/navigationbar_structure.png",
+            "../images/projects/structure/modu/modu_pages.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -124,12 +124,12 @@
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-mainpage.gif",
+            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
@@ -138,7 +138,7 @@
               {
                 "feature_name": "Carousel 베너 광고",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/modu/modu-carousel.png"
                 ],
                 "explain": [
                   "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
@@ -148,7 +148,7 @@
               {
                 "feature_name": "신상품 및 인기상품 리스트 ",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-mainpagelist.png"
+                  "../images/projects/features/modu/modu-mainpagelist.png"
                 ],
                 "explain": [
                   "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
@@ -160,12 +160,12 @@
           },
           {
             "page_name": "상품 리스트 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-category.gif",
+            "page_gif": "../images/projects/features/modu/modu-category.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/modu/modu-ordering.png"
                 ],
                 "explain": [
                   "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
@@ -176,7 +176,7 @@
               {
                 "feature_name": "무한스크롤 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/modu/modu-infinitescroll.png"
                 ],
                 "explain": [
                   "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
@@ -189,13 +189,11 @@
           },
           {
             "page_name": "장바구니 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-cart.gif",
+            "page_gif": "../images/projects/features/modu/modu-cart.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-cart.png"
-                ],
+                "code_img": ["../images/projects/features/modu/modu-cart.png"],
                 "explain": [
                   "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
                   "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
@@ -205,12 +203,12 @@
           },
           {
             "page_name": "제작자 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-developer.gif",
+            "page_gif": "../images/projects/features/modu/modu-developer.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/modu/modu-developers.png"
                 ],
                 "explain": [
                   "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
@@ -270,7 +268,7 @@
     },
     {
       "id": 1,
-      "img_url": "../../../dist/images/projects/modumain.png",
+      "img_url": "../images/projects/modumain.png",
       "project_name": "사조의 공방 프로젝트",
       "activity_type": "JUST CODE 6기",
       "project_introduction": "맞춤제작 전문 플랫폼 모두의 공방을 참고해 디자인 및 기능을 직접 구현",
@@ -332,10 +330,10 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/modu/cart_structure.png",
-            "../../../dist/images/projects/structure/modu/itemcard_structure.png",
-            "../../../dist/images/projects/structure/modu/navigationbar_structure.png",
-            "../../../dist/images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/modu/cart_structure.png",
+            "../images/projects/structure/modu/itemcard_structure.png",
+            "../images/projects/structure/modu/navigationbar_structure.png",
+            "../images/projects/structure/modu/modu_pages.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -392,12 +390,12 @@
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-mainpage.gif",
+            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
@@ -406,7 +404,7 @@
               {
                 "feature_name": "Carousel 베너 광고",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/modu/modu-carousel.png"
                 ],
                 "explain": [
                   "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
@@ -416,7 +414,7 @@
               {
                 "feature_name": "신상품 및 인기상품 리스트 ",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-mainpagelist.png"
+                  "../images/projects/features/modu/modu-mainpagelist.png"
                 ],
                 "explain": [
                   "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
@@ -428,12 +426,12 @@
           },
           {
             "page_name": "상품 리스트 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-category.gif",
+            "page_gif": "../images/projects/features/modu/modu-category.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/modu/modu-ordering.png"
                 ],
                 "explain": [
                   "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
@@ -444,7 +442,7 @@
               {
                 "feature_name": "무한스크롤 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/modu/modu-infinitescroll.png"
                 ],
                 "explain": [
                   "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
@@ -457,13 +455,11 @@
           },
           {
             "page_name": "장바구니 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-cart.gif",
+            "page_gif": "../images/projects/features/modu/modu-cart.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-cart.png"
-                ],
+                "code_img": ["../images/projects/features/modu/modu-cart.png"],
                 "explain": [
                   "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
                   "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
@@ -473,12 +469,12 @@
           },
           {
             "page_name": "제작자 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-developer.gif",
+            "page_gif": "../images/projects/features/modu/modu-developer.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/modu/modu-developers.png"
                 ],
                 "explain": [
                   "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
@@ -538,7 +534,7 @@
     },
     {
       "id": 2,
-      "img_url": "../../../dist/images/projects/justmeatmain.png",
+      "img_url": "../images/projects/justmeatmain.png",
       "project_name": "JUSTMEAT 프로젝트",
       "activity_type": "JUST CODE 6기",
       "project_introduction": "육류 판매 전문 플랫폼 정육각을 참고해 모든 기능을 직접 구현",
@@ -599,10 +595,10 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/justmeat/header_footer.png",
-            "../../../dist/images/projects/structure/justmeat/cart.png",
-            "../../../dist/images/projects/structure/justmeat/carousel.png",
-            "../../../dist/images/projects/structure/justmeat/mypage.png"
+            "../images/projects/structure/justmeat/header_footer.png",
+            "../images/projects/structure/justmeat/cart.png",
+            "../images/projects/structure/justmeat/carousel.png",
+            "../images/projects/structure/justmeat/mypage.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -631,12 +627,12 @@
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../../../dist/images/projects/features/justmeat/justmeat_carousel.gif",
+            "page_gif": "../images/projects/features/justmeat/justmeat_carousel.gif",
             "features": [
               {
                 "feature_name": "Carousel",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "라이브러리를 사용하지 않고 JacaScript 함수로 로직을 구현했습니다."
@@ -646,12 +642,12 @@
           },
           {
             "page_name": "장바구니 페이지",
-            "page_gif": "../../../dist/images/projects/features/justmeat/justmeat_cart.gif",
+            "page_gif": "../images/projects/features/justmeat/justmeat_cart.gif",
             "features": [
               {
                 "feature_name": "수량 변경 및 수량 변경에 따른 표시 가격 변동 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_amount.png"
+                  "../images/projects/features/justmeat/cart_amount.png"
                 ],
                 "explain": [
                   "Cart.js에서 선언한 함수를 CartList에서 적용하는데 어려움을 겪었습니다. 특히 카트리스트의 1번 품목의 수량 변경 버튼을 클릭했을때 1번 품목의 수량이 변경되고 2번을 클릭했을 때는 2번이 변경되도록 해야하는 점이 어려웠습니다.",
@@ -664,7 +660,7 @@
               {
                 "feature_name": "'-'버튼 비활성화",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_button.png"
+                  "../images/projects/features/justmeat/cart_button.png"
                 ],
                 "explain": [
                   "수량이 1보다 클 때 버튼이 활성화 되는 함수를 구현 한 뒤, !(부정연산자)를 활용해 함수의 반대상황일때 즉 1보다 적을 때 disabled되도록 구현했습니다."
@@ -673,7 +669,7 @@
               {
                 "feature_name": "리스트 삭제 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_delete.png"
+                  "../images/projects/features/justmeat/cart_delete.png"
                 ],
                 "explain": [
                   "splice 메서드로 삭제하고자 하는 품목을 배열에서 제거했습니다.",
@@ -683,7 +679,7 @@
               {
                 "feature_name": "총가격 트랙킹",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_reduce.png"
+                  "../images/projects/features/justmeat/cart_reduce.png"
                 ],
                 "explain": [
                   "reduce 메서드로 장바구니에 담긴 상품들의 총가격을 구하도록 구현했습니다."
@@ -692,7 +688,7 @@
               {
                 "feature_name": "장바구니 REST API통신",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_api.png"
+                  "../images/projects/features/justmeat/cart_api.png"
                 ],
                 "explain": [
                   "axios를 사용해 백엔드와 통신했습니다.",
@@ -705,7 +701,7 @@
               {
                 "feature_name": "장바구니 결제",
                 "code_img": [
-                  "../../../dist/images/projects/features/justmeat/cart_pay.png"
+                  "../images/projects/features/justmeat/cart_pay.png"
                 ],
                 "explain": [
                   "팀원들과 결제 기능에 대해 논의할 때 실제로 결제를 하는 것은 어려울것 같아 대안으로 나온 방법이 포인트 결제 방법이었습니다.",
@@ -718,13 +714,11 @@
           },
           {
             "page_name": "마이 페이지",
-            "page_gif": "../../../dist/images/projects/features/justmeat/justmeat_mypage.gif",
+            "page_gif": "../images/projects/features/justmeat/justmeat_mypage.gif",
             "features": [
               {
                 "feature_name": "결제 내역 REST API 통신",
-                "code_img": [
-                  "../../../dist/images/projects/features/justmeat/mypage.png"
-                ],
+                "code_img": ["../images/projects/features/justmeat/mypage.png"],
                 "explain": [
                   "GET 메서드로 결제내역 데이터를 받아왔습니다.",
                   "map함수를 사용하여 결제한 상품들을 리스트로 출력했습니다."
@@ -734,13 +728,11 @@
           },
           {
             "page_name": "로그아웃",
-            "page_gif": "../../../dist/images/projects/features/justmeat/justmeat_logout.gif",
+            "page_gif": "../images/projects/features/justmeat/justmeat_logout.gif",
             "features": [
               {
                 "feature_name": "로그아웃 시 토큰 삭제하여 권한 제한",
-                "code_img": [
-                  "../../../dist/images/projects/features/justmeat/logout.png"
-                ],
+                "code_img": ["../images/projects/features/justmeat/logout.png"],
                 "explain": [
                   "localStorage.removeItem으로 저장됐던 토큰을 삭제했습니다.",
                   "삼항연산자와 useNavigate를 활용해 로칼스토리지에 토큰이 있을 시 장바구니 아이콘을 누르면 장바구니 페이지로 이동, 없을 시 로그인 페이지로 이동하도록했습니다.",
@@ -798,7 +790,7 @@
   "internship_list": [
     {
       "id": 3,
-      "img_url": "../../../dist/images/projects/lululabmain.png",
+      "img_url": "../images/projects/lululabmain.png",
       "project_name": "lululab 병원 예약 서비스",
       "activity_type": "wanted pre-onboarding",
       "project_introduction": "기업 룰루랩에서 제공한 기획안을 토대로 UI/UX 디자인 및 병원 예약, 예약 조회 기능을 구현",
@@ -844,9 +836,9 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/lululab/lululab_public.png",
-            "../../../dist/images/projects/structure/lululab/lululab_reservationlist.png",
-            "../../../dist/images/projects/structure/lululab/lululab_pages.png"
+            "../images/projects/structure/lululab/lululab_public.png",
+            "../images/projects/structure/lululab/lululab_reservationlist.png",
+            "../images/projects/structure/lululab/lululab_pages.png"
           ],
           "explain": [
             "요일별 예약가능 시간을 정리한 데이터와 예약고객 데이터는 통신으로 받아왔기 때문에 public에 저장했습니다.",
@@ -903,12 +895,12 @@
         "Feature": [
           {
             "page_name": "예약 시간 선택 페이지",
-            "page_gif": "../../../dist/images/projects/features/lululab/reservation_list.gif",
+            "page_gif": "../images/projects/features/lululab/reservation_list.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
@@ -917,7 +909,7 @@
               {
                 "feature_name": "Carousel 베너 광고",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/modu/modu-carousel.png"
                 ],
                 "explain": [
                   "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
@@ -927,7 +919,7 @@
               {
                 "feature_name": "신상품 및 인기상품 리스트 ",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-mainpagelist.png"
+                  "../images/projects/features/modu/modu-mainpagelist.png"
                 ],
                 "explain": [
                   "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
@@ -939,12 +931,12 @@
           },
           {
             "page_name": "예약자 정보 입력 페이지",
-            "page_gif": "../../../dist/images/projects/features/lululab/reservation_form.gif",
+            "page_gif": "../images/projects/features/lululab/reservation_form.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/modu/modu-ordering.png"
                 ],
                 "explain": [
                   "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
@@ -955,7 +947,7 @@
               {
                 "feature_name": "무한스크롤 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/modu/modu-infinitescroll.png"
                 ],
                 "explain": [
                   "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
@@ -968,13 +960,11 @@
           },
           {
             "page_name": "예약 조회 페이지",
-            "page_gif": "../../../dist/images/projects/features/lululab/reservation_inquiry.gif",
+            "page_gif": "../images/projects/features/lululab/reservation_inquiry.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-cart.png"
-                ],
+                "code_img": ["../images/projects/features/modu/modu-cart.png"],
                 "explain": [
                   "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
                   "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
@@ -984,12 +974,12 @@
           },
           {
             "page_name": "no-show 방지",
-            "page_gif": "../../../dist/images/projects/features/lululab/noshow.gif",
+            "page_gif": "../images/projects/features/lululab/noshow.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/modu/modu-developers.png"
                 ],
                 "explain": [
                   "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
@@ -1049,7 +1039,7 @@
     },
     {
       "id": 4,
-      "img_url": "../../../dist/images/projects/haiimain.png",
+      "img_url": "../images/projects/haiimain.png",
       "project_name": "HAII 음성 녹음 애플리케이션",
       "activity_type": "wanted pre-onboarding",
       "project_introduction": "기업 하이에서 제공한 기획안을 토대로 UI/UX 디자인 및 음성 녹음, 녹음 파일 재생, 파형 출력 기능을 구현",
@@ -1111,10 +1101,10 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/modu/cart_structure.png",
-            "../../../dist/images/projects/structure/modu/itemcard_structure.png",
-            "../../../dist/images/projects/structure/modu/navigationbar_structure.png",
-            "../../../dist/images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/modu/cart_structure.png",
+            "../images/projects/structure/modu/itemcard_structure.png",
+            "../images/projects/structure/modu/navigationbar_structure.png",
+            "../images/projects/structure/modu/modu_pages.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -1171,12 +1161,12 @@
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-mainpage.gif",
+            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
@@ -1185,7 +1175,7 @@
               {
                 "feature_name": "Carousel 베너 광고",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/modu/modu-carousel.png"
                 ],
                 "explain": [
                   "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
@@ -1195,7 +1185,7 @@
               {
                 "feature_name": "신상품 및 인기상품 리스트 ",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-mainpagelist.png"
+                  "../images/projects/features/modu/modu-mainpagelist.png"
                 ],
                 "explain": [
                   "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
@@ -1207,12 +1197,12 @@
           },
           {
             "page_name": "상품 리스트 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-category.gif",
+            "page_gif": "../images/projects/features/modu/modu-category.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/modu/modu-ordering.png"
                 ],
                 "explain": [
                   "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
@@ -1223,7 +1213,7 @@
               {
                 "feature_name": "무한스크롤 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/modu/modu-infinitescroll.png"
                 ],
                 "explain": [
                   "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
@@ -1236,13 +1226,11 @@
           },
           {
             "page_name": "장바구니 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-cart.gif",
+            "page_gif": "../images/projects/features/modu/modu-cart.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-cart.png"
-                ],
+                "code_img": ["../images/projects/features/modu/modu-cart.png"],
                 "explain": [
                   "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
                   "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
@@ -1252,12 +1240,12 @@
           },
           {
             "page_name": "제작자 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-developer.gif",
+            "page_gif": "../images/projects/features/modu/modu-developer.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/modu/modu-developers.png"
                 ],
                 "explain": [
                   "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
@@ -1317,7 +1305,7 @@
     },
     {
       "id": 5,
-      "img_url": "../../../dist/images/projects/playmain.png",
+      "img_url": "../images/projects/playmain.png",
       "project_name": "BITBYTE 플레이키보드 웹스토어",
       "activity_type": "wanted pre-onboarding",
       "project_introduction": "기업 비트바이트에서 제공한 기획안 및 figma를 토대로 상품 리스트 페이지 및 상품 상세 페이지를 구현",
@@ -1379,10 +1367,10 @@
         ],
         "structure": {
           "img_url": [
-            "../../../dist/images/projects/structure/modu/cart_structure.png",
-            "../../../dist/images/projects/structure/modu/itemcard_structure.png",
-            "../../../dist/images/projects/structure/modu/navigationbar_structure.png",
-            "../../../dist/images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/modu/cart_structure.png",
+            "../images/projects/structure/modu/itemcard_structure.png",
+            "../images/projects/structure/modu/navigationbar_structure.png",
+            "../images/projects/structure/modu/modu_pages.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
@@ -1439,12 +1427,12 @@
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-mainpage.gif",
+            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
             "features": [
               {
                 "feature_name": "Drop down menu",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/modu/modu-dropdownmenu.png"
                 ],
                 "explain": [
                   "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
@@ -1453,7 +1441,7 @@
               {
                 "feature_name": "Carousel 베너 광고",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/modu/modu-carousel.png"
                 ],
                 "explain": [
                   "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
@@ -1463,7 +1451,7 @@
               {
                 "feature_name": "신상품 및 인기상품 리스트 ",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-mainpagelist.png"
+                  "../images/projects/features/modu/modu-mainpagelist.png"
                 ],
                 "explain": [
                   "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
@@ -1475,12 +1463,12 @@
           },
           {
             "page_name": "상품 리스트 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-category.gif",
+            "page_gif": "../images/projects/features/modu/modu-category.gif",
             "features": [
               {
                 "feature_name": "정렬 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/modu/modu-ordering.png"
                 ],
                 "explain": [
                   "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
@@ -1491,7 +1479,7 @@
               {
                 "feature_name": "무한스크롤 기능",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/modu/modu-infinitescroll.png"
                 ],
                 "explain": [
                   "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
@@ -1504,13 +1492,11 @@
           },
           {
             "page_name": "장바구니 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-cart.gif",
+            "page_gif": "../images/projects/features/modu/modu-cart.gif",
             "features": [
               {
                 "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-cart.png"
-                ],
+                "code_img": ["../images/projects/features/modu/modu-cart.png"],
                 "explain": [
                   "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
                   "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
@@ -1520,12 +1506,12 @@
           },
           {
             "page_name": "제작자 페이지",
-            "page_gif": "../../../dist/images/projects/features/modu/modu-developer.gif",
+            "page_gif": "../images/projects/features/modu/modu-developer.gif",
             "features": [
               {
                 "feature_name": "팀원 프로필 카드 제작",
                 "code_img": [
-                  "../../../dist/images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/modu/modu-developers.png"
                 ],
                 "explain": [
                   "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
