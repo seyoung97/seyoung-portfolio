@@ -11,9 +11,9 @@
       "blog_url": "0",
       "details": {
         "breif_info": {
-          "introduction": "2주일 동안 정육각 페이지의 모든 기능을 직접 구현해보는 클론 프로젝트입니다.",
-          "period": "2022/08/29 ~ 2022/09/09",
-          "team": "Backend 2명, Frontend 3명"
+          "introduction": "React와 TypeScript를 기반으로 제작한 개인 포트폴리오 사이트입니다.",
+          "period": "2022/11/28 ~ 2022/12/13",
+          "team": "개인 프로젝트"
         },
         "project_introduction": [
           "육류 판매 전문 인커머스 사이트인 정육각 페이지의 모든 기능을 직접 구현하는 프로젝트입니다.",
@@ -23,56 +23,34 @@
         "links": [
           {
             "link_name": "프론트엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front"
-          },
-          {
-            "link_name": "백엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-back"
-          },
-          {
-            "link_name": "팀 노션",
-            "link_url": "https://www.notion.so/wecode/4-7769dc42856248299aa5d32009b313e9"
-          },
-          {
-            "link_name": "회고록",
-            "link_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+            "link_url": "https://github.com/seyoung97/seyoung-portfolio"
           }
         ],
-        "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
+        "video_url": "https://www.youtube.com/watch?v=GvEnj2rMITI",
         "tech_stack": [
           {
             "position": "Front End",
             "skills": [
               "HTML",
-              "Sass",
-              "Javascript",
+              "styled-component",
+              "TypeScript",
               "React",
-              "CRA",
+              "Vite",
               "React-router",
-              "axios",
-              "Font Awesome"
+              "react-scroll",
+              "react-player"
             ]
-          },
-          {
-            "position": "Back End",
-            "skills": ["Node.js", "Express.js", "MYSQL"]
-          },
-          {
-            "position": "Communication",
-            "skills": ["Slack", "Notion", "Zep"]
           }
         ],
         "structure": {
           "img_url": [
-            "../images/projects/structure/modu/cart_structure.png",
-            "../images/projects/structure/modu/itemcard_structure.png",
-            "../images/projects/structure/modu/navigationbar_structure.png",
-            "../images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/portfolio/portfolio-structure1.png",
+            "../images/projects/structure/portfolio/portfolio-structure2.png"
           ],
           "explain": [
+            "assests > data 에서 사용되는 모든 데이터들을 관리했습니다.",
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
-            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다.",
-            "빨강색 글자로 적혀진 폴더는 본인이 담당했던 페이지들 입니다."
+            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다."
           ]
         },
         "cooperation": [
@@ -123,96 +101,110 @@
         ],
         "Feature": [
           {
-            "page_name": "메인 페이지",
-            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
+            "page_name": "프리뷰",
+            "page_gif": "../images/projects/features/portfolio/portfolio-main.gif",
             "features": [
               {
-                "feature_name": "Drop down menu",
+                "feature_name": "배경 동영상",
                 "code_img": [
-                  "../images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/portfolio/background.png"
                 ],
                 "explain": [
-                  "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
+                  "video 태그와 position 속성을 활용해 배경에 동영상을 삽입했습니다.",
+                  "동영상의 용량이 100MB가 넘어 git LFS를 사용해 github에 업로드했습니다."
                 ]
               },
               {
-                "feature_name": "Carousel 베너 광고",
+                "feature_name": "미리 보기 Carousel",
                 "code_img": [
-                  "../images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/portfolio/carousel.png"
                 ],
                 "explain": [
-                  "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
-                  "참고 사이트가 리뉴얼에 들어가서 참고할 이미지가 없었습니다. 핀터레스트에 베너 광고 이미지들을 검색해서 디자인을 참고하여 직접 제작했습니다."
-                ]
-              },
-              {
-                "feature_name": "신상품 및 인기상품 리스트 ",
-                "code_img": [
-                  "../images/projects/features/modu/modu-mainpagelist.png"
-                ],
-                "explain": [
-                  "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
-                  "아이템카드 컴포넌트를 재사용하여 리스트를 구현했습니다.",
-                  "표현식과 useParams를 활용해 상품을 클릭했을 때 해당 상품의 상세페이지로 넘어갈 수 있도록 동적라우팅을 구현했습니다."
+                  "swiper 라이브러리를 사용해 미리보기를 구현했습니다. ",
+                  "첨부된 이미지들을 직접 디자인 및 제작했습니다."
                 ]
               }
             ]
           },
           {
-            "page_name": "상품 리스트 페이지",
-            "page_gif": "../images/projects/features/modu/modu-category.gif",
+            "page_name": "About Me",
+            "page_gif": "../images/projects/features/portfolio/portfolio-about.gif",
             "features": [
               {
-                "feature_name": "정렬 기능",
+                "feature_name": "탭 UI",
                 "code_img": [
-                  "../images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/portfolio/category.png"
                 ],
                 "explain": [
-                  "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
-                  "정렬조건이 바뀔 때 마다 state값이 변경 되도록 하고 이 state 값을 통신 요청 URI에 표현식으로 넣어서",
-                  "state 값이 변경 되면 요청 URI가 변경되어 조건에 맞는 정렬 순서대로 데이터를 받아와 출력하도록 구현했습니다."
+                  "파일 구조: components > aboutme > AboutMe.tsx > Category.tsx, EducationSection.tsx",
+                  "Category 컴포넌트에 'category'라는 state를 props로 넘겨주어 탭을 클릭할 때 마다 state 값이 변경되도록 했습니다. ",
+                  "state 값이 변경 되면 조건부 렌더링을 활용해 해당 state 값에 맞는 UI를 출력하도록 구현했습니다."
+                ]
+              }
+            ]
+          },
+          {
+            "page_name": "프로젝트 리스트",
+            "page_gif": "../images/projects/features/portfolio/portfolio-projectslist.gif",
+            "features": [
+              {
+                "feature_name": "프로젝트 리스트 데이터 구조",
+                "code_img": [
+                  "../images/projects/features/portfolio/projectListData.png"
+                ],
+                "explain": [
+                  "JSON 형식으로 데이터를 작성했습니다.",
+                  "projects_list 와 internship_list 두 배열로 구성되어있으며 배열의 요소에 각각 프로젝트에 나열될 정보와 인턴쉽에 나열될 정보들이 객체로 이루어져있습니다."
                 ]
               },
               {
-                "feature_name": "무한스크롤 기능",
+                "feature_name": "ProjectCard 컴포넌트 재사용",
                 "code_img": [
-                  "../images/projects/features/modu/modu-infinitescroll.png"
+                  "../images/projects/features/portfolio/cardcomponent.png"
                 ],
                 "explain": [
-                  "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
-                  "스크롤이 끝에 닿을 때 마다 offset이라는 state를 1씩 증가되게 하고 이 offset을 요청 URI에 표현식으로 넣어서 계속해서 추가로 데이터를 요청하도록 구현했습니다.",
-                  "하지만 데이터의 양이 한정적이어서 실제로는 한번 밖에 상품 리스트가 추가되지 않아 이 부분이 아쉬웠습니다.",
-                  "useEffect의 의존성 배열과 표현식, return함수를 활용해 정렬기능이 적용된 상태에서 무한스크롤이 작동할 수 있도록 구현했습니다."
+                  "파일 구조: components > projects > Projects.tsx > ProjectCard.tsx",
+                  "Project와 Internship 구분되어 있었기 때문에 따로 map함수를 두번 작성했습니다.",
+                  "컴포넌트를 재사용하기 위해 content라고 props 이름을 통일했습니다."
+                ]
+              },
+              {
+                "feature_name": "상세페이지로 동적라우팅",
+                "code_img": [
+                  "../images/projects/features/portfolio/useParams.png"
+                ],
+                "explain": [
+                  "파일 구조: pages > Detail.tsx ",
+                  "프로젝트 카드를 클릭하면 해당 프로젝트에 대한 상세 정보를 보여주는 페이지로 이동되도록 구현했습니다.",
+                  "상세 정보 페이지도 하드 코딩하지 않고 content 컴포넌트를 재사용했기 때문에 content컴포넌트에 props로 클릭한 프로젝트에 대한 정보가 전달 될 수 있도록 구현해야했습니다.",
+                  "처음에는 useParams를 사용해 url에 프로젝트의 id 값을 넘겨주고 id값을 인덱스로 사용해 데이터를 전달하면 될것이라고 생각했지만 자료 상의 id값과 인덱스가 달라서 엉뚱한 정보가 전달되었습니다.",
+                  "project_list와 internship_list 각각 다른 배열에 있는게 문제였습니다. 따라서 ProjectCard 컴포넌트에 type 과 index라는 props를 전달했고 프로젝트일경우 type에 P를 전달 인턴쉽일 경우 I를 전달했습니다. 그리고 url에 type과 index를 삽입했습니다.",
+                  "Detail 페이지에서 url에서 type과 index를 추출하여 조건문을 작성해 content에 알맞은 정보가 props로 전달되도록 구현했습니다."
                 ]
               }
             ]
           },
           {
-            "page_name": "장바구니 페이지",
-            "page_gif": "../images/projects/features/modu/modu-cart.gif",
+            "page_name": "프로젝트 상세 정보",
+            "page_gif": "../images/projects/features/portfolio/portfolio-detail.gif",
             "features": [
               {
-                "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": ["../images/projects/features/modu/modu-cart.png"],
-                "explain": [
-                  "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
-                  "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "제작자 페이지",
-            "page_gif": "../images/projects/features/modu/modu-developer.gif",
-            "features": [
-              {
-                "feature_name": "팀원 프로필 카드 제작",
+                "feature_name": "상세 정보 데이터 구조",
                 "code_img": [
-                  "../images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/portfolio/projectData.png"
                 ],
                 "explain": [
-                  "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
-                  "새로운 파일을 생성하지 않고 itemCard 컴포넌트를 재사용하여 구현했습니다."
+                  "projectsList.json 파일에 detail 키를 추가하여 이어서 작성했습니다.",
+                  "페이지 내용을 하드 코딩 하지 않고 JSON으로 작성한 뒤 데이터를 뿌리는 방식으로 구현했습니다."
+                ]
+              },
+              {
+                "feature_name": "목차",
+                "code_img": ["../images/projects/features/portfolio/index.png"],
+                "explain": [
+                  "파일 구조: pages > Detail.tsx > Index.tsx",
+                  "content와 같은 방식으로 데이터를 전달 받아서 프로젝트 별로 다른 목차가 나타나도록 구현했습니다.",
+                  "react-scroll 라이브러리를 사용하여 목차를 클릭하면 해당 내용으로 스크롤이 이동하도록 구현했습니다."
                 ]
               }
             ]
@@ -818,7 +810,7 @@
             "link_url": "https://extraordinary-elf-828716.netlify.app"
           }
         ],
-        "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
+        "video_url": "https://www.youtube.com/watch?v=IKEK2qdGtqk",
         "tech_stack": [
           {
             "position": "Front End",

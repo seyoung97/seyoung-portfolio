@@ -6,12 +6,26 @@ import Feature from "./Feature";
 import TroubleShooting from "./TroubleShooting";
 import LevelUp from "./LevelUp";
 import Review from "./Review";
+import { useEffect, useState } from "react";
 
 interface ContentProps {
   projectData: ProjectDataType;
 }
 
 const Content = ({ projectData }: ContentProps) => {
+  const [cooperation, setCooperation] = useState(true);
+
+  useEffect(() => {
+    if (
+      projectData.project_name === "포트폴리오 사이트" ||
+      projectData.project_name === "lululab 병원 예약 서비스"
+    ) {
+      setCooperation(false);
+    } else {
+      setCooperation(true);
+    }
+  }, [cooperation]);
+
   return (
     <Article>
       <h1 id="project_name" className="project_name">
@@ -62,7 +76,6 @@ const Content = ({ projectData }: ContentProps) => {
             height={"630px"}
           ></ReactPlayer>
         </div>
-
         <h2 id="project_skills">사용 기술 및 라이브러리</h2>
         <ul className="tech_stack">
           {projectData.details.tech_stack.map((positions) => {
@@ -95,21 +108,26 @@ const Content = ({ projectData }: ContentProps) => {
             })}
           </ul>
         </div>
-        <h2 id="project_cooperation">협업방식</h2>
-        {projectData.details.cooperation.map((content, i) => {
-          return (
-            <div key={i}>
-              <h3 key={content.title} id={content.title}>
-                {content.title}
-              </h3>
-              <ul className="cooperation_explain">
-                {content.content.map((paragraph, i) => {
-                  return <li key={i}>{paragraph}</li>;
-                })}
-              </ul>
-            </div>
-          );
-        })}
+        {cooperation && (
+          <div>
+            <h2 id="project_cooperation">협업방식</h2>
+            {projectData.details.cooperation.map((content, i) => {
+              return (
+                <div key={i}>
+                  <h3 key={content.title} id={content.title}>
+                    {content.title}
+                  </h3>
+                  <ul className="cooperation_explain">
+                    {content.content.map((paragraph, i) => {
+                      return <li key={i}>{paragraph}</li>;
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         <Feature featureData={projectData.details} />
         <TroubleShooting troubleShootingData={projectData.details} />
         <LevelUp Data={projectData.details} />
