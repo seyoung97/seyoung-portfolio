@@ -55,13 +55,14 @@ const Content = ({ projectData }: ContentProps) => {
           })}
         </ul>
         <h2 id="project_video">시연영상</h2>
-        {/* <div className="video_box">
+        <div className="video_box">
           <ReactPlayer
             url={projectData.details.video_url}
             width={"1000px"}
             height={"630px"}
           ></ReactPlayer>
-        </div> */}
+        </div>
+
         <h2 id="project_skills">사용 기술 및 라이브러리</h2>
         <ul className="tech_stack">
           {projectData.details.tech_stack.map((positions) => {
