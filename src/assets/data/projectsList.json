@@ -2,7 +2,7 @@
   "projects_list": [
     {
       "id": 0,
-      "img_url": "/public/images/projects/portfoliomain.png",
+      "img_url": "/images/projects/portfoliomain.png",
       "project_name": "포트폴리오 사이트",
       "activity_type": "개인 프로젝트",
       "project_introduction": "React와 TypeScript를 기반으로 제작한 포트폴리오 사이트",
