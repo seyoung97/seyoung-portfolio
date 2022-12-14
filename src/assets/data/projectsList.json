@@ -894,33 +894,27 @@
             "page_gif": "../images/projects/features/lululab/reservation_list.gif",
             "features": [
               {
-                "feature_name": "Drop down menu",
+                "feature_name": "react-calendar 커스텀",
                 "code_img": [
-                  "../images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/lululab/calendar-custom.png"
                 ],
                 "explain": [
-                  "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
+                  "react-calendar 라이브러리를 사용해 calendar UI를 구현했습니다.",
+                  "공식문서와 개발자도구를 활용해 class name을 확인하면서 웹페이지에 잘 어울리도록 디자인을 변경했습니다.",
+                  "지난 날짜는 선택하지 못하도록 minDate 속성에 newDate()를 부여했습니다."
                 ]
               },
               {
-                "feature_name": "Carousel 베너 광고",
+                "feature_name": "날짜별 예약 가능 시간 확인",
                 "code_img": [
-                  "../images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/lululab/reservationlist.png"
                 ],
                 "explain": [
-                  "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
-                  "참고 사이트가 리뉴얼에 들어가서 참고할 이미지가 없었습니다. 핀터레스트에 베너 광고 이미지들을 검색해서 디자인을 참고하여 직접 제작했습니다."
-                ]
-              },
-              {
-                "feature_name": "신상품 및 인기상품 리스트 ",
-                "code_img": [
-                  "../images/projects/features/modu/modu-mainpagelist.png"
-                ],
-                "explain": [
-                  "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
-                  "아이템카드 컴포넌트를 재사용하여 리스트를 구현했습니다.",
-                  "표현식과 useParams를 활용해 상품을 클릭했을 때 해당 상품의 상세페이지로 넘어갈 수 있도록 동적라우팅을 구현했습니다."
+                  "파일구조: pages > ReservationList.jsx",
+                  "reservation.json 파일에 날짜별로 예약가능 시간들을 정리했습니다.",
+                  "getDate()함수를 활용해 limit 변수에 선택한 날짜를 담았습니다.",
+                  "변수 limit을 reservation.json함수에 접근할 인덱스로 사용했습니다.",
+                  "예약이 불가능한 시간은 버튼이 disabled가 되도록 구현했습니다."
                 ]
               }
             ]
@@ -930,26 +924,32 @@
             "page_gif": "../images/projects/features/lululab/reservation_form.gif",
             "features": [
               {
-                "feature_name": "정렬 기능",
+                "feature_name": "입력한 정보 예약자 리스트에 저장하기",
                 "code_img": [
-                  "../images/projects/features/modu/modu-ordering.png"
+                  "../images/projects/features/lululab/reservationform.png"
                 ],
                 "explain": [
-                  "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
-                  "정렬조건이 바뀔 때 마다 state값이 변경 되도록 하고 이 state 값을 통신 요청 URI에 표현식으로 넣어서",
-                  "state 값이 변경 되면 요청 URI가 변경되어 조건에 맞는 정렬 순서대로 데이터를 받아와 출력하도록 구현했습니다."
+                  "파일 구조: pages > ReservationForm.jsx",
+                  "reservatedList는 예약자 리스트 데이터를 담은 state입니다.",
+                  "useLocation을 활용해 예약시간 선택 페이지에서 url로 넘겨준 예약일시를 reservatedTime 변수에 담았습니다. 변수를 JSX문법을 활용해 화면에 출력했습니다.",
+                  "input 태그의 value값을 onChange로 감지해 state들에 담았습니다.",
+                  "예약하기 버튼을 클릭하면 onClick이벤트가 발생해 AddList 함수가 실행되어 reservatedList에 입력한 정보들이 추가되도록 했습니다."
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "page_name": "no-show 방지 시스템 구축",
+            "page_gif": "../images/projects/features/lululab/noshow.gif",
+            "features": [
               {
-                "feature_name": "무한스크롤 기능",
-                "code_img": [
-                  "../images/projects/features/modu/modu-infinitescroll.png"
-                ],
+                "feature_name": "no-show 고객은 온라인 예약 불가하도록 구현",
+                "code_img": ["../images/projects/features/lululab/no-show.png"],
                 "explain": [
-                  "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
-                  "스크롤이 끝에 닿을 때 마다 offset이라는 state를 1씩 증가되게 하고 이 offset을 요청 URI에 표현식으로 넣어서 계속해서 추가로 데이터를 요청하도록 구현했습니다.",
-                  "하지만 데이터의 양이 한정적이어서 실제로는 한번 밖에 상품 리스트가 추가되지 않아 이 부분이 아쉬웠습니다.",
-                  "useEffect의 의존성 배열과 표현식, return함수를 활용해 정렬기능이 적용된 상태에서 무한스크롤이 작동할 수 있도록 구현했습니다."
+                  "assets > data > blackList.json파일에 no-show 고객 리스트를 데이터화했습니다.",
+                  "blackList.json을 ReservationForm에 import한 후 useMemo를 활용해 blackList라는 변수에 담았습니다.",
+                  "반복문과 조건문을 활용해 사용자가 입력한 정보가 blackList의 연락처와 이름이 같은지 비교한 후 같다면 openError state가 true가 되어 Error 창이 뜨도록했습니다.",
+                  "반면 입력한 내용이 blackList데이터에 없다면 reservatedList state에 입력한 정보가 추가되어 예약자 리스트에 저장되도록 구현했습니다."
                 ]
               }
             ]
@@ -959,27 +959,16 @@
             "page_gif": "../images/projects/features/lululab/reservation_inquiry.gif",
             "features": [
               {
-                "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": ["../images/projects/features/modu/modu-cart.png"],
-                "explain": [
-                  "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
-                  "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "no-show 방지",
-            "page_gif": "../images/projects/features/lululab/noshow.gif",
-            "features": [
-              {
-                "feature_name": "팀원 프로필 카드 제작",
+                "feature_name": "연락처로 예약 조회",
                 "code_img": [
-                  "../images/projects/features/modu/modu-developers.png"
+                  "../images/projects/features/lululab/reservation-inquiry.png"
                 ],
                 "explain": [
-                  "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
-                  "새로운 파일을 생성하지 않고 itemCard 컴포넌트를 재사용하여 구현했습니다."
+                  "파일 구조: pages > ReservationInquiry.jsx",
+                  "props로 받은 reservatedList(예약자 리스트 state)의 예약자 연락처(user_contact)중 조회한 연락처(inquiry)가 있는지 반복문을 사용해 확인했습니다.",
+                  "같은 연락처가 있다면 isReservated라는 state에 예약 정보를 담아 Modal > Modal.jsx에 props로 전달했습니다.",
+                  "open state가 true가 되어 modal이 뜨도록했고 modal에 isReservated에 담긴 정보가 출력되도록 구현했습니다.",
+                  "반면 연락처가 없다면 errorOpen state가 true가 되어 Modal > Error.jsx가 뜨도록했습니다."
                 ]
               }
             ]
@@ -987,47 +976,38 @@
         ],
         "Trouble_Shooting": [
           {
-            "title": "클론 페이지 리뉴얼 이슈",
+            "title": "reservation.json에서 데이터가 안 받아와 지는 문제...",
             "explain": [
-              "프로젝트를 시작하고 얼마 지나지 않아 모두의 공방 페이지가 리뉴얼에 들어가서 UI 및 기능들이 보이지 않았습니다.",
-              "프론트 개발자에게는 눈을 감고 개발을 하라는 격이었기 때문에 상당히 당황스러웠습니다."
+              "calendar의 날짜를 누르면 해당 날짜에 예약 가능한 시간들이 나타나도록 데이터를 받아 와야했는데 데이터를 담은 state가 계속 undefined였습니다."
             ],
             "subtitle": "문제 상황 파악",
             "figure_out": [
-              "먼저 모두의 공방 고객센터에 전화해 상황을 파악했습니다. 대대적으로 리뉴얼에 들어갔기 때문에 2개월 정도 소요된다는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다.",
-              "결국 저희만의 사이트를 만들기로 결정했고 팀원들과 자주 소통하며 디자인 부터 기능까지 저희가 직접 기획하고 구현했습니다."
+              "useEffect 내에서 배열 형식의 데이터의 특정 인덱스 값을 받아올 때 변수를 인덱스로 사용해 변수가 변경될 때 마다 다른 데이터를 받아오도록 하는게 문제였습니다."
             ],
             "subtitle_2": "문제 해결 과정",
             "problem_solving": [
-              "저희는 먼저 구현할 기능들을 명확하게  정했습니다. 마이페이지의 경우 user의 정보와 구매 목록 및 찜 목록을 출력하고 구매 목록에서 ‘리뷰 작성하기’ 버튼을 누르면 해당 상품의 리뷰를 작성할 수 있도록 리뷰작성 페이지로 넘어가도록 하는 목표를 세웠습니다.",
-              "그리고 목표와 유사한 웹페이지가 있는지 조사를 했습니다. 그 결과 무신사의 마이페이지가 저희가 기획한 바와 유사하게 구성이 되어있었습니다. 이에 무신사의 마이페이지를 참고하여 제작하기로 결정했습니다.",
-              "장바구니 페이지의 경우 수량 변경 및 삭제 그리고 배송비와 전체 가격을 따로 계산하는 것을 목표로 했습니다.",
-              "참고할 사이트를 조사하다가 오늘의 집의 장바구니 페이지가 저희 프로젝트와 디자인 무드도 잘 맞고 배송비 및 전체 가격 표시 되는 부분이 깔끔해서 오늘의 집을 참고하여 제작하기로 결정했습니다. "
+              "useEffect 내에서 통신할 때는 전체 데이터를 받아오고 useEffect 외부에서 인덱스에 변수를 넣어 접근하는 방법으로 해결했습니다."
             ],
             "subtitle_3": "느낀점",
             "lesson": [
-              "처음에는 당황스러웠지만 직접 기획을하면서 사용자의 입장에서 서비스를 구축해볼 수 있는 좋은 기회였습니다. "
+              "아직 에러가 나는 이유에 대해서는 정확히 파악하지 못해서 통신에 대해 더 공부할 필요성을 느꼈습니다."
             ]
           }
         ],
         "Level_up": [
-          "Git flow 방식으로 협업하는 방법을 배울 수 있었습니다.",
-          "component 재사용의 편리성에 대해 느낄 수 있었습니다",
-          "useEffect의 dependency array를 활용한 동적라우팅",
+          "react-calendar로 달력 UI를 구현하는 방법을 배울 수 있었습니다.",
+          "UI 구현에 그치지 않고 적극적으로 활용하여 예약 시스템에 적용하는 방식을 터득했습니다.",
+          "반복문과 조건문 그리고 비교 연산자로 검색 기능을 구현하는 방법을 터득했습니다.",
           "백엔드와 소통하여 offset & limit을 설정, 무한 스크롤 구현",
           "windows height를 활용하여 무한스크롤 구현"
         ],
         "review": [
           {
-            "sub_titile": "클린코드의 중요성",
+            "sub_titile": "재미있었던 예약 기능",
             "explain": [
-              "그동안에는 구현에 집중하느라 클린 코딩의 중요성에 대해 생각할 겨를이 없었는데 이번 프로젝트는 팀원들의 코드들도 뜯어보면서 많이 배울 수 있었습니다. 특히 API 파일을 따로 관리해 임포트해서 쓰는 방식을 보고 다음 프로젝트 때 적용해봐야겠다 생각했습니다."
-            ]
-          },
-          {
-            "sub_titile": "최적화에 대하여...",
-            "explain": [
-              "리액트는 배울수록 아직 배울게 많다는 것을 느낍니다. 특히 최적화에 대한 이해도가 부족하다고 느껴 최적화에 대해 공부할 필요가 있다고 생각했습니다. 또한 프론트엔드 개발자에게 SEO도 정말 중요한데 다음 프로젝트 때는 최적화와 SEO 모두 신경 써서 작업해봐야겠다 생각했습니다."
+              "지난 프로젝트들에서 해본 적 없는 기능이라 새로운 기능을 구현하는게 재미있었습니다.",
+              "처음 구현해본 만큼 뿌듯함과 동시에 아쉬움이 남는 부분들도 있습니다.",
+              "예약자 정보 입력 페이지에 form 태그와 useRef를 사용하면 더 간결한 코드가 될것 같아서 리팩토링을 꼭 진행하고 싶습니다."
             ]
           }
         ]
