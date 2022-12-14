@@ -1024,51 +1024,45 @@
       "blog_url": "0",
       "details": {
         "breif_info": {
-          "introduction": "2주일 동안 모두의공방 페이지의 모든 기능을 직접 구현해보는 클론 프로젝트입니다.",
-          "period": "2022/09/19 ~ 2022/09/30",
-          "team": "Backend 2명, Frontend 3명"
+          "introduction": "기업 하이에서 제공한 기획안을 토대로 UI/UX 디자인 및 음성 녹음, 녹음 파일 재생, 파형 출력 기능을 구현한 기업 협업 프로젝트입니다.",
+          "period": "2022/10/11 ~ 2022/10/14",
+          "team": "Frontend 3명"
         },
         "project_introduction": [
-          "모두의 공방은 원하는 공방을 쉽고 빠르게 찾을 수 있는 맞춤 제작 전문 플랫폼입니다.",
-          "모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤 제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는 디자인마켓으로 이루어져있습니다.",
-          "저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고 싶어서 모두의 공방을 선택했습니다."
+          "HAII는 치매, 우울증, 불안장애 등의 정신 질환을 예방하고 관리하는 디지털 치료제를 만드는 회사입니다.",
+          "오디오 녹음화면은 오디오 녹음 중에는 녹음 중 UI를 표시했고 최대 녹음 가능 시간을 control할 수 있도록 구현했습니다. 녹음 완료 후에는 firebase를 이용해 음성파일을 저장했습니다.",
+          "재생 목록은 햄버거 메뉴로 구현했습니다. firebase에 저장된 음성파일을 리스트로 불러왔습니다. 각 오디오 파일 별로 재생 및 삭제 기능을 삽입했습니다.",
+          "재생 화면은 오디오 파일의 제목을 firebase에서 받아왔고 재생 버튼을 누르면 재생이 되도록 구현했습니다. 오디오 파형을 표시했습니다."
         ],
         "links": [
           {
             "link_name": "프론트엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front"
-          },
-          {
-            "link_name": "백엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-back"
+            "link_url": "https://github.com/seyoung97/pre-onboarding-4team-haii"
           },
           {
             "link_name": "팀 노션",
-            "link_url": "https://www.notion.so/wecode/4-7769dc42856248299aa5d32009b313e9"
+            "link_url": "https://www.notion.so/aae6c129b9c448c0a0ded1c5fb783437?p=5ab94e6c8ddc4cf98493fe23b0c9399c&pm=c"
           },
           {
-            "link_name": "회고록",
-            "link_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+            "link_name": "배포 링크",
+            "link_url": "https://jocular-empanada-50806c.netlify.app/"
           }
         ],
-        "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
+        "video_url": "https://www.youtube.com/watch?v=mLYzvrDWD2U",
         "tech_stack": [
           {
             "position": "Front End",
             "skills": [
               "HTML",
-              "Sass",
+              "styled-component",
               "Javascript",
               "React",
-              "CRA",
+              "Vite",
               "React-router",
-              "axios",
-              "Font Awesome"
+              "FireBase",
+              "wavesurfer-react",
+              "react-icons"
             ]
-          },
-          {
-            "position": "Back End",
-            "skills": ["Node.js", "Express.js", "MYSQL"]
           },
           {
             "position": "Communication",
@@ -1076,156 +1070,50 @@
           }
         ],
         "structure": {
-          "img_url": [
-            "../images/projects/structure/modu/cart_structure.png",
-            "../images/projects/structure/modu/itemcard_structure.png",
-            "../images/projects/structure/modu/navigationbar_structure.png",
-            "../images/projects/structure/modu/modu_pages.png"
-          ],
+          "img_url": ["../images/projects/structure/haii/haii-structure.png"],
           "explain": [
-            "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
-            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다.",
-            "빨강색 글자로 적혀진 폴더는 본인이 담당했던 페이지들 입니다."
+            "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다."
           ]
         },
         "cooperation": [
           {
-            "title": "Planning Meeting 1: 주제선정,범위설정",
+            "title": "Planning Meeting 1: 기획안 분석, 애플리케이션 기획, 프로젝트 진행 방식 결정",
             "content": [
-              "각자 2개 이상의 웹페이지를 찾아와서 소개하는 시간을 가졌습니다.",
-              "투표를 통해 모두의 공방을 클론 페이지로 선정했습니다. 일반적인 이커머스가 아닌 맞춤 제작이라는 점에서 다양한 옵션 선택 기능이나 필터링 기능을 구현해볼 수 있는 기회라고 생각해서 선택했습니다.",
-              "함께 웹사이트를 둘러보면서 주요 기능과 사이트의 흐름을 파악했습니다.",
-              "시간 제약이 있는 만큼 구현할 기능과 제외할 기능들을 명확하게 나눴습니다. 저희는 우선 디자인 마켓의 주요 기능들을 구현한 후 시간이 있다면 맞춤제작소의 채팅 기능까지 구현하는 것을 목표로 설정했습니다."
+              "기업에서 제공한 기획안을 분석해 기업의 니즈가 무엇인지 파악했습니다.",
+              "구체적인 디자인이나 서비스에 대한 가이드라인이 없었기 때문에 직접 UX/UI를 기획했습니다.",
+              "우선은 fireBase와 파형 없이 필수 구현 사항 먼저 구현하고 추가적으로 구현하는 agile한 방식으로 작업을 진행하기로 결정했습니다.",
+              "Trello를 통해 티켓을 관리하고 매일 오전 10시 30분에 Standup Meeting을 진행하고 제출 전날 최종 점검시간을 가지기로 했습니다."
             ]
           },
           {
-            "title": "Planning Meeting 2: 역할 분담, 컨벤션",
+            "title": "Planning Meeting 2: fireBase와 파형 추가",
             "content": [
-              "각자 원하는 기능을 소개하고 겹치는 부분이 있으면 조율하면서 역할을 분담했습니다.",
-              "코드 컨벤션과 Git 컨벤션을 정리했습니다. ",
-              "Git 컨벤션의 경우 Header, body, Footer 구조로 작성했습니다."
+              "fireBase 없이 세션스토리지에 녹음 파일을 저장했었는데 이 방식은 페이지를 끄면 저장 내용이 다 사라진다는 단점이있었습니다.",
+              "또한 기존의 음성파일 재생 라이브러리가 파형 라이브러리와 같이 사용할 수 없다는 점을 알게 되어 둘 중 하나를 선택해야했습니다.",
+              "논의해본 결과 시간이 조금 촉박했지만 그래도 fireBase와 파형을 사용하여 애플리케이션의 완성도를 높이는 방향으로 결정했습니다."
             ]
           },
           {
-            "title": "Planning Meeting 3: 새로운 기획 회의",
+            "title": "최종 점검: 각종 Error 해결",
             "content": [
-              "클론 페이지인 모두의 공방이 리뉴얼에 들어가서 UI가 제대로 보이지 않는 문제가 발생되어 이를 해결하기 위해 3번 째 플래닝 미팅을 갖게 되었습니다.",
-              "모두의 공방 측에 문의해본 결과 리뉴얼 기간이 2~3개월 정도 될것이라는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다. 이미 어느정도 프로젝트가 진행된 상황이었기 때문에 다른 사이트를 찾는 것 보다 저희가 직접 기획 및 디자인을하여 우리들만의 사이트를 만들기로 했습니다.",
-              "비슷한 형태의 웹사이트인 오늘의 집, 무신사 등 웹사이트들의 UI를 같이 분석하고 차용하면 괜찮을 부분들을 참고해 제작했습니다. 핀터레스트에서 웹페이지 디자인을 검색해 참고하는 것도 많은 도움이 되었습니다.",
-              "리뉴얼 이슈가 발생하여 시간이 부족할 것 같다는 판단을 내렸고 맞춤 제작소 부분은 과감히 제외시켰습니다. 대신에 제작자 페이지를 만들어서 팀원들의 프로필을 넣어 우리만의 공방 페이지를 만들었습니다.",
-              "팀원들에게 UI 피드백을 수시로 받으며 직관적인 UI를 구현하기 위해 노력했습니다."
-            ]
-          },
-          {
-            "title": "Daily Stand-Up meeting",
-            "content": [
-              "프로젝트 진행 기간동안 매일 오후 2시에 30분 내외로 스탠드업미팅을 진행했습니다.",
-              "진행상황을 공유하고 공유해야할 이슈를 공유했습니다."
-            ]
-          },
-          {
-            "title": "GIT Flow 방식",
-            "content": [
-              "개발 사항을 main 브랜치에 병합하지 않고 develop 브랜치에 병합하고 마지막에 main branch에 병합했습니다.",
-              "새로운 UI 또는 기능을 구현할 때 또는 발견된 버그를 처리할 때 마다 Issue를 등록해 팀원들의 진행상황을 tracking 할 수 있도록했습니다.",
-              "Issue를 등록할 때 태그를 적극적으로 활용했고 작업 내용을 구체적으로 작성했습니다.",
-              "commit을 남길 때 헤더-바디-푸터 구조로 작성하여 작업 내용을 세세하게 기록할 수 있도록 했습니다. 푸터에 Issue 번호를 적어서 어떤 Issue에 속한 작업인지 기록했습니다.",
-              "PR은 하나의 Issue가 완료 될 때 마다 올렸습니다. PR이 Issue와 연동되도록했습니다."
+              "Firebase에 저장된 음성 파일이 재생되지 않는 문제가 발생했는데 진영님이 저장할 때 mp3확장자를 추가하여 해결되었다.",
+              "음성 녹음 파일이 없을 경우 재생 화면에 안내 문구가 뜨도록 수정했다."
             ]
           }
         ],
         "Feature": [
           {
-            "page_name": "메인 페이지",
-            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
+            "page_name": "재생 페이지",
+            "page_gif": "../images/projects/features/haii/haii-play.gif",
             "features": [
               {
-                "feature_name": "Drop down menu",
+                "feature_name": "파형 삽입",
                 "code_img": [
-                  "../images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/haii/play-record.png"
                 ],
                 "explain": [
-                  "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
-                ]
-              },
-              {
-                "feature_name": "Carousel 베너 광고",
-                "code_img": [
-                  "../images/projects/features/modu/modu-carousel.png"
-                ],
-                "explain": [
-                  "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
-                  "참고 사이트가 리뉴얼에 들어가서 참고할 이미지가 없었습니다. 핀터레스트에 베너 광고 이미지들을 검색해서 디자인을 참고하여 직접 제작했습니다."
-                ]
-              },
-              {
-                "feature_name": "신상품 및 인기상품 리스트 ",
-                "code_img": [
-                  "../images/projects/features/modu/modu-mainpagelist.png"
-                ],
-                "explain": [
-                  "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
-                  "아이템카드 컴포넌트를 재사용하여 리스트를 구현했습니다.",
-                  "표현식과 useParams를 활용해 상품을 클릭했을 때 해당 상품의 상세페이지로 넘어갈 수 있도록 동적라우팅을 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "상품 리스트 페이지",
-            "page_gif": "../images/projects/features/modu/modu-category.gif",
-            "features": [
-              {
-                "feature_name": "정렬 기능",
-                "code_img": [
-                  "../images/projects/features/modu/modu-ordering.png"
-                ],
-                "explain": [
-                  "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
-                  "정렬조건이 바뀔 때 마다 state값이 변경 되도록 하고 이 state 값을 통신 요청 URI에 표현식으로 넣어서",
-                  "state 값이 변경 되면 요청 URI가 변경되어 조건에 맞는 정렬 순서대로 데이터를 받아와 출력하도록 구현했습니다."
-                ]
-              },
-              {
-                "feature_name": "무한스크롤 기능",
-                "code_img": [
-                  "../images/projects/features/modu/modu-infinitescroll.png"
-                ],
-                "explain": [
-                  "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
-                  "스크롤이 끝에 닿을 때 마다 offset이라는 state를 1씩 증가되게 하고 이 offset을 요청 URI에 표현식으로 넣어서 계속해서 추가로 데이터를 요청하도록 구현했습니다.",
-                  "하지만 데이터의 양이 한정적이어서 실제로는 한번 밖에 상품 리스트가 추가되지 않아 이 부분이 아쉬웠습니다.",
-                  "useEffect의 의존성 배열과 표현식, return함수를 활용해 정렬기능이 적용된 상태에서 무한스크롤이 작동할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "장바구니 페이지",
-            "page_gif": "../images/projects/features/modu/modu-cart.gif",
-            "features": [
-              {
-                "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": ["../images/projects/features/modu/modu-cart.png"],
-                "explain": [
-                  "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
-                  "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "제작자 페이지",
-            "page_gif": "../images/projects/features/modu/modu-developer.gif",
-            "features": [
-              {
-                "feature_name": "팀원 프로필 카드 제작",
-                "code_img": [
-                  "../images/projects/features/modu/modu-developers.png"
-                ],
-                "explain": [
-                  "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
-                  "새로운 파일을 생성하지 않고 itemCard 컴포넌트를 재사용하여 구현했습니다."
+                  "wavesurfer-react라이브러리를 사용해 음성 파일 파형을 구현했다.",
+                  "selectedRecord 는 fireBase에서 받아온 재생파일이다. 이를 audio 태그의 src에 삽입해 선택한 음성 파일을 재생할 수 있도록 구현했다."
                 ]
               }
             ]
@@ -1233,47 +1121,38 @@
         ],
         "Trouble_Shooting": [
           {
-            "title": "클론 페이지 리뉴얼 이슈",
+            "title": "fireBase의 도입",
             "explain": [
-              "프로젝트를 시작하고 얼마 지나지 않아 모두의 공방 페이지가 리뉴얼에 들어가서 UI 및 기능들이 보이지 않았습니다.",
-              "프론트 개발자에게는 눈을 감고 개발을 하라는 격이었기 때문에 상당히 당황스러웠습니다."
+              "제출 기간 이틀 전에 fireBase와 파형을 도입하기로 결정해서 시간이 부족했습니다. ",
+              "인이 재생을 맡았기 때문에 녹음 기능과 재생 리스트가 완성되어야 최종적으로 재생 기능을 완성할 수 있었기 때문에 전날 밤에야 서로의 기능을 합치면서 제대로 구현할 수 있었습니다."
             ],
             "subtitle": "문제 상황 파악",
             "figure_out": [
-              "먼저 모두의 공방 고객센터에 전화해 상황을 파악했습니다. 대대적으로 리뉴얼에 들어갔기 때문에 2개월 정도 소요된다는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다.",
-              "결국 저희만의 사이트를 만들기로 결정했고 팀원들과 자주 소통하며 디자인 부터 기능까지 저희가 직접 기획하고 구현했습니다."
+              "합치는 과정에서 다양한 에러를 만났습니다.",
+              "가장 당황스러웠던 것은 기껏 fireBase를 도입했는데 재생이 안됐습니다."
             ],
             "subtitle_2": "문제 해결 과정",
             "problem_solving": [
-              "저희는 먼저 구현할 기능들을 명확하게  정했습니다. 마이페이지의 경우 user의 정보와 구매 목록 및 찜 목록을 출력하고 구매 목록에서 ‘리뷰 작성하기’ 버튼을 누르면 해당 상품의 리뷰를 작성할 수 있도록 리뷰작성 페이지로 넘어가도록 하는 목표를 세웠습니다.",
-              "그리고 목표와 유사한 웹페이지가 있는지 조사를 했습니다. 그 결과 무신사의 마이페이지가 저희가 기획한 바와 유사하게 구성이 되어있었습니다. 이에 무신사의 마이페이지를 참고하여 제작하기로 결정했습니다.",
-              "장바구니 페이지의 경우 수량 변경 및 삭제 그리고 배송비와 전체 가격을 따로 계산하는 것을 목표로 했습니다.",
-              "참고할 사이트를 조사하다가 오늘의 집의 장바구니 페이지가 저희 프로젝트와 디자인 무드도 잘 맞고 배송비 및 전체 가격 표시 되는 부분이 깔끔해서 오늘의 집을 참고하여 제작하기로 결정했습니다. "
+              "해결방법은 의외로 간단했습니다. 저장할 때 끝에 mp3확장자를 추가하면 됐습니다."
             ],
             "subtitle_3": "느낀점",
             "lesson": [
-              "처음에는 당황스러웠지만 직접 기획을하면서 사용자의 입장에서 서비스를 구축해볼 수 있는 좋은 기회였습니다. "
+              "새벽까지 고생을 많이 했지만 그만큼 완성도가 높아진 것 같아서 뿌듯했습니다."
             ]
           }
         ],
         "Level_up": [
-          "Git flow 방식으로 협업하는 방법을 배울 수 있었습니다.",
-          "component 재사용의 편리성에 대해 느낄 수 있었습니다",
-          "useEffect의 dependency array를 활용한 동적라우팅",
-          "백엔드와 소통하여 offset & limit을 설정, 무한 스크롤 구현",
-          "windows height를 활용하여 무한스크롤 구현"
+          "firebase를 경험해볼 수 있었습니다.",
+          "wave-srfer 라이브러리를 커스텀하는 방법을 터득했습니다.",
+          "빠르게 변화를 수용하고 수정하는 것에 더 긍정적인 마인드를 갖게 되었습니다."
         ],
         "review": [
           {
-            "sub_titile": "클린코드의 중요성",
+            "sub_titile": "흥미로웠던 기능",
             "explain": [
-              "그동안에는 구현에 집중하느라 클린 코딩의 중요성에 대해 생각할 겨를이 없었는데 이번 프로젝트는 팀원들의 코드들도 뜯어보면서 많이 배울 수 있었습니다. 특히 API 파일을 따로 관리해 임포트해서 쓰는 방식을 보고 다음 프로젝트 때 적용해봐야겠다 생각했습니다."
-            ]
-          },
-          {
-            "sub_titile": "최적화에 대하여...",
-            "explain": [
-              "리액트는 배울수록 아직 배울게 많다는 것을 느낍니다. 특히 최적화에 대한 이해도가 부족하다고 느껴 최적화에 대해 공부할 필요가 있다고 생각했습니다. 또한 프론트엔드 개발자에게 SEO도 정말 중요한데 다음 프로젝트 때는 최적화와 SEO 모두 신경 써서 작업해봐야겠다 생각했습니다."
+              "처음에는 react-audio-player라는 라이브러리를 사용하여 음악 재생 UI를 구현했었는데 멈춤 재생 뿐만 아니라 빨리감기 등 다양한 기능을 적용할 수 있어서 흥미로웠습니다.",
+              "이 라이브러리를 활용해 음악 재생 애플리케이션을 만들어 봐야겠다 생각했습니다.",
+              "파형을 구현하는 것도 재미있었습니다. "
             ]
           }
         ]
