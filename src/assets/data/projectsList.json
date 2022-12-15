@@ -1169,208 +1169,111 @@
       "blog_url": "0",
       "details": {
         "breif_info": {
-          "introduction": "2주일 동안 모두의공방 페이지의 모든 기능을 직접 구현해보는 클론 프로젝트입니다.",
-          "period": "2022/09/19 ~ 2022/09/30",
-          "team": "Backend 2명, Frontend 3명"
+          "introduction": "기업 비트바이트에서 제공한 기획안 및 figma를 토대로 상품 리스트 페이지 및 상품 상세 페이지를 구현했습니다.",
+          "period": "2022/10/04 ~ 2022/10/06",
+          "team": "Frontend 6명"
         },
         "project_introduction": [
-          "모두의 공방은 원하는 공방을 쉽고 빠르게 찾을 수 있는 맞춤 제작 전문 플랫폼입니다.",
-          "모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤 제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는 디자인마켓으로 이루어져있습니다.",
-          "저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고 싶어서 모두의 공방을 선택했습니다."
+          "비트바이트는 이모티콘과 터치 키보드를 결합한 서비스인 플레이키보드를 만드는 회사입니다.",
+          "플레이 키보드의 웹스토어를 제작하는 과제를 받아 진행했습니다.",
+          "메인페이지와 상세페이지로 구성되어 있고 메인페이지는 api 통신을 통하여 데이터를 불러온 뒤 Nav, 테마리스트, Footer 반응형 UI 구현했고, 테마리스트 무한스롤을 구현했습니다.",
+          "상세페이지는 api 통신을 통하여 데이터를 불러온 뒤 테마 데이터가 있을때만 UI를 보여주도록 구현, 없을 경우 404이미지 표시했습니다.",
+          "figma를 참고하여 UI를 구현했고 반응형웹으로 제작했습니다."
         ],
         "links": [
           {
             "link_name": "프론트엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-front"
+            "link_url": "https://github.com/seyoung97/playkeyboard"
           },
-          {
-            "link_name": "백엔드 레포",
-            "link_url": "https://github.com/wecode-bootcamp-korea/justcode-6-2nd-team4-back"
-          },
+
           {
             "link_name": "팀 노션",
-            "link_url": "https://www.notion.so/wecode/4-7769dc42856248299aa5d32009b313e9"
+            "link_url": "https://www.notion.so/wecode/5-be0cbabf20314a74977e8d130e84e194"
           },
           {
-            "link_name": "회고록",
-            "link_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+            "link_name": "배포링크",
+            "link_url": "https://elaborate-hotteok-6003a1.netlify.app"
           }
         ],
-        "video_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
+        "video_url": "https://www.youtube.com/watch?v=2R2xrZSodME",
         "tech_stack": [
           {
             "position": "Front End",
             "skills": [
               "HTML",
-              "Sass",
-              "Javascript",
+              "styled-component",
+              "TypeScript",
               "React",
-              "CRA",
+              "Vite",
               "React-router",
               "axios",
               "Font Awesome"
             ]
           },
           {
-            "position": "Back End",
-            "skills": ["Node.js", "Express.js", "MYSQL"]
-          },
-          {
             "position": "Communication",
-            "skills": ["Slack", "Notion", "Zep"]
+            "skills": ["Slack", "Notion", "Trello", "Zep"]
           }
         ],
         "structure": {
           "img_url": [
-            "../images/projects/structure/modu/cart_structure.png",
-            "../images/projects/structure/modu/itemcard_structure.png",
-            "../images/projects/structure/modu/navigationbar_structure.png",
-            "../images/projects/structure/modu/modu_pages.png"
+            "../images/projects/structure/playkeyboard/playkeyboard-structure.png"
           ],
           "explain": [
             "모든 컴포넌트들은 components 폴더 내에서 관리했고 components 폴더 하위에 기능별로 폴더들을 만들어서 파일들을 분류했습니다.",
-            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다.",
-            "빨강색 글자로 적혀진 폴더는 본인이 담당했던 페이지들 입니다."
+            "페이지들은 pages 폴더 에서 관리했고 components들을 조립하여 하나의 페이지가 구성 될 수 있도록 했습니다."
           ]
         },
         "cooperation": [
           {
-            "title": "Planning Meeting 1: 주제선정,범위설정",
+            "title": "Planning Meeting 1: 기획안 분석, 역할 분담",
             "content": [
-              "각자 2개 이상의 웹페이지를 찾아와서 소개하는 시간을 가졌습니다.",
-              "투표를 통해 모두의 공방을 클론 페이지로 선정했습니다. 일반적인 이커머스가 아닌 맞춤 제작이라는 점에서 다양한 옵션 선택 기능이나 필터링 기능을 구현해볼 수 있는 기회라고 생각해서 선택했습니다.",
-              "함께 웹사이트를 둘러보면서 주요 기능과 사이트의 흐름을 파악했습니다.",
-              "시간 제약이 있는 만큼 구현할 기능과 제외할 기능들을 명확하게 나눴습니다. 저희는 우선 디자인 마켓의 주요 기능들을 구현한 후 시간이 있다면 맞춤제작소의 채팅 기능까지 구현하는 것을 목표로 설정했습니다."
+              "비트바이트에서 제공한 기획안을 같이 분석하면서 출제 의도를 파악했습니다.",
+              "논의 결과 figma를 토대로 레이아웃을 잡고 UI를 구현하는 것과 반응형으로 제작하는 것이 중요하다고 판단했습니다.",
+              "6명이서 기능을 나누기가 애매했습니다. 기능들이 서로 유기적이어서 여러사람이 나눠서 작업을 하는 것이 어렵기도했고 모두 핵심적인 기능을 맡아서 하고싶은 마음이 있었습니다.",
+              "장시간의 논의 끝에 메인 페이지 3명이 각각 navigation bar, 상품리스트 그리고 푸터/무한스크롤을 구현하기로 했습니다.",
+              "상세 페이지도 3명이서 화면의 각각 상단부분, 중간부분 하단부분을 맡아 진행하기로했습니다.",
+              "매일 오전 10시에 stand up 미팅을 진행하고 제출 전날 최종점검을하기로 했습니다."
             ]
           },
           {
-            "title": "Planning Meeting 2: 역할 분담, 컨벤션",
+            "title": "최종 점검",
             "content": [
-              "각자 원하는 기능을 소개하고 겹치는 부분이 있으면 조율하면서 역할을 분담했습니다.",
-              "코드 컨벤션과 Git 컨벤션을 정리했습니다. ",
-              "Git 컨벤션의 경우 Header, body, Footer 구조로 작성했습니다."
-            ]
-          },
-          {
-            "title": "Planning Meeting 3: 새로운 기획 회의",
-            "content": [
-              "클론 페이지인 모두의 공방이 리뉴얼에 들어가서 UI가 제대로 보이지 않는 문제가 발생되어 이를 해결하기 위해 3번 째 플래닝 미팅을 갖게 되었습니다.",
-              "모두의 공방 측에 문의해본 결과 리뉴얼 기간이 2~3개월 정도 될것이라는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다. 이미 어느정도 프로젝트가 진행된 상황이었기 때문에 다른 사이트를 찾는 것 보다 저희가 직접 기획 및 디자인을하여 우리들만의 사이트를 만들기로 했습니다.",
-              "비슷한 형태의 웹사이트인 오늘의 집, 무신사 등 웹사이트들의 UI를 같이 분석하고 차용하면 괜찮을 부분들을 참고해 제작했습니다. 핀터레스트에서 웹페이지 디자인을 검색해 참고하는 것도 많은 도움이 되었습니다.",
-              "리뉴얼 이슈가 발생하여 시간이 부족할 것 같다는 판단을 내렸고 맞춤 제작소 부분은 과감히 제외시켰습니다. 대신에 제작자 페이지를 만들어서 팀원들의 프로필을 넣어 우리만의 공방 페이지를 만들었습니다.",
-              "팀원들에게 UI 피드백을 수시로 받으며 직관적인 UI를 구현하기 위해 노력했습니다."
-            ]
-          },
-          {
-            "title": "Daily Stand-Up meeting",
-            "content": [
-              "프로젝트 진행 기간동안 매일 오후 2시에 30분 내외로 스탠드업미팅을 진행했습니다.",
-              "진행상황을 공유하고 공유해야할 이슈를 공유했습니다."
-            ]
-          },
-          {
-            "title": "GIT Flow 방식",
-            "content": [
-              "개발 사항을 main 브랜치에 병합하지 않고 develop 브랜치에 병합하고 마지막에 main branch에 병합했습니다.",
-              "새로운 UI 또는 기능을 구현할 때 또는 발견된 버그를 처리할 때 마다 Issue를 등록해 팀원들의 진행상황을 tracking 할 수 있도록했습니다.",
-              "Issue를 등록할 때 태그를 적극적으로 활용했고 작업 내용을 구체적으로 작성했습니다.",
-              "commit을 남길 때 헤더-바디-푸터 구조로 작성하여 작업 내용을 세세하게 기록할 수 있도록 했습니다. 푸터에 Issue 번호를 적어서 어떤 Issue에 속한 작업인지 기록했습니다.",
-              "PR은 하나의 Issue가 완료 될 때 마다 올렸습니다. PR이 Issue와 연동되도록했습니다."
+              "각자 맡은 부분을 합치고 오류가 나는 부분이 있는지 점검했습니다.",
+              "스켈레톤 UI와 상세페이지 정보가 없을 경우 404페이지가 보여지게 수정했습니다.",
+              "같이 프로젝트를 소개하는 ReadMe를 작성했습니다."
             ]
           }
         ],
         "Feature": [
           {
             "page_name": "메인 페이지",
-            "page_gif": "../images/projects/features/modu/modu-mainpage.gif",
+            "page_gif": "../images/projects/features/playkeyboard/playkeyboard-main.gif",
             "features": [
               {
-                "feature_name": "Drop down menu",
+                "feature_name": "Footer UI",
                 "code_img": [
-                  "../images/projects/features/modu/modu-dropdownmenu.png"
+                  "../images/projects/features/playkeyboard/footer.png"
                 ],
                 "explain": [
-                  "조건부 함수와 MouseEnter 이벤트를 활용해 드롭다운 메뉴를 구현했습니다."
+                  "파일 구조: components > Footer.tsx",
+                  "typescript를 사용한 통신을 경험해보고 싶어서 mockData를 만들어서 axios로 통신으로 데이터를 받아 온 뒤 map함수로 아이콘들을 출력했습니다.",
+                  "async 와 await으로 비동기 처리를 했습니다. generic을 사용해 응답으로 받을 데이터의 타입을 정의했습니다.",
+                  "응답 받은 데이터를 Footer라는 state에 담았습니다.",
+                  "Footer의 아이콘을 클릭하면 아이콘의 id를 인자로 받는 handelOnClick함수가 실행되어 iconNumber의 state가 클릭한 아이콘의 id로 변경되도록 했습니다.",
+                  "iconNumber가 클릭한 id와 동일하다면 아이콘의 색상이 변경되도록 구현했습니다."
                 ]
               },
               {
-                "feature_name": "Carousel 베너 광고",
+                "feature_name": "무한 스크롤",
                 "code_img": [
-                  "../images/projects/features/modu/modu-carousel.png"
+                  "../images/projects/features/playkeyboard/infinite-scroll.png"
                 ],
                 "explain": [
-                  "swiper 라이브러리를 사용해 베너 광고 부분을 carousel로 구현했습니다.",
-                  "참고 사이트가 리뉴얼에 들어가서 참고할 이미지가 없었습니다. 핀터레스트에 베너 광고 이미지들을 검색해서 디자인을 참고하여 직접 제작했습니다."
-                ]
-              },
-              {
-                "feature_name": "신상품 및 인기상품 리스트 ",
-                "code_img": [
-                  "../images/projects/features/modu/modu-mainpagelist.png"
-                ],
-                "explain": [
-                  "신상품과 인기상품 리스트부분은 라이브러리를 따로 사용하지 않고 JavaScript로 직접 슬라이드 기능을 구현했습니다.",
-                  "아이템카드 컴포넌트를 재사용하여 리스트를 구현했습니다.",
-                  "표현식과 useParams를 활용해 상품을 클릭했을 때 해당 상품의 상세페이지로 넘어갈 수 있도록 동적라우팅을 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "상품 리스트 페이지",
-            "page_gif": "../images/projects/features/modu/modu-category.gif",
-            "features": [
-              {
-                "feature_name": "정렬 기능",
-                "code_img": [
-                  "../images/projects/features/modu/modu-ordering.png"
-                ],
-                "explain": [
-                  "백엔드와 통신하여 추천순, 판매량순, 낮은 가격순 , 높은 가격 순 정렬기능을 구현했습니다.",
-                  "정렬조건이 바뀔 때 마다 state값이 변경 되도록 하고 이 state 값을 통신 요청 URI에 표현식으로 넣어서",
-                  "state 값이 변경 되면 요청 URI가 변경되어 조건에 맞는 정렬 순서대로 데이터를 받아와 출력하도록 구현했습니다."
-                ]
-              },
-              {
-                "feature_name": "무한스크롤 기능",
-                "code_img": [
-                  "../images/projects/features/modu/modu-infinitescroll.png"
-                ],
-                "explain": [
-                  "windows의 scroll height 와 scroll event를 활용하여 무한스크롤 기능을 구현했습니다.",
-                  "스크롤이 끝에 닿을 때 마다 offset이라는 state를 1씩 증가되게 하고 이 offset을 요청 URI에 표현식으로 넣어서 계속해서 추가로 데이터를 요청하도록 구현했습니다.",
-                  "하지만 데이터의 양이 한정적이어서 실제로는 한번 밖에 상품 리스트가 추가되지 않아 이 부분이 아쉬웠습니다.",
-                  "useEffect의 의존성 배열과 표현식, return함수를 활용해 정렬기능이 적용된 상태에서 무한스크롤이 작동할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "장바구니 페이지",
-            "page_gif": "../images/projects/features/modu/modu-cart.gif",
-            "features": [
-              {
-                "feature_name": "장바구니 수량변경, 삭제 기능 구현",
-                "code_img": ["../images/projects/features/modu/modu-cart.png"],
-                "explain": [
-                  "버튼에 value값을 부여해 해당 아이템의 수량/가격만 변동및 삭제되도록 구현했습니다.",
-                  "map함수와 reduce함수를 사용해 제품가격, 총배송비, 총결제가격을 표시하고 변동을 트래킹할 수 있도록 구현했습니다."
-                ]
-              }
-            ]
-          },
-          {
-            "page_name": "제작자 페이지",
-            "page_gif": "../images/projects/features/modu/modu-developer.gif",
-            "features": [
-              {
-                "feature_name": "팀원 프로필 카드 제작",
-                "code_img": [
-                  "../images/projects/features/modu/modu-developers.png"
-                ],
-                "explain": [
-                  "팀원들의 아바타를 아이폰 이모지 기능을 활용해 직접 제작했습니다.",
-                  "새로운 파일을 생성하지 않고 itemCard 컴포넌트를 재사용하여 구현했습니다."
+                  "scroll even를 활용해 무한 스크롤을 구현했습니다.",
+                  "백엔드 없이 프론트단에서 구현해야했기 때문에 데이터를 받을 때 slice 메서드로 화면에 보여줄 만큼만 데이터를 받아오도록 했습니다.",
+                  "limit은 스크롤이 끝에 닿을 때 마다 8씩 추가되는 state로 slice의 두번째 인자로 들어가 데이터의 양을 조절하도록 했습니다.",
+                  "다른 카테고리를 누르면 처음 가져오는 양인 15개가 되게하기 위해 Nav.tsx 컴포넌트에 setLimit함수를 프롭스로 넘겨 onClick 이벤트가 발생하면 limit이 다시 15가 되도록 구현했습니다."
                 ]
               }
             ]
@@ -1378,47 +1281,42 @@
         ],
         "Trouble_Shooting": [
           {
-            "title": "클론 페이지 리뉴얼 이슈",
+            "title": "타입스크립트",
             "explain": [
-              "프로젝트를 시작하고 얼마 지나지 않아 모두의 공방 페이지가 리뉴얼에 들어가서 UI 및 기능들이 보이지 않았습니다.",
-              "프론트 개발자에게는 눈을 감고 개발을 하라는 격이었기 때문에 상당히 당황스러웠습니다."
+              "타입스크립트를 학습하지 않은 상태였기 때문에 처음에 막막했습니다."
             ],
             "subtitle": "문제 상황 파악",
             "figure_out": [
-              "먼저 모두의 공방 고객센터에 전화해 상황을 파악했습니다. 대대적으로 리뉴얼에 들어갔기 때문에 2개월 정도 소요된다는 답변을 받았고 기다리고만 있을 수 없다는 판단을 내렸습니다.",
-              "결국 저희만의 사이트를 만들기로 결정했고 팀원들과 자주 소통하며 디자인 부터 기능까지 저희가 직접 기획하고 구현했습니다."
+              "타입스크립트를 모르는 상태에서 프로젝트를 진행하다보니 통신할 때나 프롭스를 지정할 때 에러가 발생했습니다."
             ],
             "subtitle_2": "문제 해결 과정",
             "problem_solving": [
-              "저희는 먼저 구현할 기능들을 명확하게  정했습니다. 마이페이지의 경우 user의 정보와 구매 목록 및 찜 목록을 출력하고 구매 목록에서 ‘리뷰 작성하기’ 버튼을 누르면 해당 상품의 리뷰를 작성할 수 있도록 리뷰작성 페이지로 넘어가도록 하는 목표를 세웠습니다.",
-              "그리고 목표와 유사한 웹페이지가 있는지 조사를 했습니다. 그 결과 무신사의 마이페이지가 저희가 기획한 바와 유사하게 구성이 되어있었습니다. 이에 무신사의 마이페이지를 참고하여 제작하기로 결정했습니다.",
-              "장바구니 페이지의 경우 수량 변경 및 삭제 그리고 배송비와 전체 가격을 따로 계산하는 것을 목표로 했습니다.",
-              "참고할 사이트를 조사하다가 오늘의 집의 장바구니 페이지가 저희 프로젝트와 디자인 무드도 잘 맞고 배송비 및 전체 가격 표시 되는 부분이 깔끔해서 오늘의 집을 참고하여 제작하기로 결정했습니다. "
+              "타입스크립트에 대해 기본적인 것을 우선 익혀야한다는 생각에 프로젝트 첫날은 타입스크립트를 학습했습니다.",
+              "타입스크립트 공식문서를 많이 참고했고 동영상 강의를 찾아봤습니다.",
+              "기본적인 개념을 학습한 후 통신이나 프롭스 지정할 때 타입스크립트 경험이 있는 팀원의 코드를 참고하여 작성했습니다."
             ],
             "subtitle_3": "느낀점",
             "lesson": [
-              "처음에는 당황스러웠지만 직접 기획을하면서 사용자의 입장에서 서비스를 구축해볼 수 있는 좋은 기회였습니다. "
+              "타입스크립트가 왜 필요한지 사용하면서 느낄 수 있었습니다. 컴파일 단계에서 미리 오류를 수정해주기 때문에 큰 프로제트를 진행할 때 정말 도움이 많이 될것같다고 느꼈습니다."
             ]
           }
         ],
         "Level_up": [
-          "Git flow 방식으로 협업하는 방법을 배울 수 있었습니다.",
-          "component 재사용의 편리성에 대해 느낄 수 있었습니다",
-          "useEffect의 dependency array를 활용한 동적라우팅",
-          "백엔드와 소통하여 offset & limit을 설정, 무한 스크롤 구현",
-          "windows height를 활용하여 무한스크롤 구현"
+          "TypeScript를 사용해 프로젝트를 완성했습니다.",
+          "백엔드 없이 자바스크립트를 활용해 무한스크롤을 구현하는 방법을 터득했습니다."
         ],
         "review": [
           {
-            "sub_titile": "클린코드의 중요성",
+            "sub_titile": "첫 타입스크립트",
             "explain": [
-              "그동안에는 구현에 집중하느라 클린 코딩의 중요성에 대해 생각할 겨를이 없었는데 이번 프로젝트는 팀원들의 코드들도 뜯어보면서 많이 배울 수 있었습니다. 특히 API 파일을 따로 관리해 임포트해서 쓰는 방식을 보고 다음 프로젝트 때 적용해봐야겠다 생각했습니다."
+              "타입스크립트를 항상 배우고싶었는데 이번 기회에 배울 수 있어서 좋았습니다. 더 깊이 공부해서 큰 프로젝트를 진행할 때 사용해보고싶습니다."
             ]
           },
           {
-            "sub_titile": "최적화에 대하여...",
+            "sub_titile": "무한스크롤을 구현할 수 있는 다른 방법",
             "explain": [
-              "리액트는 배울수록 아직 배울게 많다는 것을 느낍니다. 특히 최적화에 대한 이해도가 부족하다고 느껴 최적화에 대해 공부할 필요가 있다고 생각했습니다. 또한 프론트엔드 개발자에게 SEO도 정말 중요한데 다음 프로젝트 때는 최적화와 SEO 모두 신경 써서 작업해봐야겠다 생각했습니다."
+              "이번에 조사하면서 intersection observer로 무한스크롤을 구현하는 것이 성능상 더 좋다는 것을 알았습니다.",
+              "이번 프로젝트에는 타입스크립트에 집중하느라 적용해보지 못했지만 추후에 리팩토링을 진행하고싶습니다."
             ]
           }
         ]
