@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
   body {
-    width: 1920px;
-    margin: 0 auto;
+    /* width: 1920px;
+    margin: 0 auto; */
     font-family: 'Noto Sans KR', sans-serif;
     background-color: rgb(33, 32, 33);
     /* position: relative;  */

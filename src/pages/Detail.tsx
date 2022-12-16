@@ -24,14 +24,14 @@ const Detail = ({ projectsData }: DetailProps) => {
   }
 
   return (
-    <Section>
+    <Wrap>
       <Content projectData={projectData} />
       <Index indexData={projectData} />
-    </Section>
+    </Wrap>
   );
 };
 
-const Section = styled.section`
+const Wrap = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
