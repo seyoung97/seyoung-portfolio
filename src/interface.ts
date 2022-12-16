@@ -1,7 +1,9 @@
 export interface SkillsInfo {
   id: number;
+  skill_type: string;
   skillName: string;
   imgUrl: string;
+  projects: { project_name: string; link: string }[];
 }
 
 export interface ProjectDetailType {

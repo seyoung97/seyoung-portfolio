@@ -13,8 +13,7 @@ import ExperienceData from "../../assets/data/education.json";
 
 const AboutMe = () => {
   const skillsTitle = TitleData[0];
-  const frontList = useMemo(() => SkillsList["Front-end"], []);
-  const communicationList = useMemo(() => SkillsList.communication, []);
+  const techStack = useMemo(() => SkillsList["tech_stack"], []);
   const ExperienceList = useMemo(() => ExperienceData, []);
   const [category, setCategory] = useState("selfIntroduction");
 
@@ -61,23 +60,9 @@ const AboutMe = () => {
       {category === "techStack" ? (
         <SkillsSection>
           <article>
-            <h2>Front-end</h2>
             <div>
-              {frontList.map((frontSkills) => {
+              {techStack.map((frontSkills) => {
                 return <Skills key={frontSkills.id} content={frontSkills} />;
-              })}
-            </div>
-          </article>
-          <article>
-            <h2>Communication</h2>
-            <div>
-              {communicationList.map((communicationSkills) => {
-                return (
-                  <Skills
-                    key={communicationSkills.id}
-                    content={communicationSkills}
-                  />
-                );
               })}
             </div>
           </article>
@@ -173,24 +158,17 @@ const IntroductionArticle = styled.article`
 `;
 
 const SkillsSection = styled.section`
-  border-radius: 2%;
+  border: ${layout};
+  width: 100%;
+  height: 700px;
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+
   article {
-    width: 48.5%;
+    width: 80%;
     padding-bottom: 20px;
     border-radius: 5px;
-    background-color: rgb(211, 211, 211, 0.3);
-    h2 {
-      text-align: center;
-      color: ${darkGray};
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 20px 0px 10px 0px;
-    }
     div {
       display: flex;
       justify-content: center;

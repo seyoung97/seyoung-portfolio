@@ -1,66 +1,155 @@
 {
-  "Front-end": [
+  "tech_stack": [
     {
       "id": 0,
+      "skill_type": "UI",
       "skillName": "HTML5",
-      "imgUrl": "../images/skills/html-5.png"
+      "imgUrl": "../images/skills/html-5.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 1,
+      "skill_type": "UI",
       "skillName": "CSS",
-      "imgUrl": "../images/skills/css-3.png"
+      "imgUrl": "../images/skills/css-3.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 2,
+      "skill_type": "Packages",
       "skillName": "Sass",
-      "imgUrl": "../images/skills/sass.png"
+      "imgUrl": "../images/skills/sass.png",
+      "projects": [
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" }
+      ]
     },
     {
       "id": 3,
+      "skill_type": "Packages",
       "skillName": "styled-component",
-      "imgUrl": "../images/skills/img.png"
+      "imgUrl": "../images/skills/img.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 4,
+      "skill_type": "Language",
       "skillName": "JavaScript",
-      "imgUrl": "../images/skills/javsscript.png"
+      "imgUrl": "../images/skills/javsscript.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 5,
+      "skill_type": "Language",
       "skillName": "TypeScript",
-      "imgUrl": "../images/skills/typescript.png"
+      "imgUrl": "../images/skills/typescript.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 6,
+      "skill_type": "Framework",
       "skillName": "React",
-      "imgUrl": "../images/skills/physics.png"
-    }
-  ],
-  "communication": [
+      "imgUrl": "../images/skills/physics.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
+    },
     {
       "id": 7,
+      "skill_type": "Version Control",
       "skillName": "git",
-      "imgUrl": "../images/skills/git.png"
+      "imgUrl": "../images/skills/git.png",
+      "projects": [
+        { "project_name": "포트폴리오", "link": "/detail/P0" },
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "병원예약", "link": "/detail/I0" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 8,
+      "skill_type": "Cooperation",
       "skillName": "Slack",
-      "imgUrl": "../images/skills/slack.png"
+      "imgUrl": "../images/skills/slack.png",
+      "projects": [
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 9,
+      "skill_type": "Cooperation",
       "skillName": "Zep",
-      "imgUrl": "../images/skills/zep.png"
+      "imgUrl": "../images/skills/zep.png",
+      "projects": [
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 10,
+      "skill_type": "Cooperation",
       "skillName": "Notion",
-      "imgUrl": "../images/skills/letter-n.png"
+      "imgUrl": "../images/skills/letter-n.png",
+      "projects": [
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     },
     {
       "id": 11,
+      "skill_type": "Cooperation",
       "skillName": "Trello",
-      "imgUrl": "../images/skills/trello.png"
+      "imgUrl": "../images/skills/trello.png",
+      "projects": [
+        { "project_name": "사조의 공방", "link": "/detail/P1" },
+        { "project_name": "JUST MEAT", "link": "/detail/P2" },
+        { "project_name": "음성녹음", "link": "/detail/I1" },
+        { "project_name": "플레이키보드", "link": "/detail/I2" }
+      ]
     }
   ]
 }
