@@ -45,7 +45,7 @@ const Ul = styled.ul`
     padding: 20px 0px;
     text-align: center;
     border: 1px solid ${butter};
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: ${butter};
     cursor: pointer;
   }
@@ -54,11 +54,21 @@ const Ul = styled.ul`
     padding: 20px 0px;
     text-align: center;
     border: 1px solid ${butter};
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: ${darkGray};
     background-color: ${butter};
     cursor: pointer;
+  }
+  @media (max-width: 1520px) {
+    li.before {
+      padding: 12px 0px;
+      font-size: 1.1rem;
+    }
+    li.after {
+      padding: 12px 0px;
+      font-size: 1.1rem;
+    }
   }
 `;
 

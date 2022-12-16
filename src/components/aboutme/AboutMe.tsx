@@ -27,20 +27,28 @@ const AboutMe = () => {
             <img src={profileimg}></img>
           </div>
           <div className="introduction_container">
-            <p className="intro">안녕하세요, 남다른 성장곡선을 그리는 개발자</p>
+            <p className="intro">안녕하세요, 가파른 성장곡선을 그리는 개발자</p>
             <div className="name_box">
               <span className="name">정세영</span>
               <span className="end">입니다.</span>
             </div>
             <div className="content_box">
               <p>
-                개발자가 되기 전부터 제작하는 것에 큰 기쁨을 느끼며 살다가,{" "}
+                IT회사에서의 인턴십을 계기로 IT산업에 관심을 갖기 시작했습니다.{" "}
               </p>
-              <p>이제는 웹개발에 푹 빠져있습니다.</p>
               <p>
-                부트캠프를 통해 백엔드와 협업하여 프로젝트를 진행한 경험이 있고,
+                처음에는 PM을 지망했는데 준비하는 과정에서 기본적인 코딩 지식이
+                필요하다고 느껴 독학을 시작했습니다. 공부하면서 상상한 것을 직접
+                구현할 수 있는 개발의 매력에 매료되었고 개발자로 진로를
+                전향했습니다.
               </p>
-              <p>인턴십을 통해 디자이너와 figma로 협업한 경험이있습니다. </p>
+              <p>
+                비록 개발을 전공하지는 않았지만 개발자가 되기로 마음먹고 5개월
+                간 열정을 쏟아 공부했습니다. 부트캠프에 참여해 하루에 10시간
+                이상 코딩 공부에 매진했고 백엔드와 협업하여 두 번의 프로젝트를
+                진행했습니다. 인턴십을 통해 예약 기능, 음성 녹음 기능 등 다양한
+                기능들을 구현하면서 실력을 쌓았습니다.
+              </p>
               <p>
                 개발자의 생명은 꾸준함이라고 믿고 1일 1커밋과 기술 블로그를
                 운영하고 있습니다.
@@ -95,7 +103,7 @@ const AboutMe = () => {
 
 const AboutSection = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 const IntroductionArticle = styled.article`
@@ -120,10 +128,9 @@ const IntroductionArticle = styled.article`
     color: ${butter};
     .intro {
       font-size: 1.3rem;
-      margin-bottom: 20px;
     }
     .name_box {
-      margin: 30px 0px 100px 0px;
+      margin: 30px 0px 50px 0px;
       .name {
         font-size: 4rem;
         font-weight: bold;
@@ -139,7 +146,28 @@ const IntroductionArticle = styled.article`
     .content_box {
       p {
         margin-bottom: 10px;
+        line-height: 120%;
       }
+    }
+  }
+  @media (max-width: 1520px) {
+    div.img_box {
+      width: 400px;
+      height: 400px;
+      margin: 80px 0px 200px 0px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    div.img_box {
+      width: 350px;
+      height: 350px;
+      margin: 80px 0px 200px 0px;
+    }
+
+    .introduction_container {
+      width: 550px;
+      margin-left: 120px;
     }
   }
 `;

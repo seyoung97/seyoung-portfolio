@@ -42,17 +42,17 @@ const Header = () => {
             SeYoung
           </li>
         </Link>
-        <Link to="about" smooth={true} offset={-162}>
+        <Link to="about" smooth={true} offset={-104}>
           <li className="navigation" onClick={goMain}>
             About me
           </li>
         </Link>
-        <Link to="projects" smooth={true} offset={-170}>
+        <Link to="projects" smooth={true} offset={-120}>
           <li className="navigation" onClick={goMain}>
             Projects
           </li>
         </Link>
-        <Link to="internship" smooth={true} offset={-170}>
+        <Link to="internship" smooth={true} offset={-260}>
           <li className="navigation" onClick={goMain}>
             Internship
           </li>
