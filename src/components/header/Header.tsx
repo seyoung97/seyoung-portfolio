@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Section className="header">
+    <Nav className="header">
       <ul>
         <Link to="preview" smooth={true}>
           <li className="title" onClick={goMain}>
@@ -69,11 +69,11 @@ const Header = () => {
           <img src={resume}></img>
         </a>
       </div>
-    </Section>
+    </Nav>
   );
 };
 
-const Section = styled.section`
+const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,27 +81,18 @@ const Section = styled.section`
   position: fixed;
   top: 0%;
   z-index: 2;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(33, 32, 33, 1),
-    rgba(33, 32, 33, 0)
-  );
-
-  &.color_change {
-    background-color: ${darkGray};
-  }
 
   ul {
     display: flex;
     align-items: center;
     .title {
-      margin: 3.5rem 10rem 2rem 5rem;
+      margin: 40px 200px 20px 100px;
       font-size: 2rem;
       color: ${butter};
       cursor: pointer;
     }
     .navigation {
-      margin: 3.5rem 1rem 2rem 1rem;
+      margin: 40px 20px 20px 20px;
       font-size: 1.3rem;
       color: ${butter};
       cursor: pointer;
@@ -109,7 +100,7 @@ const Section = styled.section`
   }
 
   .links_container {
-    margin-right: 5rem;
+    margin-right: 100px;
     img {
       width: 1.6rem;
       margin: 0px 35px 0px 0px;
