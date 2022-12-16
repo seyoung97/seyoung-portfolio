@@ -21,7 +21,7 @@ const Skills = ({ content }: SkillsProps) => {
         <span>projects:</span>
         {content.projects.map((project) => {
           return (
-            <Link to={project.link}>
+            <Link to={project.link} key={project.project_name}>
               <span className="project_name">{project.project_name},</span>
             </Link>
           );
@@ -31,12 +31,10 @@ const Skills = ({ content }: SkillsProps) => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.ul`
   border: ${layout};
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin: 10px;
   border-radius: 5px;
 
   .skill_type {
@@ -49,7 +47,9 @@ const Container = styled.div`
     color: ${butter};
   }
   .img_name_box {
+    display: flex;
     justify-content: flex-start;
+    align-items: center;
     width: 100%;
     padding: 10px 15px;
     background-color: ${butter};
@@ -64,7 +64,7 @@ const Container = styled.div`
     }
     span {
       margin-left: 20px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: bold;
       color: ${darkGray};
     }

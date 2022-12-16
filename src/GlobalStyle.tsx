@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   }
   ul{
     li{
-      line-height: 128%;
+       line-height: 128%; 
     }
   }
   @media (max-width:1280px) {

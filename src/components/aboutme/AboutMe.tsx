@@ -59,13 +59,15 @@ const AboutMe = () => {
 
       {category === "techStack" ? (
         <SkillsSection>
-          <article>
-            <div>
-              {techStack.map((frontSkills) => {
-                return <Skills key={frontSkills.id} content={frontSkills} />;
-              })}
-            </div>
-          </article>
+          <ol>
+            {techStack.map((frontSkills) => {
+              return (
+                <li>
+                  <Skills key={frontSkills.id} content={frontSkills} />
+                </li>
+              );
+            })}
+          </ol>
         </SkillsSection>
       ) : null}
       {category === "education" ? (
@@ -158,22 +160,29 @@ const IntroductionArticle = styled.article`
 `;
 
 const SkillsSection = styled.section`
-  border: ${layout};
-  width: 100%;
-  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 
-  article {
+  ol {
     width: 80%;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      width: calc(100% / 5);
+      margin: 10px;
+    }
+  }
+  @media (max-width: 1520px) {
+    ol {
+      li {
+        width: calc(100% / 4);
+      }
     }
   }
 `;
