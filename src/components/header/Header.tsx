@@ -106,6 +106,15 @@ const Nav = styled.nav`
       margin: 0px 35px 0px 0px;
     }
   }
+  @media (max-width: 1280px) {
+    li.title {
+      margin: 40px 100px 20px 100px;
+    }
+
+    div.links_container {
+      margin-right: 50px;
+    }
+  }
 `;
 
 export default Header;
