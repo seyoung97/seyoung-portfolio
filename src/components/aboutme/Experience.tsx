@@ -42,7 +42,7 @@ const Article = styled.article`
     width: 20%;
     margin: 30px 0px 30px 60px;
     img {
-      width: 150px;
+      width: 100px;
     }
     .info_box {
       margin-top: 10px;
@@ -51,7 +51,7 @@ const Article = styled.article`
         margin-bottom: 5px;
       }
       .course_name {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: bold;
       }
       .period {
@@ -72,8 +72,24 @@ const Article = styled.article`
       margin-bottom: 20px;
       padding-left: 40px;
       color: ${butter};
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       line-height: 120%;
+    }
+  }
+  @media (max-width: 1520px) {
+    div.info_container {
+      margin: 30px 0px 30px 40px;
+      .info_box {
+        .major {
+          font-size: 0.9rem;
+        }
+        .course_name {
+          font-size: 1.1rem;
+        }
+        .period {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 `;

@@ -188,7 +188,7 @@ const SkillsSection = styled.section`
 `;
 
 const EducationSection = styled.section`
-  width: 60%;
+  width: 59%;
   margin: 70px auto 0px auto;
 `;
 

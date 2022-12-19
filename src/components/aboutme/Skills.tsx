@@ -18,7 +18,7 @@ const Skills = ({ content }: SkillsProps) => {
         <span>{content.skillName}</span>
       </div>
       <div className="projects_box">
-        <span>projects:</span>
+        <span className="projects">projects:</span>
         {content.projects.map((project) => {
           return (
             <Link to={project.link} key={project.project_name}>
@@ -80,8 +80,11 @@ const Container = styled.ul`
     background-color: ${butter};
     font-size: 0.7rem;
     color: grey;
+    .projects {
+      margin: 10px 5px 10px 0px;
+    }
     .project_name {
-      margin-right: 5px;
+      margin: 10px 5px 10px 0px;
       color: grey;
       cursor: pointer;
       :hover {
