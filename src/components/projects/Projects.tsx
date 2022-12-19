@@ -49,8 +49,9 @@ const Projects = ({ projectsData }: ProjectsProps) => {
 
 const Section = styled.section`
   width: 100%;
-  margin: auto;
-  margin-top: 150px;
+  margin: 200px auto 0px;
+  padding: 30px 0px 70px 0px;
+  background-color: rgb(223, 222, 222, 0.1);
   .projects_container {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +60,6 @@ const Section = styled.section`
     width: 80%;
     margin: auto;
     margin-top: 70px;
-    margin-bottom: 100px;
   }
 `;
 

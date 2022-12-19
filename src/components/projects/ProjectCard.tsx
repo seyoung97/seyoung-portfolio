@@ -47,7 +47,7 @@ const Article = styled.article`
   margin: 0px 50px 50px 0px;
   border: 1px solid rgb(223, 222, 222, 0.3);
   border-radius: 5px;
-  background-color: rgb(223, 222, 222, 0.1);
+  background-color: ${darkGray};
   cursor: pointer;
   &:hover {
     transform: scale(1.03);

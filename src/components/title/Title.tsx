@@ -10,6 +10,7 @@ const Title = ({ content }: TitleProps) => {
 };
 
 const StyledTitle = styled.div`
+  margin-top: 80px;
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
