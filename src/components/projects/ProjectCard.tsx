@@ -43,7 +43,7 @@ const ProjectCard = ({ content, type, index }: ProjectCardProps) => {
 };
 
 const Article = styled.article`
-  width: 450px;
+  width: 100%;
   margin: 0px 50px 50px 0px;
   border: 1px solid rgb(223, 222, 222, 0.3);
   border-radius: 5px;
@@ -54,10 +54,9 @@ const Article = styled.article`
     transition: 0.5s;
   }
   .img_box {
-    width: 449px;
+    width: 100%;
     height: 250px;
     margin-top: 10px;
-    padding: 0px 2px 0px 0px;
     img {
       width: 100%;
       height: 100%;
@@ -88,6 +87,27 @@ const Article = styled.article`
     img {
       width: 30px;
       margin: 10px 15px 15px 0px;
+    }
+  }
+  @media (max-width: 1520px) {
+    .img_box {
+      height: 200px;
+    }
+    .title {
+      font-size: 1.1rem;
+    }
+    .activity {
+      font-size: 0.8rem;
+    }
+    .explain {
+      font-size: 0.7rem;
+    }
+    .links_container {
+      margin-left: 15px;
+      img {
+        width: 25px;
+        margin: 10px 15px 15px 0px;
+      }
     }
   }
 `;

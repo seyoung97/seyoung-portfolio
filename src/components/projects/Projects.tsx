@@ -18,31 +18,35 @@ const Projects = ({ projectsData }: ProjectsProps) => {
   return (
     <Section id="projects">
       <Title content={projectsTitle} />
-      <div className="projects_container">
+      <ol className="projects_container">
         {projectsData.projects_list.map((projects, i) => {
           return (
-            <ProjectCard
-              key={projects.id}
-              content={projects}
-              type={"P"}
-              index={i}
-            />
+            <li>
+              <ProjectCard
+                key={projects.id}
+                content={projects}
+                type={"P"}
+                index={i}
+              />
+            </li>
           );
         })}
-      </div>
+      </ol>
       <Title content={internshipTitle} />
-      <div id="internship" className="projects_container">
+      <ol id="internship" className="projects_container">
         {projectsData.internship_list.map((projects, i) => {
           return (
-            <ProjectCard
-              key={projects.id}
-              content={projects}
-              type={"I"}
-              index={i}
-            />
+            <li>
+              <ProjectCard
+                key={projects.id}
+                content={projects}
+                type={"I"}
+                index={i}
+              />
+            </li>
           );
         })}
-      </div>
+      </ol>
     </Section>
   );
 };
@@ -60,6 +64,10 @@ const Section = styled.section`
     width: 80%;
     margin: auto;
     margin-top: 70px;
+    li {
+      width: calc(90% / 3);
+      margin: calc(3% / 3);
+    }
   }
 `;
 
