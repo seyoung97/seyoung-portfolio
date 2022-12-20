@@ -65,7 +65,7 @@ const Header = () => {
         <a href="https://velog.io/@seeyong_0">
           <img src={blog} />
         </a>
-        <a href="/src/assets/pdf/resume.pdf">
+        <a href="../pdf/resume.pdf">
           <img src={resume}></img>
         </a>
       </div>
