@@ -67,7 +67,9 @@ const Content = ({ projectData }: ContentProps) => {
             return (
               <li key={content.link_name}>
                 <span>{content.link_name}:</span>
-                <a href={content.link_url}>🔎자세히 보러가기</a>
+                <a href={content.link_url} target="_blank">
+                  🔎자세히 보러가기
+                </a>
               </li>
             );
           })}
