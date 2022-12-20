@@ -7,8 +7,8 @@
       "activity_type": "개인 프로젝트",
       "project_introduction": "React와 TypeScript를 기반으로 제작한 포트폴리오 사이트",
       "github_url": "https://github.com/seyoung97/seyoung-portfolio",
-      "distribute_url": "0",
-      "blog_url": "0",
+      "distribute_url": "https://regal-sherbet-cf1b6b.netlify.app",
+      "blog_url": "https://velog.io/@seeyong_0/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
       "details": {
         "breif_info": {
           "introduction": "React와 TypeScript를 기반으로 제작한 개인 포트폴리오 사이트입니다.",
@@ -16,14 +16,22 @@
           "team": "개인 프로젝트"
         },
         "project_introduction": [
-          "육류 판매 전문 인커머스 사이트인 정육각 페이지의 모든 기능을 직접 구현하는 프로젝트입니다.",
-          "모두의 공방에서 제공하는 주요 기능은 맞춤 제작을 문의할 수 있는 맞춤 제작소와 이미 만들어진 제품을 옵션에 따라 구매할 수 있는 디자인마켓으로 이루어져있습니다.",
-          "저희는 디자인마켓의 다양한 옵션 선택 기능과 필터링 기능을 구현해보고 싶어서 모두의 공방을 선택했습니다."
+          "그동안 진행한 프로젝트들을 정리한 포트폴리오 사이트 입니다.",
+          "원래 포트폴리오를 노션에 정리했었는데 저의 개성을 잘 나타내지 못하는 것 같아서 직접 포트폴리오 사이트를 기획 및 제작했습니다.",
+          "모든 데이터들은 JSON형식으로 정리하여 적용했습니다. 타입스크립트를 사용하여 제작했습니다."
         ],
         "links": [
           {
             "link_name": "프론트엔드 레포",
             "link_url": "https://github.com/seyoung97/seyoung-portfolio"
+          },
+          {
+            "link_name": "회고록",
+            "link_url": "https://velog.io/@seeyong_0/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+          },
+          {
+            "link_name": "배포 링크",
+            "link_url": "https://regal-sherbet-cf1b6b.netlify.app"
           }
         ],
         "video_url": "https://www.youtube.com/watch?v=GvEnj2rMITI",
@@ -120,7 +128,7 @@
                   "../images/projects/features/portfolio/carousel.png"
                 ],
                 "explain": [
-                  "swiper 라이브러리를 사용해 미리보기를 구현했습니다. ",
+                  "swiper 라이브러리를 사용해 그동안 진행한 프로젝트들을 간략하게 소개하는 미리보기를 구현했습니다. ",
                   "첨부된 이미지들을 직접 디자인 및 제작했습니다."
                 ]
               }
@@ -244,7 +252,7 @@
         ],
         "review": [
           {
-            "sub_titile": "방대한 데이터의 바다에 허우적거리다",
+            "sub_titile": "방대한 데이터를 다루는 방법",
             "explain": [
               "그동안에는 이렇게 많은 양의 데이터를 직접 JSON으로 가공하고 적용한 경험이 없었습니다.",
               "정보를 가장 효율적으로 구조화하는 방식에 대해 고민을 많이 해볼 수 있는 기회였습니다.",
@@ -269,7 +277,7 @@
       "activity_type": "JUST CODE 6기",
       "project_introduction": "맞춤제작 전문 플랫폼 모두의 공방을 참고해 디자인 및 기능을 직접 구현",
       "github_url": "https://github.com/seyoung97/justcode-6-2nd-team4-front",
-      "distribute_url": "0",
+      "distribute_url": "https://www.youtube.com/watch?v=0NputbNx3_s",
       "blog_url": "https://velog.io/@seeyong_0/%EC%82%AC%EC%A1%B0%EC%9D%98-%EA%B3%B5%EB%B0%A9Justcode-2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
       "details": {
         "breif_info": {
@@ -535,7 +543,7 @@
       "activity_type": "JUST CODE 6기",
       "project_introduction": "육류 판매 전문 플랫폼 정육각을 참고해 모든 기능을 직접 구현",
       "github_url": "https://github.com/seyoung97/justcode-6-1st-justmeat-front",
-      "distribute_url": "0",
+      "distribute_url": "https://www.youtube.com/watch?v=IXRNaVJAwKQ&t=3s",
       "blog_url": "https://velog.io/@seeyong_0/JUST-MEAT-1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
       "details": {
         "breif_info": {
@@ -792,7 +800,7 @@
       "project_introduction": "기업 룰루랩에서 제공한 기획안을 토대로 UI/UX 디자인 및 병원 예약, 예약 조회 기능을 구현",
       "github_url": "https://github.com/seyoung97/preonboarding-lululab",
       "distribute_url": "https://extraordinary-elf-828716.netlify.app",
-      "blog_url": "0",
+      "blog_url": "https://velog.io/@seeyong_0/Pre-onboarding-lululab-%EB%B3%91%EC%9B%90%EC%98%88%EC%95%BD-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%9A%8C%EA%B3%A0%EB%A1%9D",
       "details": {
         "breif_info": {
           "introduction": "기업 룰루랩에서 제공한 기획안을 토대로 UI/UX 디자인 및 병원 예약, 예약 조회 기능을 구현했습니다.",
@@ -810,6 +818,10 @@
             "link_url": "https://github.com/seyoung97/preonboarding-lululab"
           },
           {
+            "link_name": "회고록",
+            "link_url": "https://velog.io/@seeyong_0/Pre-onboarding-lululab-%EB%B3%91%EC%9B%90%EC%98%88%EC%95%BD-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+          },
+          {
             "link_name": "배포 링크",
             "link_url": "https://extraordinary-elf-828716.netlify.app"
           }
@@ -821,12 +833,12 @@
             "skills": [
               "HTML",
               "styled-component",
-              "Javascript",
+              "Typecript",
               "React",
               "Vite",
               "React-router",
               "axios",
-              "Font Awesome"
+              "react-calendar"
             ]
           }
         ],
@@ -1021,7 +1033,7 @@
       "project_introduction": "기업 하이에서 제공한 기획안을 토대로 UI/UX 디자인 및 음성 녹음, 녹음 파일 재생, 파형 출력 기능을 구현",
       "github_url": "https://github.com/seyoung97/pre-onboarding-4team-haii",
       "distribute_url": "https://jocular-empanada-50806c.netlify.app/",
-      "blog_url": "0",
+      "blog_url": "https://velog.io/@seeyong_0/%ED%9A%8C%EA%B3%A0%EB%A1%9D-%ED%85%9C%ED%94%8C%EB%A6%BF",
       "details": {
         "breif_info": {
           "introduction": "기업 하이에서 제공한 기획안을 토대로 UI/UX 디자인 및 음성 녹음, 녹음 파일 재생, 파형 출력 기능을 구현한 기업 협업 프로젝트입니다.",
@@ -1042,6 +1054,10 @@
           {
             "link_name": "팀 노션",
             "link_url": "https://www.notion.so/aae6c129b9c448c0a0ded1c5fb783437?p=5ab94e6c8ddc4cf98493fe23b0c9399c&pm=c"
+          },
+          {
+            "link_name": "회고록",
+            "link_url": "https://velog.io/@seeyong_0/%ED%9A%8C%EA%B3%A0%EB%A1%9D-%ED%85%9C%ED%94%8C%EB%A6%BF"
           },
           {
             "link_name": "배포 링크",
@@ -1166,7 +1182,7 @@
       "project_introduction": "기업 비트바이트에서 제공한 기획안 및 figma를 토대로 상품 리스트 페이지 및 상품 상세 페이지를 구현",
       "github_url": "https://github.com/seyoung97/playkeyboard",
       "distribute_url": "https://elaborate-hotteok-6003a1.netlify.app",
-      "blog_url": "0",
+      "blog_url": "https://velog.io/@seeyong_0/Pre-onboarding-Play-Keyboard",
       "details": {
         "breif_info": {
           "introduction": "기업 비트바이트에서 제공한 기획안 및 figma를 토대로 상품 리스트 페이지 및 상품 상세 페이지를 구현했습니다.",
@@ -1189,6 +1205,10 @@
           {
             "link_name": "팀 노션",
             "link_url": "https://www.notion.so/wecode/5-be0cbabf20314a74977e8d130e84e194"
+          },
+          {
+            "link_name": "회고록",
+            "link_url": "https://velog.io/@seeyong_0/Pre-onboarding-Play-Keyboard"
           },
           {
             "link_name": "배포링크",

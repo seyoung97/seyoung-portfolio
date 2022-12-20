@@ -28,13 +28,13 @@ const ProjectCard = ({ content, type, index }: ProjectCardProps) => {
       <div className="activity">관련활동: {content.activity_type}</div>
       <p className="explain">{content.project_introduction}</p>
       <div className="links_container">
-        <a href={content.github_url}>
+        <a href={content.github_url} target="_blank">
           <img src={github}></img>
         </a>
-        <a href={content.distribute_url}>
+        <a href={content.distribute_url} target="_blank">
           <img src={network} />
         </a>
-        <a href={content.blog_url}>
+        <a href={content.blog_url} target="_blank">
           <img src={blog}></img>
         </a>
       </div>

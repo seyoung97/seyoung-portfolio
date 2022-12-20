@@ -59,10 +59,10 @@ const Header = () => {
         </Link>
       </ul>
       <div className="links_container">
-        <a href="https://github.com/seyoung97">
+        <a href="https://github.com/seyoung97" target="_blank">
           <img src={github} />
         </a>
-        <a href="https://velog.io/@seeyong_0">
+        <a href="https://velog.io/@seeyong_0" target="_blank">
           <img src={blog} />
         </a>
         <a href="../pdf/resume.pdf">
