@@ -35,7 +35,7 @@ const Wrap = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 115px;
   background-color: ${butter};
 `;
 export default Detail;

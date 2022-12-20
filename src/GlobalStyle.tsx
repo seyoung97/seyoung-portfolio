@@ -26,6 +26,11 @@ const GlobalStyle = createGlobalStyle`
        line-height: 128%; 
     }
   }
+  @media (max-width: 1520px) {
+    html {
+      font-size: 18px;
+    }
+  }
   @media (max-width:1280px) {
     html {font-size: 17px;}
   }

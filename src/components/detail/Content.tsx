@@ -33,20 +33,24 @@ const Content = ({ projectData }: ContentProps) => {
       </h1>
       <ul className="info_container">
         <li>
-          <span>한 줄 소개</span>
-          {projectData.details.breif_info.introduction}
+          <span className="name">한 줄 소개</span>
+          <span className="content">
+            {projectData.details.breif_info.introduction}
+          </span>
         </li>
         <li>
-          <span>진행 기간</span>
-          {projectData.details.breif_info.period}
+          <span className="name">진행 기간</span>
+          <span className="content">
+            {projectData.details.breif_info.period}
+          </span>
         </li>
         <li>
-          <span>팀 구성</span>
-          {projectData.details.breif_info.team}
+          <span className="name">팀 구성</span>
+          <span className="content">{projectData.details.breif_info.team}</span>
         </li>
         <li>
-          <span>관련 활동</span>
-          {projectData.activity_type}
+          <span className="name">관련 활동</span>
+          <span className="content"> {projectData.activity_type}</span>
         </li>
       </ul>
       <section className="content_section">
@@ -70,11 +74,7 @@ const Content = ({ projectData }: ContentProps) => {
         </ul>
         <h2 id="project_video">시연영상</h2>
         <div className="video_box">
-          <ReactPlayer
-            url={projectData.details.video_url}
-            width={"1000px"}
-            height={"630px"}
-          ></ReactPlayer>
+          <ReactPlayer url={projectData.details.video_url}></ReactPlayer>
         </div>
         <h2 id="project_skills">사용 기술 및 라이브러리</h2>
         <ul className="tech_stack">
@@ -137,11 +137,6 @@ const Content = ({ projectData }: ContentProps) => {
   );
 };
 
-const MainImage = styled.img`
-  display: block;
-  width: 100%;
-`;
-
 const Article = styled.article`
   width: 55%;
   margin: 100px auto;
@@ -152,15 +147,17 @@ const Article = styled.article`
     font-weight: bold;
   }
   .info_container {
-    margin-top: 50px;
+    margin: 60px 0px 0px 10px;
     li {
       display: flex;
       margin-bottom: 10px;
-      font-size: 1.2rem;
-
-      span {
-        width: 250px;
+      font-size: 1.1rem;
+      .name {
+        width: 25%;
         font-weight: bold;
+      }
+      .content {
+        width: 75%;
       }
     }
   }
@@ -236,7 +233,7 @@ const Article = styled.article`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 85%;
+      width: 100%;
       margin: 30px auto;
       .structure_imgbox {
         width: fit-content;
@@ -262,6 +259,13 @@ const Article = styled.article`
         margin-bottom: 20px;
         font-size: ${paragraphFontSize};
       }
+    }
+  }
+
+  @media (max-width: 1520px) {
+    div.structure_container {
+      display: flex;
+      flex-direction: column;
     }
   }
 `;

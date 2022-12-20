@@ -58,9 +58,10 @@ const FeatureSection = styled.section`
   }
   .page_gif {
     margin: 20px 0px 50px 25px;
+    width: 80%;
   }
   .code_img {
-    width: 800px;
+    width: 80%;
     margin: 20px 0px 30px 25px;
   }
   ul {
