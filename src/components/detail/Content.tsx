@@ -152,13 +152,13 @@ const Article = styled.article`
     font-weight: bold;
   }
   .info_container {
+    margin-top: 50px;
     li {
       display: flex;
       margin-bottom: 10px;
       font-size: 1.2rem;
-      /* border: ${layout}; */
+
       span {
-        /* border: ${layout}; */
         width: 250px;
         font-weight: bold;
       }

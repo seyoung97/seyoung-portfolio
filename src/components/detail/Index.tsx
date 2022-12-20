@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import {
   h1Style,
@@ -10,7 +10,6 @@ import {
   h3FocusedStyle,
 } from "../../theme";
 import { ProjectDataType } from "../../interface";
-import Title from "../title/Title";
 
 interface IndexProps {
   indexData: ProjectDataType;
@@ -18,8 +17,18 @@ interface IndexProps {
 
 const Index = ({ indexData }: IndexProps) => {
   const [styleName, setStyleName] = useState("");
+  const [cooperationIndex, setCooperationIndex] = useState(true);
 
-  console.log(styleName);
+  useEffect(() => {
+    if (
+      indexData.project_name === "포트폴리오 사이트" ||
+      indexData.project_name === "lululab 병원 예약 서비스"
+    ) {
+      setCooperationIndex(false);
+    } else {
+      setCooperationIndex(true);
+    }
+  }, [cooperationIndex]);
 
   return (
     <Section>
@@ -86,33 +95,38 @@ const Index = ({ indexData }: IndexProps) => {
             📁 프로젝트 구조
           </h2>
         </Link>
-        <Link to="project_cooperation" smooth={true}>
-          <h2
-            onClick={() => {
-              setStyleName("project_cooperation");
-            }}
-            style={
-              styleName === "project_cooperation" ? h2FocusedStyle : h2Style
-            }
-          >
-            👥 협업 방식
-          </h2>
-        </Link>
-        {indexData.details.cooperation.map((title, i) => {
-          return (
-            <Link to={title.title} smooth={true}>
-              <h3
-                key={title.title}
+        {cooperationIndex && (
+          <>
+            <Link to="project_cooperation" smooth={true}>
+              <h2
                 onClick={() => {
-                  setStyleName(title.title);
+                  setStyleName("project_cooperation");
                 }}
-                style={styleName === title.title ? h3FocusedStyle : h3Style}
+                style={
+                  styleName === "project_cooperation" ? h2FocusedStyle : h2Style
+                }
               >
-                {title.title}
-              </h3>
+                👥 협업 방식
+              </h2>
             </Link>
-          );
-        })}
+            {indexData.details.cooperation.map((title, i) => {
+              return (
+                <Link to={title.title} smooth={true}>
+                  <h3
+                    key={title.title}
+                    onClick={() => {
+                      setStyleName(title.title);
+                    }}
+                    style={styleName === title.title ? h3FocusedStyle : h3Style}
+                  >
+                    {title.title}
+                  </h3>
+                </Link>
+              );
+            })}
+          </>
+        )}
+
         <Link to="project_feature" smooth={true}>
           <h2
             onClick={() => {
@@ -208,9 +222,10 @@ const Section = styled.section`
   width: 18%;
   .index_box {
     position: fixed;
-    margin-top: 5%;
+    margin-top: 4%;
     padding: 15px 30px 15px 20px;
     border-left: 2px solid #cccc;
+    font-size: 0.8rem;
     cursor: pointer;
   }
 `;
