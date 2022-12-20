@@ -1104,7 +1104,7 @@
         "Feature": [
           {
             "page_name": "재생 페이지",
-            "page_gif": "../images/projects/features/haii/haii-play.gif",
+            "page_gif": "../images/projects/features/haii/haii_play.gif",
             "features": [
               {
                 "feature_name": "파형 삽입",
