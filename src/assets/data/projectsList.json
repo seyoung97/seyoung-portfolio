@@ -833,11 +833,10 @@
             "skills": [
               "HTML",
               "styled-component",
-              "Typecript",
+              "JavaScript",
               "React",
               "Vite",
               "React-router",
-              "axios",
               "react-calendar"
             ]
           }
