@@ -86,7 +86,7 @@ npm run dev
 
 ## ✅ 상세 페이지
 
-![portfolio-detail](https://user-images.githubusercontent.com/108709932/208818826-710a736e-5136-4a27-87b0-ca86e8f45b39.gif)
+![portfolio-detail](https://user-images.githubusercontent.com/108709932/208819393-593eba14-4617-49c3-968b-2b8a324e4c5a.gif)
 
 - 프로젝트 상세 내용 JSON 형식으로 정리하여 적용, content 컴포넌트 재사용.
 - 목차 UI 구현, react-scroll을 활용해 클릭시 해당 내용으로 이동
