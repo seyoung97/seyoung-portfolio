@@ -76,9 +76,7 @@ npm run dev
 
 ## ✅ 메인 페이지
 
-<p align="center">
-<img src="![portfolio-about](https://user-images.githubusercontent.com/108709932/208818003-30e47bef-6e21-4293-bac6-6f13e5d8cfd6.gif)">
-</p>
+![portfolio-about](https://user-images.githubusercontent.com/108709932/208818003-30e47bef-6e21-4293-bac6-6f13e5d8cfd6.gif)
 
 - react-scroll라이브러리를 사용하여 Navigation Bar에 scroll event 적용
 - About Me 섹션에 탭 UI 구현
