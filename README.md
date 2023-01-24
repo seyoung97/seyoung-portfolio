@@ -16,11 +16,15 @@
 
 <br/>
 
-# 링크
+# 배포 사이트
 
 > 배포 링크: https://regal-sherbet-cf1b6b.netlify.app
 
+# 회고록
+
 > 회고록 링크: https://velog.io/@seeyong_0/포트폴리오-사이트-회고록
+
+# 시연 영상
 
 > 시연 영상 링크: https://www.youtube.com/watch?v=GvEnj2rMITI
 
