@@ -33,6 +33,20 @@
   "work_experience": [
     {
       "id": 2,
+      "img_url": "../images/education/tens.png",
+      "course_name": "(주) 텐소프트웍스",
+      "major": "프론트엔드",
+      "double_major": "Internship",
+      "period": "2023-01 ~ 2023-05",
+      "explain": [
+        "텐소프트웍스는 우아한형제들 배민로봇 CMS, 네이버 OGQ 포토북 등 프로젝트의 기획 및 개발을 담당한 웹솔루션 개발 전문 회사입니다. ",
+        "포토북 제작 플랫폼과 구인구직 플랫폼 개발 및 유지 보수에 참여했습니다. ",
+        "Redux, Redux Toolkit, RTK Query 등 중요한 라이브러리를 실무에서 어떻게 사용하는지 경험했습니다.",
+        "프로젝트 : Naver OGQ 포토북, 보너스잡"
+      ]
+    },
+    {
+      "id": 3,
       "img_url": "../images/education/preonboarding.png",
       "course_name": "Wanted Pre-onboarding",
       "major": "프론트엔드",
@@ -41,12 +55,12 @@
       "explain": [
         "프리온 보딩은 원티드에서 주최하는 기업 인턴십 프로그램입니다.",
         "기업이 제공하는 기획안에 따라 서비스를 제작하는 방식으로 진행됐으며,",
-        "4개의 팀프로젝트와 한 개의 개인프로젝트를 진행했다.",
+        "4개의 팀프로젝트와 한 개의 개인프로젝트를 진행했습니다.",
         "프로젝트 : Lululab 병원예약서비스, 주식회사 하이 오디오 재생 프로그램, 플레이키보드 웹스토어"
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "img_url": "../images/education/toonsquare.png",
       "course_name": "TOONSQUARE",
       "major": "콘텐츠팀",
